@@ -2,14 +2,35 @@
   "parser": "@typescript-eslint/parser",
   "extends": [
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
   ],
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "react-hooks"],
   "parserOptions": {
     "ecmaVersion": 2018,
-    "sourceType": "module"
-   },
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": 0
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "prefer-const": "warn",
+    "no-unused-vars": ["warn", { "ignoreRestSiblings": true }],
+    "react/prop-types": [0, { "ignore": ["dispatch"] }],
+    "react/jsx-no-target-blank": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/no-unescaped-entities": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

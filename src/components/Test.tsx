@@ -7,7 +7,7 @@ interface TestProps {
 
 const Test: React.FunctionComponent<TestProps> = ({
   title = 'Mr.',
-  name = 'Vasily'
+  name = 'Vasily',
 }) => {
   return (
     <span>
