@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { Route, BrowserRouter as Router, Link } from 'react-router-dom'
 
-import App from './App'
+import Main from './views/Main'
 
 const routing = (
   <Router>
@@ -11,11 +11,11 @@ const routing = (
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/about">Contact</Link>
+        <Link to="/about">About</Link>
       </li>
     </ul>
     <div>
-      <Route exact path="/" component={App} />
+      <Route exact path="/" component={Main} />
     </div>
   </Router>
 )
