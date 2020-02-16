@@ -2,8 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import * as React from 'react'
 
-import Test from './components/Test'
-
 class App extends React.Component {
   title: string
   name: string
@@ -15,12 +13,7 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        Hallo,
-        <Test title={this.title} name={this.name} />
-      </div>
-    )
+    return <div>Hallo, World!</div>
   }
 }
 
