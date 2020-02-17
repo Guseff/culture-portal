@@ -6,20 +6,18 @@ import { Nav } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <div className=" bg-primary fixed-bottom">
+    <footer className=" bg-primary fixed-bottom">
       <Navbar color="dark">
         <Container fluid={true}>
-          <footer>
-            <address>
-              <a>Тут будут ссылки на наши контакты</a>
-              <Nav.Link as={Link} to="/author">
-                О нас
-              </Nav.Link>
-            </address>
-          </footer>
+          <address>
+            <a>Тут будут ссылки на наши контакты</a>
+            <Nav.Link as={Link} to="/author">
+              О нас
+            </Nav.Link>
+          </address>
         </Container>
       </Navbar>
-    </div>
+    </footer>
   );
 };
 
