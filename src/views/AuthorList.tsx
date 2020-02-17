@@ -14,7 +14,7 @@ class Main extends React.Component {
   render() {
     return (
       <Container>
-        <h3>Hello, World!</h3>
+        <h3>Author List</h3>
       </Container>
     );
   }

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container } from 'react-bootstrap';
 
-class Main extends React.Component {
+class Author extends React.Component {
   title: string;
   name: string;
 
@@ -14,10 +14,10 @@ class Main extends React.Component {
   render() {
     return (
       <Container>
-        <h3>Hello, World!</h3>
+        <h3>Author Page</h3>
       </Container>
     );
   }
 }
 
-export default Main;
+export default Author;
