@@ -6,9 +6,9 @@ import { Nav } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <div className="fixed-bottom">
+    <div className=" bg-primary fixed-bottom">
       <Navbar color="dark">
-        <Container fluid={true} className="bg-primary">
+        <Container fluid={true}>
           <footer>
             <address>
               <a>Тут будут ссылки на наши контакты</a>
