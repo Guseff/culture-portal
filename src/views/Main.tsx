@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Container } from 'react-bootstrap';
 
 class Main extends React.Component {
   title: string;
@@ -11,7 +12,11 @@ class Main extends React.Component {
   }
 
   render() {
-    return <div>Hallo, World!</div>;
+    return (
+      <Container>
+        <h3>Hello, World!</h3>
+      </Container>
+    );
   }
 }
 
