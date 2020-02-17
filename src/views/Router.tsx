@@ -10,7 +10,7 @@ import Author from './Author';
 import WorkLog from './WorkLog';
 import StyleGuide from './StyleGuide';
 import About from './About';
-import Footer from '../components/Header/Footer';
+import Footer from '../components/Footer/Footer';
 
 const Router = () => {
   return (
