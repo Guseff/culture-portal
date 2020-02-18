@@ -9,7 +9,6 @@ interface LangOutputProps {
 }
 
 const LangOutputTest: React.FC<LangOutputProps> = ({ language }) => {
-  console.log('component', language);
   return <Container>{`Language ${language}`}</Container>;
 };
 
