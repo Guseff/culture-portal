@@ -14,12 +14,7 @@ import About from './About/index';
 import Footer from '../components/Footer/index';
 import configureStore from '../store';
 
-// TODO: move in file
-const initialStore = {
-  language: 'en',
-};
-
-const store = configureStore(initialStore);
+const store = configureStore();
 
 const Router = () => {
   return (
