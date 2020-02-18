@@ -1,7 +1,9 @@
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import * as React from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { ConnectedRouter } from 'connected-react-router';
+import { history } from '../store';
 import { Provider } from 'react-redux';
 
 import Header from '../components/Header/index';
@@ -14,17 +16,12 @@ import About from './About/index';
 import Footer from '../components/Footer/index';
 import configureStore from '../store';
 
-// TODO: move in file
-const initialStore = {
-  language: 'en',
-};
-
-const store = configureStore(initialStore);
+const store = configureStore();
 
 const Router = () => {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <ConnectedRouter history={history}>
         <Header />
         <Route exact path="/" component={Main} />
         <Route path="/list" component={AuthorList} />
@@ -33,7 +30,7 @@ const Router = () => {
         <Route path="/styleguide" render={StyleGuide} />
         <Route path="/about" component={About} />
         <Footer />
-      </BrowserRouter>
+      </ConnectedRouter>
     </Provider>
   );
 };

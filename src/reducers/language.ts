@@ -1,7 +1,7 @@
-import { SET_LANGUAGE } from '../constants';
+import { SET_LANGUAGE, LANGUAGE } from '../constants';
 
 const initialState = {
-  language: 'en',
+  language: LANGUAGE.BE,
 };
 
 const language = (
