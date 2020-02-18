@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Dropdown } from 'react-bootstrap';
 
 const Header = () => {
   return (
@@ -18,30 +18,17 @@ const Header = () => {
           <Nav.Link as={Link} to="/about">
             О нас
           </Nav.Link>
-          <div className="dropdown">
-            <button
-              className="btn btn-info dropdown-toggle"
-              type="button"
-              id="dropdownMenu1"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="true"
-            >
+          <Dropdown>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
               Языки
-              <span className="caret"></span>
-            </button>
-            <ul className="dropdown-menu">
-              <li>
-                <a href="#">ru</a>
-              </li>
-              <li>
-                <a href="#">be</a>
-              </li>
-              <li>
-                <a href="#">eng</a>
-              </li>
-            </ul>
-          </div>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">ru</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">be</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">eng</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Nav>
       </Navbar>
     </header>
