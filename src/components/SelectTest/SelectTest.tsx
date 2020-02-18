@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
 import { setLanguage } from '../../actions';
 import { Form } from 'react-bootstrap';
@@ -7,15 +8,15 @@ import { LANGUAGES } from '../../constants';
 
 const languages = Object.values(LANGUAGES);
 
-class SelectTest extends React.Component {
-  constructor(props: Readonly<{}>) {
-    super(props);
-  }
+interface SelectTestProps {
+  dispatch: Dispatch;
+}
 
+class SelectTest extends React.Component<SelectTestProps> {
   setLanguageHandle = (e: React.FormEvent<HTMLInputElement>): void => {
     e.preventDefault();
     console.log(e.currentTarget.value);
-    setLanguage(e.currentTarget.value);
+    this.props.dispatch(setLanguage(e.currentTarget.value));
   };
 
   render() {
@@ -31,4 +32,4 @@ class SelectTest extends React.Component {
   }
 }
 
-export default connect(null, { SelectTest })(SelectTest);
+export default connect()(SelectTest);

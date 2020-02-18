@@ -4,7 +4,7 @@ const initialState = {
   language: LANGUAGES.BE,
 };
 
-const language = (
+const settings = (
   state = initialState,
   action: { type: string; payload: string }
 ) => {
@@ -18,4 +18,4 @@ const language = (
   }
 };
 
-export default language;
+export default settings;
