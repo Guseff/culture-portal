@@ -1,23 +1,16 @@
-import * as React from 'react';
+import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
+import writersData from '../../data/writersData';
+import  { AuthorListCards } from '../../components/AuthorList/AuthorListCards/AuthorListCards';
 
-class Main extends React.Component {
-  title: string;
-  name: string;
+const AuthorList:React.FC = () => {
 
-  constructor(props: Readonly<{}>) {
-    super(props);
-    this.title = 'Mr.';
-    this.name = 'Ronnie';
-  }
-
-  render() {
-    return (
-      <Container>
-        <h3>Author List</h3>
-      </Container>
-    );
-  }
+  return (
+    <Container>
+      <h3>Author List</h3>
+      <AuthorListCards data={writersData} />
+    </Container>
+  );
 }
 
-export default Main;
+export default AuthorList;
