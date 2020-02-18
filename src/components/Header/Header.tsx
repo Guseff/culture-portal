@@ -2,11 +2,14 @@ import * as React from 'react';
 
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
+import SelectTest from '../SelectTest';
 
 const Header = () => {
   return (
     <Navbar bg="primary" variant="dark">
-      <Navbar.Brand href="/">Logo</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">
+        Logo
+      </Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link as={Link} to="/">
           Home
@@ -24,6 +27,7 @@ const Header = () => {
           Work Log
         </Nav.Link>
       </Nav>
+      <SelectTest />
     </Navbar>
   );
 };

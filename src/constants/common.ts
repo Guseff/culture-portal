@@ -1,4 +1,4 @@
-export const LANGUAGE = {
+export const LANGUAGES = {
   RU: 'ru',
   EN: 'en',
   BE: 'be',
