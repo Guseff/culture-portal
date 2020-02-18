@@ -15,7 +15,7 @@ const Header = () => {
           <Nav.Link as={Link} to="/list">
             Писатели
           </Nav.Link>
-          <Nav.Link as={Link} to="/author">
+          <Nav.Link as={Link} to="/about">
             О нас
           </Nav.Link>
           <div className="dropdown">
@@ -25,7 +25,8 @@ const Header = () => {
               id="dropdownMenu1"
               data-toggle="dropdown"
               aria-haspopup="true"
-              aria-expanded="true">
+              aria-expanded="true"
+            >
               Языки
               <span className="caret"></span>
             </button>
