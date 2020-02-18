@@ -1,21 +1,22 @@
 import * as React from 'react';
+import './Footer.module.css';
 
-import { Navbar } from 'react-bootstrap';
+import { Navbar, Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <footer className=" bg-primary fixed-bottom">
-      <Navbar color="dark">
-        <address>
-          <a>Тут будут ссылки на наши контакты</a>
-          <Nav.Link as={Link} to="/author">
-            О нас
-          </Nav.Link>
-        </address>
+    <Alert variant="primary" className="footer fixed-bottom">
+      <Navbar className="footer_item">
+        <Nav.Link as={Link} to="/author">
+          Тут будут ссылки на наши контакты
+        </Nav.Link>
+        <Nav.Link as={Link} to="/author">
+          О нас
+        </Nav.Link>
       </Navbar>
-    </footer>
+    </Alert>
   );
 };
 

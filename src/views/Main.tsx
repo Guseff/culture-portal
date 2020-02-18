@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col, Container, Image } from 'react-bootstrap';
 
 class Main extends React.Component {
   title: string;
@@ -32,7 +32,7 @@ class Main extends React.Component {
         <Row>
           <Col>
             <h2>Имя писателя</h2>
-            <img src="" alt="фото писателя" />
+            <Image src="../171x180" rounded alt="фото писателя" />
             <h3>годы жизни</h3>
             <p>Информация о писателе (коротко)</p>
             <button>Узнать больше</button>

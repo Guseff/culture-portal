@@ -1,0 +1,7 @@
+.header {
+    font-size: large;
+}
+
+.header_logo {
+    flex-grow: 1;
+}
