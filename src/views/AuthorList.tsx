@@ -1,19 +1,21 @@
 import React from 'react';
 import writersData from '../data/writersData';
-import  { AuthorListCards } from '../components/AuthorList/AuthorListCards/AuthorListCards';
+import AuthorListApp from '../components/AuthorList/index';
 import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const AuthorList:React.FC = () => {
 
-    return (
-      <Container>
-        <Nav.Link as={Link} to="/author">
-          Author Page
-        </Nav.Link>
-        <AuthorListCards data={writersData} />
-      </Container>
-    );
+  return (
+    <Container>
+      <Nav.Link as={Link} to="/author">
+        Author Page
+      </Nav.Link>
+      <AuthorListApp data={writersData}/>
+    </Container>
+  );
 }
 
 export default AuthorList;
+
+
