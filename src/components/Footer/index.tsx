@@ -1,4 +1,4 @@
 import Footer from './Footer';
-import './Footer.css';
+import './index.css';
 
 export default Footer;
