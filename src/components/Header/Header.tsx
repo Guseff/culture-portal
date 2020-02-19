@@ -1,6 +1,6 @@
 import * as React from 'react';
 import logo from '../../assets/images/logo.png';
-import './index.css';
+import './index.scss';
 
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Alert, Image } from 'react-bootstrap';
