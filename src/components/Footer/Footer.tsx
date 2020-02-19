@@ -1,6 +1,6 @@
-import * as React from 'react';
-import './index.css';
+import './index.scss';
 
+import * as React from 'react';
 import { Navbar, Alert, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
