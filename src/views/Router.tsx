@@ -1,29 +1,38 @@
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../assets/styles/index.css';
 
 import * as React from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { ConnectedRouter } from 'connected-react-router';
+import { history } from '../store';
+import { Provider } from 'react-redux';
 
-import Header from '../components/Header/Header';
-import Main from './Main';
-import AuthorList from './AuthorList';
-import Author from './Author';
-import WorkLog from './WorkLog';
-import StyleGuide from './StyleGuide';
-import About from './About';
-import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/index';
+import Main from './Main/index';
+import AuthorList from './AuthorList/index';
+import Author from './Author/index';
+import WorkLog from './WorkLog/index';
+import StyleGuide from './StyleGuide/index';
+import About from './About/index';
+import Footer from '../components/Footer/index';
+import configureStore from '../store';
+
+const store = configureStore();
 
 const Router = () => {
   return (
-    <BrowserRouter>
-      <Header />
-      <Route exact path="/" component={Main} />
-      <Route path="/list" component={AuthorList} />
-      <Route path="/author" component={Author} />
-      <Route path="/worklog" component={WorkLog} />
-      <Route path="/styleguide" render={StyleGuide} />
-      <Route path="/about" component={About} />
-      <Footer />
-    </BrowserRouter>
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <Header />
+        <Route exact path="/" component={Main} />
+        <Route path="/list" component={AuthorList} />
+        <Route path="/author" component={Author} />
+        <Route path="/worklog" component={WorkLog} />
+        <Route path="/styleguide" render={StyleGuide} />
+        <Route path="/about" component={About} />
+        <Footer />
+      </ConnectedRouter>
+    </Provider>
   );
 };
 
