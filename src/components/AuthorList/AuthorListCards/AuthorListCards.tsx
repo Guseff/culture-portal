@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AuthorListCards.module.css';
+import './AuthorListCards.css';
 
 interface AuthorListCardsState {
   filterList: object[]
