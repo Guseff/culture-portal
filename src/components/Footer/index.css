@@ -1,0 +1,11 @@
+.footer {
+  margin-bottom: 0;
+}
+
+.footer_item {
+  justify-content: space-between;
+}
+
+.footer_item a {
+  color: rgba(0, 0, 0, 0.5);
+}
