@@ -1,7 +1,13 @@
 import { combineReducers } from 'redux';
+import { connectRouter } from 'connected-react-router';
+import { History } from 'history';
 
-import language from './language';
+import settings from './settings';
+import { author } from './author';
 
-export default combineReducers({
-  language,
-});
+export const reducerCreator = (history: History) =>
+  combineReducers({
+    router: connectRouter(history),
+    settings,
+    author,
+  });
