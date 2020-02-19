@@ -15,4 +15,5 @@ const LangOutputTest: React.FC<LangOutputProps> = ({ language }) => {
 const mapStateToProps = (state: AppState): LangOutputProps => {
   return { language: state.settings.language };
 };
+
 export default connect(mapStateToProps)(LangOutputTest);
