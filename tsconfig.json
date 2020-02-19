@@ -3,6 +3,19 @@
     "esModuleInterop": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "target": "ESNext"
-  }
+    "target": "ESNext",
+    "baseUrl": "./",
+    "paths": {
+      "Actions": ["src/actions"],
+      "Assets": ["src/assets"],
+      "Components": ["src/components"],
+      "Constants": ["src/constants"],
+      "Data": ["src/data"],
+      "Reducers": ["src/reducers"],
+      "Store": ["src/store"],
+      "Types": ["src/types"],
+      "Utils": ["src/utils"],
+      "Views": ["src/views"],
+    }
+  },
 }
