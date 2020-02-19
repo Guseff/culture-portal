@@ -2,14 +2,16 @@ import * as React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import ReactMapboxGl from 'react-mapbox-gl';
 
-const AuthorMap = (location: number[]) => {
+interface AuthorMapProps {
+  location: number[];
+}
+
+const AuthorMap: React.FC<AuthorMapProps> = ({ location }) => {
+  const [longitude, latitude] = location;
   const Map = ReactMapboxGl({
     accessToken:
       'pk.eyJ1IjoidWxhZHppbWlyLWF0cm9zaGNoYW5rYSIsImEiOiJjazNoZTNtNGMwYW84M21xdHhwc2hqcXZpIn0.GpqDhq5ctOG4hKxhZ_xKjg',
   });
-
-  const longitude = location[0];
-  const latitude = location[1];
 
   return (
     <Row>

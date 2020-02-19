@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container } from 'react-bootstrap';
-import AuthorMap from '../components/AuthorPage/AuthorMap/AuthorMap';
+import AuthorMap from '../components/AuthorPage/AuthorMap/index';
 
 class Author extends React.Component {
   title: string;
@@ -17,7 +17,7 @@ class Author extends React.Component {
     return (
       <Container>
         <h3>Author Page</h3>
-        <AuthorMap {...coords} />
+        <AuthorMap location={coords} />
       </Container>
     );
   }
