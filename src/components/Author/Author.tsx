@@ -1,3 +1,5 @@
+import './index.scss';
+
 import * as React from 'react';
 import { Container } from 'react-bootstrap';
 // import { connect } from 'react-redux';

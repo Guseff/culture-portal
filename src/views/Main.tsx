@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Row, Col, Container, Image } from 'react-bootstrap';
-import LangOutputTest from '../components/LangOutputTest';
 
 class Main extends React.Component {
   title: string;
@@ -40,7 +39,6 @@ class Main extends React.Component {
             <button>Узнать больше</button>
           </Col>
         </Row>
-        <LangOutputTest />
       </Container>
     );
   }
