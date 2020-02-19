@@ -17,11 +17,11 @@ import Footer from '../components/Footer/index';
 
 import { authorGetList } from 'Actions';
 
-const Router = () => {
-  // const { authorGetList } = props;
+const Router = (props: any) => {
+  const { authorGetList } = props;
 
   React.useEffect(() => {
-    // authorGetList();
+    authorGetList();
   }, []);
 
   return (
