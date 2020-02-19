@@ -4,8 +4,8 @@ import '../assets/styles/index.css';
 import * as React from 'react';
 import { Route } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
-import { history } from '../store';
-import { Provider } from 'react-redux';
+import { connect } from 'react-redux';
+import { history } from 'Store';
 
 import Header from '../components/Header/index';
 import Main from './Main/index';
@@ -15,25 +15,28 @@ import WorkLog from './WorkLog/index';
 import StyleGuide from './StyleGuide/index';
 import About from './About/index';
 import Footer from '../components/Footer/index';
-import configureStore from '../store';
 
-const store = configureStore();
+import { authorGetList } from 'Actions';
 
-const Router = () => {
+const Router = (props: any) => {
+  const { authorGetList } = props;
+
+  React.useEffect(() => {
+    authorGetList();
+  }, []);
+
   return (
-    <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <Header />
-        <Route exact path="/" component={Main} />
-        <Route path="/list" component={AuthorList} />
-        <Route path="/author" component={Author} />
-        <Route path="/worklog" component={WorkLog} />
-        <Route path="/styleguide" render={StyleGuide} />
-        <Route path="/about" component={About} />
-        <Footer />
-      </ConnectedRouter>
-    </Provider>
+    <ConnectedRouter history={history}>
+      <Header />
+      <Route exact path="/" component={Main} />
+      <Route path="/list" component={AuthorList} />
+      <Route path="/author" component={Author} />
+      <Route path="/worklog" component={WorkLog} />
+      <Route path="/styleguide" render={StyleGuide} />
+      <Route path="/about" component={About} />
+      <Footer />
+    </ConnectedRouter>
   );
 };
 
-export default Router;
+export default connect(null, { authorGetList })(Router);
