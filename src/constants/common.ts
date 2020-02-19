@@ -1,5 +1,5 @@
-export const LANGUAGE = {
-  RU: 'ru',
-  EN: 'en',
-  BE: 'be',
+export const LANGUAGES = {
+  RU: 'русский',
+  EN: 'english',
+  BE: 'беларуская',
 };
