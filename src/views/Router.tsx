@@ -8,12 +8,12 @@ import { history } from '../store';
 import { Provider } from 'react-redux';
 
 import Header from '../components/Header/index';
-import Main from './Main/index';
-import AuthorList from './AuthorList/index';
-import Author from './Author/index';
-import WorkLog from './WorkLog/index';
-import StyleGuide from './StyleGuide/index';
-import About from './About/index';
+import Main from './Main';
+import AuthorList from './AuthorList';
+import Author from './Author';
+import WorkLog from './WorkLog';
+import StyleGuide from './StyleGuide';
+import About from './About';
 import Footer from '../components/Footer/index';
 import configureStore from '../store';
 

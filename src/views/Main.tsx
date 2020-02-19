@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container } from 'react-bootstrap';
-import LangOutputTest from '../../components/LangOutputTest';
+import LangOutputTest from '../components/LangOutputTest';
 
 class Main extends React.Component {
   title: string;
