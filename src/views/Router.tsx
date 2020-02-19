@@ -1,5 +1,4 @@
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../assets/styles/index.css';
 
 import * as React from 'react';
 import { Route } from 'react-router-dom';
@@ -18,11 +17,11 @@ import Footer from '../components/Footer/index';
 
 import { authorGetList } from 'Actions';
 
-const Router = (props: any) => {
-  const { authorGetList } = props;
+const Router = () => {
+  // const { authorGetList } = props;
 
   React.useEffect(() => {
-    authorGetList();
+    // authorGetList();
   }, []);
 
   return (
