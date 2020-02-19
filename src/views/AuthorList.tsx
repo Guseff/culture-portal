@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Main extends React.Component {
   title: string;
@@ -15,6 +16,9 @@ class Main extends React.Component {
     return (
       <Container>
         <h3>Author List</h3>
+        <Nav.Link as={Link} to="/author">
+          Author Page
+        </Nav.Link>
       </Container>
     );
   }
