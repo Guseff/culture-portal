@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <Alert variant="primary" className="footer fixed-bottom">
+    <Alert variant="primary" className="footer">
       <Navbar className="footer_item">
         <Nav.Link as={Link} to="/author">
-          Тут будут ссылки на наши контакты
+          Culture Portal by RSS team #14
         </Nav.Link>
         <Nav.Link as={Link} to="/author">
           О нас

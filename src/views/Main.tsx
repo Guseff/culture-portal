@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Row, Col, Container, Image } from 'react-bootstrap';
-import LangOutputTest from '../components/LangOutputTest';
+import '../components/Main/index.css';
 
 class Main extends React.Component {
   title: string;
@@ -16,9 +16,9 @@ class Main extends React.Component {
     return (
       <Container>
         <Row>
-          <Col>
-            <h1>Культурный портал о писателях Беларуси</h1>
-            <p>
+          <Col className="col_item1">
+            <h1 className="main_title">Культурный портал о писателях Беларуси</h1>
+            <p className="main_description">
               Культурный портал о писателях Беларуси — сборник статей о
               выдающихся творческих личностях с их подробным описанием, включая
               годы жизни, фотографии, биографии в виде временной шкалы, списки
@@ -30,8 +30,6 @@ class Main extends React.Component {
               шаблон стилей сайта.
             </p>
           </Col>
-        </Row>
-        <Row>
           <Col>
             <h2>Имя писателя</h2>
             <Image src="../171x180" rounded alt="фото писателя" />
@@ -40,7 +38,6 @@ class Main extends React.Component {
             <button>Узнать больше</button>
           </Col>
         </Row>
-        <LangOutputTest />
       </Container>
     );
   }

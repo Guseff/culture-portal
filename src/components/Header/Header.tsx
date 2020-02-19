@@ -24,7 +24,11 @@ const Header = () => {
           </Nav.Link>
         </Nav>
         <Nav>
-          <NavDropdown title="Language" id="basic-nav-dropdown">
+          <NavDropdown
+            alignRight
+            title="Language"
+            id="dropdown-menu-align-right"
+          >
             <NavDropdown.Item href="#ru">ru</NavDropdown.Item>
             <NavDropdown.Item href="#eng">eng</NavDropdown.Item>
             <NavDropdown.Item href="#be">be</NavDropdown.Item>
