@@ -2,14 +2,14 @@ import * as React from 'react';
 import './Header.module.css';
 
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Alert } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Alert, Image } from 'react-bootstrap';
 
 const Header = () => {
   return (
     <Alert variant="primary">
       <Navbar className="header">
         <Navbar.Brand className="header_logo" href="/">
-          Logo
+          <Image src="logo" alt="logo" />
         </Navbar.Brand>
         <Nav>
           <Nav.Link as={Link} to="/">
