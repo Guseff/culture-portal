@@ -1,9 +1,9 @@
-import * as React from 'react';
-import logo from '../../assets/images/logo.png';
 import './index.scss';
 
+import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Alert, Image } from 'react-bootstrap';
+import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   return (
