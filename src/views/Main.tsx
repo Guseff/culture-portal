@@ -13,7 +13,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container className="main-content">
         <Row>
           <Col>
             <h1>Культурный портал о писателях Беларуси</h1>
@@ -33,7 +33,7 @@ class Main extends React.Component {
         <Row>
           <Col>
             <h2>Имя писателя</h2>
-            <Image src="../171x180" rounded alt="фото писателя" />
+            <Image src="" rounded alt="фото писателя" />
             <h3>годы жизни</h3>
             <p>Информация о писателе (коротко)</p>
             <button>Узнать больше</button>
