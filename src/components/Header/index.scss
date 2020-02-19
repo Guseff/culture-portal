@@ -1,12 +1,35 @@
-.fade .header {
-  font-size: large;
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/fonts.scss';
+
+.header {
+  padding: 0.5rem 2rem;
+  margin-bottom: $margin-around-main-content;
+  background-color: $color-header-footer;
+
+  .header_item {
+    font-size: large;
+    padding: 0;
+
+    .header_logo {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      padding: 0;
+
+      .header_logo__img {
+        height: 50px;
+      }
+
+      .header_logo__text {
+        font-family: 'Merienda', cursive;
+        font-size: 20px;
+        margin-left: 1rem;
+        padding: 0;
+      }
+    }
+  }
 }
 
-.header_logo {
-  flex-grow: 1;
-}
-
-.header_logo .header_logo__img {
-  width: 245px;
-  height: 60px;
+.navbar-expand .navbar-nav .nav-link {
+  padding: 0 0.5rem;
 }

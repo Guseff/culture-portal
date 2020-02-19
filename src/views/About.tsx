@@ -9,7 +9,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container className="main-content">
         <h3>About</h3>
         <Nav.Link as={Link} to="/worklog">
           Worklog
