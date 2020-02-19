@@ -28,16 +28,19 @@ class AuthorListCards extends Component<AuthorListCardsProps, AuthorListCardsSta
 
     render() {
         const { filterList } = this.state;
+        
      
         return (
-            <div className="row justify-content-between">
-                { filterList.map((item: any) => (                    
+            <div className="row justify-content-around">
+                { filterList.map((item: any) => (                  
                     <div className="card col-3" key={item.id}>
-                        <img className="img-fluid" src={item.image} alt={item.name}/>
+                        <div className="card-body photo">
+                          <img className="img-fluid shadow rounded" src={item.image} alt={item.name}/>
+                        </div>
                         <div className="card-body">
-                            <h5 className="card-title">{item.name}</h5>
-                            <p className="card-text">{item.birthCity}</p>
-                            <a href="#" className="btn btn-primary">Learn more</a>
+                          <h5 className="card-title">{item.name}</h5>
+                          <p className="card-text">{item.birthCity}</p>
+                          <a href="#" className="btn btn-primary">Learn more</a>
                         </div>
                     </div>   
                 ))}
