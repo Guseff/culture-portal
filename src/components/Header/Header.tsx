@@ -2,15 +2,18 @@ import './index.scss';
 
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Alert, Image } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Image, Container } from 'react-bootstrap';
 import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   return (
-    <Alert variant="primary">
-      <Navbar className="header">
+    <Container className="header" fluid>
+      <Navbar className="header_item">
         <Navbar.Brand className="header_logo" href="/">
           <Image src={logo} alt="logo" className="header_logo__img" />
+          <Navbar.Text className="header_logo__text">
+            Belarussian Writers
+          </Navbar.Text>
         </Navbar.Brand>
         <Nav>
           <Nav.Link as={Link} to="/">
@@ -22,8 +25,6 @@ const Header = () => {
           <Nav.Link as={Link} to="/about">
             О нас
           </Nav.Link>
-        </Nav>
-        <Nav>
           <NavDropdown title="Language" id="basic-nav-dropdown">
             <NavDropdown.Item href="#ru">ru</NavDropdown.Item>
             <NavDropdown.Item href="#eng">eng</NavDropdown.Item>
@@ -31,7 +32,7 @@ const Header = () => {
           </NavDropdown>
         </Nav>
       </Navbar>
-    </Alert>
+    </Container>
   );
 };
 

@@ -1,14 +1,22 @@
-@import "../../assets/styles/variables.scss";
+@import '../../assets/styles/variables.scss';
 
 .footer {
-  margin-bottom: 0;
-}
+  flex: 0 0 auto;
+  margin: $margin-around-main-content 0 0;
+  padding: 0.5rem 2rem;
+  background-color: $color-header-footer;
 
-.footer_item {
-  justify-content: space-between;
-}
+  .footer_item {
+    justify-content: space-between;
+    padding: 0;
 
-.footer_item a {
-  // you can use variable here as
-  color: $color-footer;
+    a {
+      // you can use variable here as
+      color: $text-color-footer;
+    }
+
+    .nav-link {
+      padding: 0 0.5rem;
+    }
+  }
 }
