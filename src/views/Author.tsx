@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container } from 'react-bootstrap';
-import AuthorMap from '../components/AuthorPage/AuthorMap/index';
+import AuthorMap from '../components/Author/index';
 
 class Author extends React.Component {
   title: string;
