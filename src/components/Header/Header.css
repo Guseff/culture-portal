@@ -1,0 +1,12 @@
+.fade .header {
+    font-size: large;
+}
+
+.header_logo {
+    flex-grow: 1;
+}
+
+.header_logo .header_logo__img {
+    width: 245px;
+    height: 60px;
+}

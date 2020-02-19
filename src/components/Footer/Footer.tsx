@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './Footer.module.css';
+import './Footer.css';
 
 import { Navbar, Alert, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import './Header.module.css';
+import logo from '../../assets/images/logo.png';
+import './Header.css';
 
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Alert, Image } from 'react-bootstrap';
@@ -9,7 +10,7 @@ const Header = () => {
     <Alert variant="primary">
       <Navbar className="header">
         <Navbar.Brand className="header_logo" href="/">
-          <Image src="logo" alt="logo" />
+          <Image src={logo} alt="logo" className="header_logo__img" />
         </Navbar.Brand>
         <Nav>
           <Nav.Link as={Link} to="/">
