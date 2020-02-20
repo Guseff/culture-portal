@@ -1,27 +1,29 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
+
 import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-class Author extends React.Component {
-  pageToGo: number;
-  name: string;
+import { AppState } from '../types';
 
-  constructor(props: Readonly<{}>) {
-    super(props);
-    this.pageToGo = 3;
-    this.name = 'Ronnie';
-  }
-
-  render() {
-    return (
-      <Container>
-        <h3>Author Page</h3>
-        <Nav.Link as={Link} to={'/list'}>
-          Back to Author List
-        </Nav.Link>
-      </Container>
-    );
-  }
+interface AuthorProps {
+  pageNum?: number;
 }
 
-export default Author;
+const Author: React.FC<AuthorProps> = ({ pageNum }) => {
+  return (
+    <Container>
+      <h3>Author Page</h3>
+      <h4>{`Page number ${pageNum}`}</h4>
+      <Nav.Link as={Link} to={'/list'}>
+        Back to Author List
+      </Nav.Link>
+    </Container>
+  );
+};
+
+const mapStateToProps = (state: AppState): AuthorProps => {
+  return { pageNum: state.pages.pageNum };
+};
+
+export default connect(mapStateToProps)(Author);
