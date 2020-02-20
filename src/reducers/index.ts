@@ -3,7 +3,6 @@ import { connectRouter } from 'connected-react-router';
 import { History } from 'history';
 
 import settings from './settings';
-import pages from './pages';
 import { author } from './author';
 
 export const reducerCreator = (history: History) =>
@@ -11,5 +10,4 @@ export const reducerCreator = (history: History) =>
     router: connectRouter(history),
     settings,
     author,
-    pages,
   });
