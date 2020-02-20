@@ -3,12 +3,12 @@ import logo from '../../assets/images/logo.png';
 import './index.scss';
 
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Alert, Image } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Image, Container } from 'react-bootstrap';
 
 const Header = () => {
   return (
-    <Alert variant="primary">
-      <Navbar className="header">
+    <Container className="header" fluid>
+      <Navbar>
         <Navbar.Brand className="header_logo" href="/">
           <Image src={logo} alt="logo" className="header_logo__img" />
         </Navbar.Brand>
@@ -35,7 +35,7 @@ const Header = () => {
           </NavDropdown>
         </Nav>
       </Navbar>
-    </Alert>
+    </Container>
   );
 };
 

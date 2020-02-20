@@ -1,19 +1,19 @@
 import './index.scss';
 
 import * as React from 'react';
-import { Navbar, Alert, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <Alert variant="primary" className="footer">
+    <Container className="footer" fluid>
       <Navbar className="footer_item">
-        <Nav>Culture Portal by RSS team #14</Nav>
+        <Navbar.Text>Culture Portal by RSS team #14</Navbar.Text>
         <Nav.Link as={Link} to="/about">
           О нас
         </Nav.Link>
       </Navbar>
-    </Alert>
+    </Container>
   );
 };
 

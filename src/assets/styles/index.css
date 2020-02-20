@@ -1,13 +1,7 @@
-html { 
-    height: 100%; 
+#root {
+    display: flex;
+    flex-direction: column;
 }
-
-body {
-  min-height:100%; 
-  position:relative; 
-  padding-bottom: 70px; 
-}
-
 .footer_item a,
 .col_item1 .main_title {
     color: rgba(0,0,0,.5);

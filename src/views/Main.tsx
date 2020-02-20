@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Row, Col, Container, Image } from 'react-bootstrap';
-import '../components/Main/index.css';
+import '../components/Main/index.scss';
 
 class Main extends React.Component {
   title: string;
@@ -14,7 +14,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container className="content">
         <Row>
           <Col className="col_item1">
             <h1 className="main_title">
