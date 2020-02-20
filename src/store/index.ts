@@ -10,7 +10,11 @@ export const history = createBrowserHistory();
 const reducer = reducerCreator(history);
 const middlewares = [routerMiddleware(history), thunk];
 
-const configureStore = (initialState?: {}) => {
+const configureStore = (
+  initialState: {} = {
+    settings: { language: 'en', dayPage: new Date().getDay() + 1 },
+  }
+) => {
   const store = createStore(
     reducer,
     initialState,
