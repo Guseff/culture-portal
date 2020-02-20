@@ -1,27 +1,21 @@
-import * as React from 'react';
+import React from 'react';
+import writersData from '../data/writersData';
+import AuthorListApp from '../components/AuthorList/index';
 import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-class Main extends React.Component {
-  title: string;
-  name: string;
+const AuthorList:React.FC = () => {
 
-  constructor(props: Readonly<{}>) {
-    super(props);
-    this.title = 'Mr.';
-    this.name = 'Ronnie';
-  }
-
-  render() {
-    return (
-      <Container>
-        <h3>Author List</h3>
-        <Nav.Link as={Link} to="/author">
-          Author Page
-        </Nav.Link>
-      </Container>
-    );
-  }
+  return (
+    <Container>
+      <Nav.Link as={Link} to="/author">
+        Author Page
+      </Nav.Link>
+      <AuthorListApp data={writersData}/>
+    </Container>
+  );
 }
 
-export default Main;
+export default AuthorList;
+
+

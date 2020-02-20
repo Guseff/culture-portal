@@ -1,0 +1,35 @@
+$width-full: 100%;
+
+.img-fluid {
+    max-width: $width-full;
+    max-height: 350px;
+}
+
+.photo {
+    width: $width-full;
+    margin: 0;
+}
+
+.card {
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: $width-full;
+}
+
+*, ::after, ::before {
+    box-sizing: unset;
+}
+
+p {
+    width: $width-full;
+}
