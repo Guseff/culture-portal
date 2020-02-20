@@ -1,12 +1,23 @@
-.fade .header {
+@import "../../assets/styles/variables.scss";
+
+.header {
+  margin-bottom: 20px;
   font-size: large;
+  background-color: $bg-header-footer;
+
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .header_logo {
+    flex-grow: 1;
+
+    .header_logo__img {
+      width: 245px;
+      height: 70px;
+    }
+  }
 }
 
-.header_logo {
-  flex-grow: 1;
-}
 
-.header_logo .header_logo__img {
-  width: 245px;
-  height: 60px;
-}
+

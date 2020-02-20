@@ -1,0 +1,22 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/fonts.scss";
+
+.content {
+    flex-grow: 1;
+
+    .row {
+
+        .col_item1 {
+            
+            .main_title {
+                margin-bottom: 20px;
+                color: $color-text;
+                text-align: center;
+            }
+
+            .main_description {
+                font-family: 'Raleway Dots', sans-serif;
+            }
+        }
+    }
+}
