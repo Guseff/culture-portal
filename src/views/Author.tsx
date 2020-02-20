@@ -16,7 +16,7 @@ class Author extends React.Component {
     return (
       <Container>
         <h3>Author Page</h3>
-        <Nav.Link as={Link} to={`/list/${this.pageToGo}`}>
+        <Nav.Link as={Link} to={'/list'}>
           Back to Author List
         </Nav.Link>
       </Container>
