@@ -7,6 +7,10 @@
 
   .navbar {
     padding: 0 1rem;
+
+    .navbar-nav {
+      margin-right: 30px;
+    }
   }
 
   .header_logo {
@@ -15,6 +19,15 @@
     .header_logo__img {
       width: 245px;
       height: 70px;
+    }
+  }
+
+  form {
+
+    .form-control {
+      color: $color-text;
+      background-color: transparent;
+      border: 1px solid $color-text;
     }
   }
 }
