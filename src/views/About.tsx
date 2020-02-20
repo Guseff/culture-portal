@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '../components/About/index.scss';
 
-import { Container, Nav, Card, Button } from 'react-bootstrap';
+import { Container, Nav, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 class About extends React.Component {
@@ -10,55 +10,56 @@ class About extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <Container className="content">
         <section className="about">
           <Card>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Роль</Card.Text>
-              <Button>Go somewhere</Button>
+              <Card.Title>Name</Card.Title>
+              <Card.Text>role</Card.Text>
+              <Card.Text>git</Card.Text>
             </Card.Body>
           </Card>
           <Card>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Роль</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title>Name</Card.Title>
+              <Card.Text>role</Card.Text>
+              <Card.Text>git</Card.Text>
             </Card.Body>
           </Card>
           <Card>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-              <Card.Title></Card.Title>
-              <Card.Text>Роль</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title>Name</Card.Title>
+              <Card.Text>role</Card.Text>
+              <Card.Text>git</Card.Text>
             </Card.Body>
           </Card>
           <Card>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Роль</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title>Name</Card.Title>
+              <Card.Text>role</Card.Text>
+              <Card.Text>git</Card.Text>
             </Card.Body>
           </Card>
           <Card>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Роль</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title>Name</Card.Title>
+              <Card.Text>role</Card.Text>
+              <Card.Text>git</Card.Text>
             </Card.Body>
           </Card>
           <Card>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>Роль</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title>Name</Card.Title>
+              <Card.Text>role</Card.Text>
+              <Card.Text>git</Card.Text>
             </Card.Body>
           </Card>
         </section>
