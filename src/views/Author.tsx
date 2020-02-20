@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom';
 import { AppState } from '../types';
 
 interface AuthorProps {
-  pageNum?: number;
+  pageFromPath?: string;
 }
 
-const Author: React.FC<AuthorProps> = ({ pageNum }) => {
+const Author: React.FC<AuthorProps> = ({ pageFromPath }) => {
   return (
     <Container>
       <h3>Author Page</h3>
-      <h4>{`Page number ${pageNum}`}</h4>
+      <h4>{`Page number ${pageFromPath.slice(-1)}`}</h4>
       <Nav.Link as={Link} to={'/list'}>
         Back to Author List
       </Nav.Link>
@@ -23,7 +23,9 @@ const Author: React.FC<AuthorProps> = ({ pageNum }) => {
 };
 
 const mapStateToProps = (state: AppState): AuthorProps => {
-  return { pageNum: state.pages.pageNum };
+  return {
+    pageFromPath: state.router.location.pathname,
+  };
 };
 
 export default connect(mapStateToProps)(Author);
