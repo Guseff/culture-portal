@@ -3,12 +3,12 @@ import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 class Author extends React.Component {
-  title: string;
+  pageToGo: number;
   name: string;
 
   constructor(props: Readonly<{}>) {
     super(props);
-    this.title = 'Mr.';
+    this.pageToGo = 3;
     this.name = 'Ronnie';
   }
 
@@ -16,7 +16,7 @@ class Author extends React.Component {
     return (
       <Container>
         <h3>Author Page</h3>
-        <Nav.Link as={Link} to="/list">
+        <Nav.Link as={Link} to={`/list/${this.pageToGo}`}>
           Back to Author List
         </Nav.Link>
       </Container>
