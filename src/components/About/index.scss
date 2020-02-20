@@ -1,0 +1,14 @@
+@import "../../assets/styles/variables.scss";
+
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .card {
+        width: 18rem;
+        margin: 10px;
+        background-color: $bg-header-footer;
+        border: 1px solid $color-text;
+    }
+}
