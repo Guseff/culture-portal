@@ -1,0 +1,16 @@
+#root {
+    display: flex;
+    flex-direction: column;
+}
+.footer_item a,
+.col_item1 .main_title {
+    color: rgba(0,0,0,.5);
+}
+
+.navbar {
+    padding: 0 1rem;
+}
+
+.alert {
+    padding: 0.1rem 1.25rem;
+}
