@@ -1,9 +1,11 @@
-import * as React from 'react';
 import logo from '../../assets/images/logo.png';
 import './index.scss';
 
+import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Alert, Image } from 'react-bootstrap';
+import { Navbar, Nav, Alert, Image } from 'react-bootstrap';
+
+import SelectLanguage from '../SelectLanguage';
 
 const Header = () => {
   return (
@@ -23,13 +25,7 @@ const Header = () => {
             О нас
           </Nav.Link>
         </Nav>
-        <Nav>
-          <NavDropdown title="Language" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#ru">ru</NavDropdown.Item>
-            <NavDropdown.Item href="#eng">eng</NavDropdown.Item>
-            <NavDropdown.Item href="#be">be</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
+        <SelectLanguage />
       </Navbar>
     </Alert>
   );
