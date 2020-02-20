@@ -10,908 +10,2730 @@
   ],
   "author": {
     "1": {
-      "nativeId": 1,
-      "nativeImage": "Korotkevich",
-      "name": "Владимир Семёнович Короткевич",
-      "birthDate": "1930-11-26",
-      "deathDate": "1984-07-25",
-      "birthCity": "Орша",
-      "description": "Белорусский советский писатель, поэт, драматург, сценарист и публицист, классик белорусской литературы. Является одной из наиболее ярких фигур в белорусской литературе XX столетия. Стал первым белорусским писателем, обратившимся к жанру исторического детектива.",
-      "video": "https://youtu.be/Dpk0KkuAYFE",
-      "activityPlace": {
-        "longitude": 54.5119008,
-        "latitude": 30.4254486
+      "be": {
+        "name": "Уладзімір Сямёнавіч Караткевіч",
+        "video": "https://youtu.be/Dpk0KkuAYFE",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "зборнік вершаў",
+            "title": "матчына душа",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "Дзікае паляванне караля Стаха",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "сівая легенда",
+            "startAt": "1960"
+          },
+          {
+            "endAt": "1962",
+            "genre": "раман",
+            "title": "Леаніды не вернуцца да Зямлі (Нельга забыць)",
+            "startAt": "1960"
+          },
+          {
+            "endAt": "1964",
+            "genre": "раман",
+            "title": "Каласы пад сярпом тваім",
+            "startAt": "1962"
+          },
+          {
+            "endAt": null,
+            "genre": "п'еса",
+            "title": "Кастусь Каліноўскі",
+            "startAt": "1963"
+          },
+          {
+            "endAt": "1966",
+            "genre": "раман",
+            "title": "Хрыстос прызямліўся ў Гародні",
+            "startAt": "1965"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "лісце каштанаў",
+            "startAt": "1973"
+          },
+          {
+            "endAt": null,
+            "genre": "нарыс",
+            "title": "Зямля пад белымі крыламі",
+            "startAt": "1977"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "ладдзя Роспачы",
+            "startAt": "1978"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "Чорны замак Альшанскі",
+            "startAt": "1979"
+          }
+        ],
+        "nativeId": 1,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1930",
+            "description": "Нарадзіўся ў горадзе Орша Віцебскай вобласці ў сям'і бухгалтара."
+          },
+          {
+            "endAt": "1954",
+            "startAt": "1949",
+            "description": "Скончыў філалагічны факультэт Кіеўскага ўніверсітэта імя Т.Г. Шаўчэнка"
+          },
+          {
+            "endAt": null,
+            "startAt": "1951",
+            "description": "Дэбютаваў як паэт, апублікаваў у аршанскай раённай газеце «Ленінскі прызыў» два вершы: «Тут будзе канал» (на рускай мове) і «Якубу Коласу» (на беларускай мове)"
+          },
+          {
+            "endAt": null,
+            "startAt": "1955",
+            "description": "Cдал экзамены кандыдацкага мінімуму і прыступіў да напісання дысертацыі пра паўстанне 1863 года, але так яе і не скончыў. У той жа час прыйшла і ідэя аб напісанні рамана на гэтую ж тэму."
+          },
+          {
+            "endAt": null,
+            "startAt": "1957",
+            "description": "Член Саюза пісьменнікаў СССР"
+          },
+          {
+            "endAt": "1958",
+            "startAt": "1954",
+            "description": "Hаботал школьным настаўнікам рускай мовы і літаратуры ў вёсцы Лясовічамі (Украіна), у родным горадзе, Воршы."
+          },
+          {
+            "endAt": "1962",
+            "startAt": "1958",
+            "description": "Скончыў Вышэйшыя літаратурныя курсы, падчас якіх захапіўся кіно і пачаў працу над сцэнарамі, а таксама сцэнарныя курсы ў Інстытуце кінематаграфіі ў Маскве, якая, як і Кіеў, аказала сур'ёзны ўплыў на фарміраванне Караткевіча як асобы і мастака слова"
+          },
+          {
+            "endAt": "1984",
+            "startAt": "1957",
+            "description": "Творчая дзейнасць паэта. Асноўная тэма творчасці пісьменніка - гісторыя роднага краю, яе рамантычна-легендарнае асэнсаванне. Караткевіч таксама напісаў некалькі п'ес, сцэнарыяў для мастацкіх фільмаў, вялікая колькасць эсэ, нарысаў і артыкулаў."
+          },
+          {
+            "endAt": null,
+            "startAt": "1983",
+            "description": "Атрымаў прэмію Саюза пісьменнікаў Беларусі імя Івана Мележа за раман «Нельга забыць» («Леаніды не вернуцца да Зямлі»)."
+          }
+        ],
+        "birthCity": "Орша",
+        "birthDate": "1930-11-26",
+        "deathDate": "1984-07-25",
+        "description": "Беларускі савецкі пісьменнік, паэт, драматург, сцэнарыст і публіцыст, класік беларускай літаратуры. З'яўляецца адной з найбольш яркіх фігур у беларускай літаратуры XX стагоддзя. Стаў першым беларускім пісьменнікам, які звярнуўся да жанру гістарычнага дэтэктыва.",
+        "nativeImage": "Korotkevich",
+        "activityPlace": {
+          "latitude": 30.4254486,
+          "longitude": 54.5119008
+        }
       },
-      "biography": [
-        {
-          "startAt": "1930",
-          "endAt": null,
-          "description": "Родился в городе Орша Витебской области в семье бухгалтера."
-        },
-        {
-          "startAt": "1949",
-          "endAt": "1954",
-          "description": "Окончил филологический факультет Киевского университета имени Т.Г. Шевченко"
-        },
-        {
-          "startAt": "1951",
-          "endAt": null,
-          "description": "Дебютировал как поэт, опубликовал в оршанской районной газете «Ленинский призыв» два стихотворения: «Тут будет канал» (на русском языке) и «Якубу Коласу» (на белорусском языке)"
-        },
-        {
-          "startAt": "1955",
-          "endAt": null,
-          "description": "Cдал экзамены кандидатского минимума и приступил к написанию диссертации про восстание 1863 года, но так её и не закончил. В то же время пришла и идея о написании романа на эту же тему."
-        },
-        {
-          "startAt": "1957",
-          "endAt": null,
-          "description": "Член Союза писателей СССР"
-        },
-        {
-          "startAt": "1954",
-          "endAt": "1958",
-          "description": "Hаботал школьным учителем русского языка и литературы в деревне Лесовичи (Украина), в родном городе, Орше."
-        },
-        {
-          "startAt": "1958",
-          "endAt": "1962",
-          "description": "Окончил Высшие литературные курсы, во время которых увлёкся кино и начал работу над сценариями, а также сценарные курсы в Институте кинематографии в Москве, которая, как и Киев, оказала серьёзное влияние на формирование Короткевича как личности и художника слова"
-        },
-        {
-          "startAt": "1957",
-          "endAt": "1984",
-          "description": "Творческая деятельность поэта. Основная тема творчества писателя – история родного края, её романтически-легендарное осмысление. Короткевич также написал несколько пьес, сценариев для художественных фильмов, большое количество эссе, очерков и статей."
-        },
-        {
-          "startAt": "1983",
-          "endAt": null,
-          "description": "Получил премию Союза писателей Беларуси имени Ивана Мележа за роман «Нельзя забыть» («Леониды не вернутся к Земле»)."
+      "en": {
+        "name": "Vladimir Semenovich Korotkevich",
+        "video": "https://youtu.be/Dpk0KkuAYFE",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Collection of poems",
+            "title": "Mother soul",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "The Wild Hunt of King Stach",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Gray legend",
+            "startAt": "1960"
+          },
+          {
+            "endAt": "1962",
+            "genre": "Novel",
+            "title": "Leonids will not return to Earth (Do not forget)",
+            "startAt": "1960"
+          },
+          {
+            "endAt": "1964",
+            "genre": "Novel",
+            "title": "Spikes under your sickle",
+            "startAt": "1962"
+          },
+          {
+            "endAt": null,
+            "genre": "Play",
+            "title": "Kastus Kalinovsky",
+            "startAt": "1963"
+          },
+          {
+            "endAt": "1966",
+            "genre": "Novel",
+            "title": "Christ landed in Grodno",
+            "startAt": "1965"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Chestnut leaves",
+            "startAt": "1973"
+          },
+          {
+            "endAt": null,
+            "genre": "Feature article",
+            "title": "Earth under the white wings",
+            "startAt": "1977"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Rook of Despair",
+            "startAt": "1978"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Black Castle Olshansky",
+            "startAt": "1979"
+          }
+        ],
+        "nativeId": 1,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1930",
+            "description": "Born in the city of Orsha in the Vitebsk region in the family of an accountant."
+          },
+          {
+            "endAt": "1954",
+            "startAt": "1949",
+            "description": "Graduated from the philological faculty of T.G. Shevchenko"
+          },
+          {
+            "endAt": null,
+            "startAt": "1951",
+            "description": "He made his debut as a poet, published two poems in the Orsha district newspaper “Leninsky Call”: “There will be a channel” (in Russian) and “Yakubu Kolasu” (in Belarusian)"
+          },
+          {
+            "endAt": null,
+            "startAt": "1955",
+            "description": "He passed the candidate minimum exams and began writing a dissertation about the uprising of 1863, but he did not finish it. At the same time, the idea came of writing a novel on the same topic.."
+          },
+          {
+            "endAt": null,
+            "startAt": "1957",
+            "description": "Member of the Union of Writers of the USSR"
+          },
+          {
+            "endAt": "1958",
+            "startAt": "1954",
+            "description": "He worked as a school teacher of Russian language and literature in the village of Lesovichi (Ukraine), in his hometown, Orsha."
+          },
+          {
+            "endAt": "1962",
+            "startAt": "1958",
+            "description": "He graduated from the Higher Literary Courses, during which he became interested in cinema and began working on scripts, as well as screenwriting courses at the Institute of Cinematography in Moscow, which, like Kiev, had a serious impact on the formation of Korotkevich as a person and artist of the word"
+          },
+          {
+            "endAt": "1984",
+            "startAt": "1957",
+            "description": "Creative activity of the poet. The main theme of the writer's work is the history of his native land, its romantic and legendary comprehension. Korotkevich also wrote several plays, scripts for feature films, a large number of essays, essays and articles."
+          },
+          {
+            "endAt": null,
+            "startAt": "1983",
+            "description": "Received the award of the Ivan Melezh Union of Writers of Belarus for the novel “You Can’t Forget” (“Leonids Will Not Return to Earth”)."
+          }
+        ],
+        "birthCity": "Orsha",
+        "birthDate": "1930-11-26",
+        "deathDate": "1984-07-25",
+        "description": "Belarusian Soviet writer, poet, playwright, screenwriter and publicist, classic of Belarusian literature. It is one of the most striking figures in Belarusian literature of the 20th century. He became the first Belarusian writer to turn to the genre of historical detective story.",
+        "nativeImage": "Korotkevich",
+        "activityPlace": {
+          "latitude": 30.4254486,
+          "longitude": 54.5119008
         }
-      ],
-      "works": [
-        {
-          "startAt": "1958",
-          "endAt": null,
-          "genre": "Сборник стихов",
-          "title": "Материнская душа"
-        },
-        {
-          "startAt": "1958",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Дикая охота короля Стаха"
-        },
-        {
-          "startAt": "1960",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Седая легенда"
-        },
-        {
-          "startAt": "1960",
-          "endAt": "1962",
-          "genre": "Роман",
-          "title": "Леониды не вернутся к Земле (Нельзя забыть)"
-        },
-        {
-          "startAt": "1962",
-          "endAt": "1964",
-          "genre": "Роман",
-          "title": "Колосья под серпом твоим"
-        },
-        {
-          "startAt": "1963",
-          "endAt": null,
-          "genre": "Пьеса",
-          "title": "Кастусь Калиновский"
-        },
-        {
-          "startAt": "1965",
-          "endAt": "1966",
-          "genre": "Роман",
-          "title": "Христос приземлился в Гродно"
-        },
-        {
-          "startAt": "1973",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Листья каштанов"
-        },
-        {
-          "startAt": "1977",
-          "endAt": null,
-          "genre": "Очерк",
-          "title": "Земля под белыми крыльями"
-        },
-        {
-          "startAt": "1978",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Ладья Отчаяния"
-        },
-        {
-          "startAt": "1979",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Чёрный замок Ольшанский"
+      },
+      "ru": {
+        "name": "Владимир Семёнович Короткевич",
+        "video": "https://youtu.be/Dpk0KkuAYFE",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Сборник стихов",
+            "title": "Материнская душа",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Дикая охота короля Стаха",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Седая легенда",
+            "startAt": "1960"
+          },
+          {
+            "endAt": "1962",
+            "genre": "Роман",
+            "title": "Леониды не вернутся к Земле (Нельзя забыть)",
+            "startAt": "1960"
+          },
+          {
+            "endAt": "1964",
+            "genre": "Роман",
+            "title": "Колосья под серпом твоим",
+            "startAt": "1962"
+          },
+          {
+            "endAt": null,
+            "genre": "Пьеса",
+            "title": "Кастусь Калиновский",
+            "startAt": "1963"
+          },
+          {
+            "endAt": "1966",
+            "genre": "Роман",
+            "title": "Христос приземлился в Гродно",
+            "startAt": "1965"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Листья каштанов",
+            "startAt": "1973"
+          },
+          {
+            "endAt": null,
+            "genre": "Очерк",
+            "title": "Земля под белыми крыльями",
+            "startAt": "1977"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Ладья Отчаяния",
+            "startAt": "1978"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Чёрный замок Ольшанский",
+            "startAt": "1979"
+          }
+        ],
+        "nativeId": 1,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1930",
+            "description": "Родился в городе Орша Витебской области в семье бухгалтера."
+          },
+          {
+            "endAt": "1954",
+            "startAt": "1949",
+            "description": "Окончил филологический факультет Киевского университета имени Т.Г. Шевченко"
+          },
+          {
+            "endAt": null,
+            "startAt": "1951",
+            "description": "Дебютировал как поэт, опубликовал в оршанской районной газете «Ленинский призыв» два стихотворения: «Тут будет канал» (на русском языке) и «Якубу Коласу» (на белорусском языке)"
+          },
+          {
+            "endAt": null,
+            "startAt": "1955",
+            "description": "Cдал экзамены кандидатского минимума и приступил к написанию диссертации про восстание 1863 года, но так её и не закончил. В то же время пришла и идея о написании романа на эту же тему."
+          },
+          {
+            "endAt": null,
+            "startAt": "1957",
+            "description": "Член Союза писателей СССР"
+          },
+          {
+            "endAt": "1958",
+            "startAt": "1954",
+            "description": "Hаботал школьным учителем русского языка и литературы в деревне Лесовичи (Украина), в родном городе, Орше."
+          },
+          {
+            "endAt": "1962",
+            "startAt": "1958",
+            "description": "Окончил Высшие литературные курсы, во время которых увлёкся кино и начал работу над сценариями, а также сценарные курсы в Институте кинематографии в Москве, которая, как и Киев, оказала серьёзное влияние на формирование Короткевича как личности и художника слова"
+          },
+          {
+            "endAt": "1984",
+            "startAt": "1957",
+            "description": "Творческая деятельность поэта. Основная тема творчества писателя – история родного края, её романтически-легендарное осмысление. Короткевич также написал несколько пьес, сценариев для художественных фильмов, большое количество эссе, очерков и статей."
+          },
+          {
+            "endAt": null,
+            "startAt": "1983",
+            "description": "Получил премию Союза писателей Беларуси имени Ивана Мележа за роман «Нельзя забыть» («Леониды не вернутся к Земле»)."
+          }
+        ],
+        "birthCity": "Орша",
+        "birthDate": "1930-11-26",
+        "deathDate": "1984-07-25",
+        "description": "Белорусский советский писатель, поэт, драматург, сценарист и публицист, классик белорусской литературы. Является одной из наиболее ярких фигур в белорусской литературе XX столетия. Стал первым белорусским писателем, обратившимся к жанру исторического детектива.",
+        "nativeImage": "Korotkevich",
+        "activityPlace": {
+          "latitude": 30.4254486,
+          "longitude": 54.5119008
         }
-      ]
+      }
     },
     "2": {
-      "nativeId": 2,
-      "nativeImage": "Kupala",
-      "name": "Янка Купала",
-      "birthDate": "1882-07-07",
-      "deathDate": "1942-07-28",
-      "birthCity": "Вязынка",
-      "description": "Янка Купала (настоящее имя Иван Доминикович Луцевич) — белорусский советский поэт и переводчик, драматург, публицист. Классик белорусской литературы.",
-      "video": "https://youtu.be/aJbr-p5cYuI",
-      "activityPlace": {
-        "longitude": 54.6870458,
-        "latitude": 25.2829111
+      "be": {
+        "name": "Янка Купала",
+        "video": "https://youtu.be/aJbr-p5cYuI",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "верш",
+            "title": "мая доля",
+            "startAt": "15 июля 1904"
+          },
+          {
+            "endAt": null,
+            "genre": "верш",
+            "title": "мужык",
+            "startAt": "1905"
+          },
+          {
+            "endAt": null,
+            "genre": "паэма",
+            "title": "У Піліпаўка",
+            "startAt": "1908"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік вершаў",
+            "title": "Гусляр",
+            "startAt": "1910"
+          },
+          {
+            "endAt": null,
+            "genre": "п'еса",
+            "title": "Паўлінка",
+            "startAt": "1912"
+          },
+          {
+            "endAt": null,
+            "genre": "п'еса",
+            "title": "Раскіданае гняздо",
+            "startAt": "1913"
+          },
+          {
+            "endAt": null,
+            "genre": "паэма",
+            "title": "магіла льва",
+            "startAt": "1913"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік вершаў",
+            "title": "спадчына",
+            "startAt": "1922"
+          },
+          {
+            "endAt": null,
+            "genre": "п'еса",
+            "title": "тутэйшыя",
+            "startAt": "1922"
+          },
+          {
+            "endAt": null,
+            "genre": "паэма",
+            "title": "Тарасова доля",
+            "startAt": "1939"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік вершаў",
+            "title": "ад сэрца",
+            "startAt": "1940"
+          }
+        ],
+        "nativeId": 2,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1882",
+            "description": "Нарадзіўся ў вёсцы Вязынка (Беларусь) у беларускай каталіцкай сям'і"
+          },
+          {
+            "endAt": null,
+            "startAt": "1898",
+            "description": "Скончыў народнае вучылішча ў мястэчку Бяларучы."
+          },
+          {
+            "endAt": null,
+            "startAt": "1902",
+            "description": "Пасля смерці бацькі працаваў хатнім настаўнікам, пісарам у абшарніцкім маёнтку, прыказчыкам і на іншых працах."
+          },
+          {
+            "endAt": "1909",
+            "startAt": "1908",
+            "description": "Жыў у Вільні, дзе працаваў у рэдакцыі першай беларускай газеты «Наша ніва»."
+          },
+          {
+            "endAt": "1913",
+            "startAt": "1909",
+            "description": "Вучыўся ў Санкт-Пецярбургу на падрыхтоўчых агульнаадукацыйных курсах А. Чарняева."
+          },
+          {
+            "endAt": null,
+            "startAt": "1913",
+            "description": "Вярнуўся ў Вільню, дзе спачатку працаваў сакратаром Беларускага выдавецкага таварыства, а потым зноў працаваў у «Нашай ніве»."
+          },
+          {
+            "endAt": null,
+            "startAt": "7 красавік 1914",
+            "description": "Cтал рэдактарам газеты «Наша ніва»."
+          },
+          {
+            "endAt": null,
+            "startAt": "1916",
+            "description": "Прызваны ў войска. Паступіў у дарожна-будаўнічы атрад, у складзе якога працаваў аж да наступлення падзей Кастрычніцкай рэвалюцыі."
+          },
+          {
+            "endAt": null,
+            "startAt": "1919",
+            "description": "Пераязджае ў Мінск. Працуе ў Народным камісарыяце асветы БССР."
+          },
+          {
+            "endAt": null,
+            "startAt": "1925",
+            "description": "15 мая ў сувязі з 20-годдзем творчай дзейнасці ўрад БССР прысвойвае Янку Купалу званне народнага паэта БССР."
+          },
+          {
+            "endAt": null,
+            "startAt": "31 Студзень 1939",
+            "description": "Прэзідыум Вярхоўнага Савета СССР за выдатныя заслугі ў развіцці савецкай літаратуры ўзнагароджвае Я. Купалу ордэнам Леніна."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "Трагічна загінуў у гатэлі «Масква» пры нявысветленых абставінах (упаў ў лесвічны пралёт з 10-га паверха). Пахаваны на маскоўскім Ваганькаўскіх могілках"
+          }
+        ],
+        "birthCity": "Вязынка",
+        "birthDate": "1882-07-07",
+        "deathDate": "1942-07-28",
+        "description": "Янка Купала (сапраўднае імя Іван Дамінікавіч Луцэвіч) - беларускі савецкі паэт і перакладчык, драматург, публіцыст. Класік беларускай літаратуры.",
+        "nativeImage": "Kupala",
+        "activityPlace": {
+          "latitude": 25.2829111,
+          "longitude": 54.6870458
+        }
       },
-      "biography": [
-        {
-          "startAt": "1882",
-          "endAt": null,
-          "description": "Родился в деревне Вязынка (Беларусь) в белорусской католической семье"
-        },
-        {
-          "startAt": "1898",
-          "endAt": null,
-          "description": "Закончил народное училище в местечке Беларуч."
-        },
-        {
-          "startAt": "1902",
-          "endAt": null,
-          "description": "После смерти отца работал домашним учителем, писарем в помещичьем имении, приказчиком и на других работах."
-        },
-        {
-          "startAt": "1908",
-          "endAt": "1909",
-          "description": "Жил в Вильнюсе, где работал в редакции первой белорусской газеты «Наша нива»."
-        },
-        {
-          "startAt": "1909",
-          "endAt": "1913",
-          "description": "Учился в Санкт-Петербурге на подготовительных общеобразовательных курсах А. Черняева."
-        },
-        {
-          "startAt": "1913",
-          "endAt": null,
-          "description": "Возвратился в Вильнюс, где сначала работал секретарём Белорусского издательского товарищества, а потом вновь работал в «Нашей ниве»."
-        },
-        {
-          "startAt": "7 апреля 1914",
-          "endAt": null,
-          "description": "Cтал редактором газеты «Наша нива»."
-        },
-        {
-          "startAt": "1916",
-          "endAt": null,
-          "description": "Призван в армию. Поступил в дорожно-строительный отряд, в составе которого работал вплоть до наступления событий Октябрьской революции."
-        },
-        {
-          "startAt": "1919",
-          "endAt": null,
-          "description": "Переезжает в Минск. Работает в Народном комиссариате просвещения БССР."
-        },
-        {
-          "startAt": "1925",
-          "endAt": null,
-          "description": "15 мая в связи с 20-летием творческой деятельности правительство БССР присваивает Я. Купале звание народного поэта БССР."
-        },
-        {
-          "startAt": "31 января 1939",
-          "endAt": null,
-          "description": "Президиум Верховного Совета СССР за выдающиеся заслуги в развитии советской литературы награждает Я. Купалу орденом Ленина."
-        },
-        {
-          "startAt": "1942",
-          "endAt": null,
-          "description": "Трагически погиб в гостинице «Москва» при невыясненных обстоятельствах (упал в лестничный пролет с 10-го этажа). Похоронен на московском Ваганьковском кладбище"
+      "en": {
+        "name": "Yanka Kupala",
+        "video": "https://youtu.be/aJbr-p5cYuI",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Poem",
+            "title": "My share",
+            "startAt": "15 July 1904"
+          },
+          {
+            "endAt": null,
+            "genre": "Poem",
+            "title": "Man",
+            "startAt": "1905"
+          },
+          {
+            "endAt": null,
+            "genre": "Poem",
+            "title": "To Pilipovka",
+            "startAt": "1908"
+          },
+          {
+            "endAt": null,
+            "genre": "Collection of poems",
+            "title": "Guslyar",
+            "startAt": "1910"
+          },
+          {
+            "endAt": null,
+            "genre": "Play",
+            "title": "Pavlinka",
+            "startAt": "1912"
+          },
+          {
+            "endAt": null,
+            "genre": "Play",
+            "title": "Scattered nest",
+            "startAt": "1913"
+          },
+          {
+            "endAt": null,
+            "genre": "Poem",
+            "title": "Grave of a lion",
+            "startAt": "1913"
+          },
+          {
+            "endAt": null,
+            "genre": "Collection of poems",
+            "title": "Heritage",
+            "startAt": "1922"
+          },
+          {
+            "endAt": null,
+            "genre": "Play",
+            "title": "Here",
+            "startAt": "1922"
+          },
+          {
+            "endAt": null,
+            "genre": "Poem",
+            "title": "Tarasova share",
+            "startAt": "1939"
+          },
+          {
+            "endAt": null,
+            "genre": "Collection of poems",
+            "title": "From the heart",
+            "startAt": "1940"
+          }
+        ],
+        "nativeId": 2,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1882",
+            "description": "Born in the village of Vyazynka (Belarus) in a Belarusian Catholic family"
+          },
+          {
+            "endAt": null,
+            "startAt": "1898",
+            "description": "He graduated from the public school in the town of Belaruch."
+          },
+          {
+            "endAt": null,
+            "startAt": "1902",
+            "description": "After the death of his father, he worked as a home teacher, a clerk in a landowner estate, a clerk and other work."
+          },
+          {
+            "endAt": "1909",
+            "startAt": "1908",
+            "description": "He lived in Vilnius, where he worked at the editorial office of the first Belarusian newspaper «Nasha Niva»"
+          },
+          {
+            "endAt": "1913",
+            "startAt": "1909",
+            "description": "Studied in St. Petersburg at preparatory general education courses of A. Chernyaev."
+          },
+          {
+            "endAt": null,
+            "startAt": "1913",
+            "description": "He returned to Vilnius, where he first worked as a secretary of the Belarusian Publishing Partnership, and then again worked in «Nasha Niva»"
+          },
+          {
+            "endAt": null,
+            "startAt": "7 april 1914",
+            "description": "He became the editor of the newspaper «Our Niva»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1916",
+            "description": "Drafted into the army. He entered the road construction detachment, as part of which he worked until the onset of the events of the October Revolution."
+          },
+          {
+            "endAt": null,
+            "startAt": "1919",
+            "description": "Moves to Minsk. Works in the People's Commissariat of Education of the BSSR."
+          },
+          {
+            "endAt": null,
+            "startAt": "1925",
+            "description": "On May 15, in connection with the 20th anniversary of creative activity, the government of the BSSR confers Y. Kupale the title of national poet of the BSSR."
+          },
+          {
+            "endAt": null,
+            "startAt": "31 January 1939",
+            "description": "The Presidium of the Supreme Soviet of the USSR for outstanding services in the development of Soviet literature awards Y. Kupal with the Order of Lenin."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "Tragically died in the Moscow Hotel under unclear circumstances (fell into a flight of stairs from the 10th floor). He was buried at the Moscow Vagankovsky cemetery"
+          }
+        ],
+        "birthCity": "Elm",
+        "birthDate": "1882-07-07",
+        "deathDate": "1942-07-28",
+        "description": "Yanka Kupala (real name Ivan Dominicovich Lutsevich) - Belarusian Soviet poet and translator, playwright, publicist. Classic of Belarusian literature.",
+        "nativeImage": "Kupala",
+        "activityPlace": {
+          "latitude": 25.2829111,
+          "longitude": 54.6870458
         }
-      ],
-      "works": [
-        {
-          "startAt": "15 июля 1904",
-          "endAt": null,
-          "genre": "Стихотворение",
-          "title": "Моя доля"
-        },
-        {
-          "startAt": "1905",
-          "endAt": null,
-          "genre": "Стихотворение",
-          "title": "Мужик"
-        },
-        {
-          "startAt": "1908",
-          "endAt": null,
-          "genre": "Поэма",
-          "title": "В Пилиповку"
-        },
-        {
-          "startAt": "1910",
-          "endAt": null,
-          "genre": "Сборник стихов",
-          "title": "Гусляр"
-        },
-        {
-          "startAt": "1912",
-          "endAt": null,
-          "genre": "Пьеса",
-          "title": "Павлинка"
-        },
-        {
-          "startAt": "1913",
-          "endAt": null,
-          "genre": "Пьеса",
-          "title": "Раскиданное гнездо"
-        },
-        {
-          "startAt": "1913",
-          "endAt": null,
-          "genre": "Поэма",
-          "title": "Могила льва"
-        },
-        {
-          "startAt": "1922",
-          "endAt": null,
-          "genre": "Сборник стихов",
-          "title": "Наследие"
-        },
-        {
-          "startAt": "1922",
-          "endAt": null,
-          "genre": "Пьеса",
-          "title": "Здешние"
-        },
-        {
-          "startAt": "1939",
-          "endAt": null,
-          "genre": "Поэма",
-          "title": "Тарасова доля"
-        },
-        {
-          "startAt": "1940",
-          "endAt": null,
-          "genre": "Сборник стихов",
-          "title": "От сердца"
+      },
+      "ru": {
+        "name": "Янка Купала",
+        "video": "https://youtu.be/aJbr-p5cYuI",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Стихотворение",
+            "title": "Моя доля",
+            "startAt": "15 июля 1904"
+          },
+          {
+            "endAt": null,
+            "genre": "Стихотворение",
+            "title": "Мужик",
+            "startAt": "1905"
+          },
+          {
+            "endAt": null,
+            "genre": "Поэма",
+            "title": "В Пилиповку",
+            "startAt": "1908"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник стихов",
+            "title": "Гусляр",
+            "startAt": "1910"
+          },
+          {
+            "endAt": null,
+            "genre": "Пьеса",
+            "title": "Павлинка",
+            "startAt": "1912"
+          },
+          {
+            "endAt": null,
+            "genre": "Пьеса",
+            "title": "Раскиданное гнездо",
+            "startAt": "1913"
+          },
+          {
+            "endAt": null,
+            "genre": "Поэма",
+            "title": "Могила льва",
+            "startAt": "1913"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник стихов",
+            "title": "Наследие",
+            "startAt": "1922"
+          },
+          {
+            "endAt": null,
+            "genre": "Пьеса",
+            "title": "Здешние",
+            "startAt": "1922"
+          },
+          {
+            "endAt": null,
+            "genre": "Поэма",
+            "title": "Тарасова доля",
+            "startAt": "1939"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник стихов",
+            "title": "От сердца",
+            "startAt": "1940"
+          }
+        ],
+        "nativeId": 2,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1882",
+            "description": "Родился в деревне Вязынка (Беларусь) в белорусской католической семье"
+          },
+          {
+            "endAt": null,
+            "startAt": "1898",
+            "description": "Закончил народное училище в местечке Беларуч."
+          },
+          {
+            "endAt": null,
+            "startAt": "1902",
+            "description": "После смерти отца работал домашним учителем, писарем в помещичьем имении, приказчиком и на других работах."
+          },
+          {
+            "endAt": "1909",
+            "startAt": "1908",
+            "description": "Жил в Вильнюсе, где работал в редакции первой белорусской газеты «Наша нива»."
+          },
+          {
+            "endAt": "1913",
+            "startAt": "1909",
+            "description": "Учился в Санкт-Петербурге на подготовительных общеобразовательных курсах А. Черняева."
+          },
+          {
+            "endAt": null,
+            "startAt": "1913",
+            "description": "Возвратился в Вильнюс, где сначала работал секретарём Белорусского издательского товарищества, а потом вновь работал в «Нашей ниве»."
+          },
+          {
+            "endAt": null,
+            "startAt": "7 апреля 1914",
+            "description": "Cтал редактором газеты «Наша нива»."
+          },
+          {
+            "endAt": null,
+            "startAt": "1916",
+            "description": "Призван в армию. Поступил в дорожно-строительный отряд, в составе которого работал вплоть до наступления событий Октябрьской революции."
+          },
+          {
+            "endAt": null,
+            "startAt": "1919",
+            "description": "Переезжает в Минск. Работает в Народном комиссариате просвещения БССР."
+          },
+          {
+            "endAt": null,
+            "startAt": "1925",
+            "description": "15 мая в связи с 20-летием творческой деятельности правительство БССР присваивает Я. Купале звание народного поэта БССР."
+          },
+          {
+            "endAt": null,
+            "startAt": "31 января 1939",
+            "description": "Президиум Верховного Совета СССР за выдающиеся заслуги в развитии советской литературы награждает Я. Купалу орденом Ленина."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "Трагически погиб в гостинице «Москва» при невыясненных обстоятельствах (упал в лестничный пролет с 10-го этажа). Похоронен на московском Ваганьковском кладбище"
+          }
+        ],
+        "birthCity": "Вязынка",
+        "birthDate": "1882-07-07",
+        "deathDate": "1942-07-28",
+        "description": "Янка Купала (настоящее имя Иван Доминикович Луцевич) — белорусский советский поэт и переводчик, драматург, публицист. Классик белорусской литературы.",
+        "nativeImage": "Kupala",
+        "activityPlace": {
+          "latitude": 25.2829111,
+          "longitude": 54.6870458
         }
-      ]
+      }
     },
     "3": {
-      "nativeId": 3,
-      "nativeImage": "Chorny",
-      "name": "Кузьма Чорный",
-      "birthDate": "1900-06-24",
-      "deathDate": "1944-11-22",
-      "birthCity": "Борки",
-      "description": "Кузьма Чорный (настоящее имя Николай Карлович Романовский) — белорусский советский писатель, драматург и переводчик. ",
-      "video": "https://youtu.be/HGvYNDVLqoI",
-      "location": {
-        "longitude": 54.11213,
-        "latitude": 26.56134
+      "be": {
+        "name": "Кузьма Чорны",
+        "video": "https://youtu.be/HGvYNDVLqoI",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "зборнікі апавяданняў",
+            "title": "Апавяданні і Серабро жыцця",
+            "startAt": "1925"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнікі апавяданняў",
+            "title": "Па дарозе, Пачуцці, Сосны кажуць",
+            "startAt": "1926"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "сястра",
+            "startAt": "1927"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "зямля",
+            "startAt": "1928"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "Айчына",
+            "startAt": "1931"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "трэцяе пакаленне",
+            "startAt": "1935"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "пошукі будучыні",
+            "startAt": "1943"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "Млечны Шлях",
+            "startAt": "1944"
+          }
+        ],
+        "location": {
+          "latitude": 26.56134,
+          "longitude": 54.11213
+        },
+        "nativeId": 3,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1900",
+            "description": "Нарадзіўся ў вёсцы ў вёсцы Боркі на Случчыне ў сялянскай сям'і"
+          },
+          {
+            "endAt": null,
+            "startAt": "1913",
+            "description": "Скончыў Цімкавіцкім народнае вучылішча"
+          },
+          {
+            "endAt": "1919",
+            "startAt": "1916",
+            "description": "Навучаўся ў Нясвіжскай настаўніцкай семінарыі."
+          },
+          {
+            "endAt": null,
+            "startAt": "1923",
+            "description": "Паступіў на літаратурнае аддзяленне педагагічнага факультэта Беларускага дзяржаўнага універсітэта і ў тым жа годзе ў газеце «Савецкая Беларусь» былі апублікаваны яго першыя творы пад псеўданімам Кузьма Чорны."
+          },
+          {
+            "endAt": null,
+            "startAt": "c 1923",
+            "description": "Сябра літаратурнай суполкі «Маладняк»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1926",
+            "description": "Перайшоў у літаратурнае аб'яднанне «Узвышша»."
+          },
+          {
+            "endAt": null,
+            "startAt": "1934",
+            "description": "Член Саюза пісьменнікаў СССР."
+          },
+          {
+            "endAt": "1939",
+            "startAt": "1938",
+            "description": "Быў арыштаваны і заключаны ў Мінскую турму, дзе правёў 8 месяцаў, у тым ліку 6 месяцаў - у камеры-адзіночцы."
+          },
+          {
+            "endAt": null,
+            "startAt": "c 1941",
+            "description": "Знаходзіўся ў эвакуацыі, працаваў у многіх агітацыйных газетах."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "Пераехаў у Маскву, працаваў у рэдакцыі часопіса «Беларусь»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1944",
+            "description": "Вярнуўся ў Мінск, дзе і памёр ад другога інсульту."
+          }
+        ],
+        "birthCity": "Боркі",
+        "birthDate": "1900-06-24",
+        "deathDate": "1944-11-22",
+        "description": "Кузьма Чорны (сапраўднае імя Мікалай Карлавіч Раманоўскі) - беларускі савецкі пісьменнік, драматург і перакладчык.",
+        "nativeImage": "Chorny"
       },
-      "biography": [
-        {
-          "startAt": "1900",
-          "endAt": null,
-          "description": "Родился в деревне в деревне Борки на Случчине в крестьянской семье"
+      "en": {
+        "name": "Kuzma Chorny",
+        "video": "https://youtu.be/HGvYNDVLqoI",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Storybooks",
+            "title": "Stories and the Silver of Life",
+            "startAt": "1925"
+          },
+          {
+            "endAt": null,
+            "genre": "Storybooks",
+            "title": "Along the road, Feelings, Pines say",
+            "startAt": "1926"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Sister",
+            "startAt": "1927"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Land",
+            "startAt": "1928"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Fatherland",
+            "startAt": "1931"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Third generation",
+            "startAt": "1935"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Search for the future",
+            "startAt": "1943"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Milky Way",
+            "startAt": "1944"
+          }
+        ],
+        "location": {
+          "latitude": 26.56134,
+          "longitude": 54.11213
         },
-        {
-          "startAt": "1913",
-          "endAt": null,
-          "description": "Окончил Тимковичское народное училище"
+        "nativeId": 3,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1900",
+            "description": "Born in a village in the village of Borki on Sluchin in a peasant family"
+          },
+          {
+            "endAt": null,
+            "startAt": "1913",
+            "description": "Graduated from the Timkovichy National School"
+          },
+          {
+            "endAt": "1919",
+            "startAt": "1916",
+            "description": "Studied at the Nesvizh Teacher Seminary."
+          },
+          {
+            "endAt": null,
+            "startAt": "1923",
+            "description": "He entered the literary department of the pedagogical faculty of the Belarusian State University and in the same year his first works under the pseudonym Kuzma Chorny were published in the newspaper Savetskaya Belarus."
+          },
+          {
+            "endAt": null,
+            "startAt": "since 1923",
+            "description": "Member of the literary association «Maladnyak»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1926",
+            "description": "Moved to the literary association «Uzvyshsha»."
+          },
+          {
+            "endAt": null,
+            "startAt": "1934",
+            "description": "Member of the Union of Writers of the USSR."
+          },
+          {
+            "endAt": "1939",
+            "startAt": "1938",
+            "description": "He was arrested and imprisoned in Minsk prison, where he spent 8 months, including 6 months in solitary confinement."
+          },
+          {
+            "endAt": null,
+            "startAt": "since 1941",
+            "description": "He was evacuated, worked in many campaign newspapers."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "He moved to Moscow, worked in the editorial office of the magazine «Belarus»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1944",
+            "description": "He returned to Minsk, where he died of a second stroke."
+          }
+        ],
+        "birthCity": "Borki",
+        "birthDate": "1900-06-24",
+        "deathDate": "1944-11-22",
+        "description": "Kuzma Chorny (real name Nikolai Karlovich Romanovsky) - Belarusian Soviet writer, playwright and translator",
+        "nativeImage": "Chorny"
+      },
+      "ru": {
+        "name": "Кузьма Чорный",
+        "video": "https://youtu.be/HGvYNDVLqoI",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Сборники рассказов",
+            "title": "Рассказы и Серебро жизни",
+            "startAt": "1925"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборники рассказов",
+            "title": "По дороге, Чувства, Сосны говорят",
+            "startAt": "1926"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Сестра",
+            "startAt": "1927"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Земля",
+            "startAt": "1928"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Отечество",
+            "startAt": "1931"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Третье поколение",
+            "startAt": "1935"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Поиски будущего",
+            "startAt": "1943"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Млечный путь",
+            "startAt": "1944"
+          }
+        ],
+        "location": {
+          "latitude": 26.56134,
+          "longitude": 54.11213
         },
-        {
-          "startAt": "1916",
-          "endAt": "1919",
-          "description": "Обучался в Несвижской учительской семинарии."
-        },
-        {
-          "startAt": "1923",
-          "endAt": null,
-          "description": "Поступил на литературное отделение педагогического факультета Белорусского государственного университета и в том же году в газете «Савецкая Беларусь» были опубликованы его первые произведения под псевдонимом Кузьма Чорный."
-        },
-        {
-          "startAt": "c 1923",
-          "endAt": null,
-          "description": "Член литературного объединения «Маладняк»"
-        },
-        {
-          "startAt": "1926",
-          "endAt": null,
-          "description": "Перешел в литературное объединение «Узвышша»."
-        },
-        {
-          "startAt": "1934",
-          "endAt": null,
-          "description": "Член Союза писателей СССР."
-        },
-        {
-          "startAt": "1938",
-          "endAt": "1939",
-          "description": "Был арестован и заключён в Минскую тюрьму, где провёл 8 месяцев, в том числе 6 месяцев — в камере-одиночке."
-        },
-        {
-          "startAt": "c 1941",
-          "endAt": null,
-          "description": "Находился в эвакуации, работал во многих агитационных газетах."
-        },
-        {
-          "startAt": "1942",
-          "endAt": null,
-          "description": "Переехал в Москву, работал в редакции журнала «Беларусь»"
-        },
-        {
-          "startAt": "1944",
-          "endAt": null,
-          "description": "Вернулся в Минск, где и умер от второго инсульта."
-        }
-      ],
-      "works": [
-        {
-          "startAt": "1925",
-          "endAt": null,
-          "genre": "Сборники рассказов",
-          "title": "Рассказы и Серебро жизни"
-        },
-        {
-          "startAt": "1926",
-          "endAt": null,
-          "genre": "Сборники рассказов",
-          "title": "По дороге, Чувства, Сосны говорят"
-        },
-        {
-          "startAt": "1927",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Сестра"
-        },
-        {
-          "startAt": "1928",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Земля"
-        },
-        {
-          "startAt": "1931",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Отечество"
-        },
-        {
-          "startAt": "1935",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Третье поколение"
-        },
-        {
-          "startAt": "1943",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Поиски будущего"
-        },
-        {
-          "startAt": "1944",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Млечный путь"
-        }
-      ]
+        "nativeId": 3,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1900",
+            "description": "Родился в деревне в деревне Борки на Случчине в крестьянской семье"
+          },
+          {
+            "endAt": null,
+            "startAt": "1913",
+            "description": "Окончил Тимковичское народное училище"
+          },
+          {
+            "endAt": "1919",
+            "startAt": "1916",
+            "description": "Обучался в Несвижской учительской семинарии."
+          },
+          {
+            "endAt": null,
+            "startAt": "1923",
+            "description": "Поступил на литературное отделение педагогического факультета Белорусского государственного университета и в том же году в газете «Савецкая Беларусь» были опубликованы его первые произведения под псевдонимом Кузьма Чорный."
+          },
+          {
+            "endAt": null,
+            "startAt": "c 1923",
+            "description": "Член литературного объединения «Маладняк»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1926",
+            "description": "Перешел в литературное объединение «Узвышша»."
+          },
+          {
+            "endAt": null,
+            "startAt": "1934",
+            "description": "Член Союза писателей СССР."
+          },
+          {
+            "endAt": "1939",
+            "startAt": "1938",
+            "description": "Был арестован и заключён в Минскую тюрьму, где провёл 8 месяцев, в том числе 6 месяцев — в камере-одиночке."
+          },
+          {
+            "endAt": null,
+            "startAt": "c 1941",
+            "description": "Находился в эвакуации, работал во многих агитационных газетах."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "Переехал в Москву, работал в редакции журнала «Беларусь»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1944",
+            "description": "Вернулся в Минск, где и умер от второго инсульта."
+          }
+        ],
+        "birthCity": "Борки",
+        "birthDate": "1900-06-24",
+        "deathDate": "1944-11-22",
+        "description": "Кузьма Чорный (настоящее имя Николай Карлович Романовский) — белорусский советский писатель, драматург и переводчик. ",
+        "nativeImage": "Chorny"
+      }
     },
     "4": {
-      "nativeId": 4,
-      "nativeImage": "Shamyakin",
-      "name": "Иван Петрович Шамякин",
-      "birthDate": "1921-01-30",
-      "deathDate": "2004-10-14",
-      "birthCity": "Корма",
-      "video": "https://youtu.be/ddMAfJFjzew",
-      "location": {
-        "longitude": 53.902334,
-        "latitude": 27.5618791
+      "be": {
+        "name": "Іван Пятровіч Шамякін",
+        "video": "https://youtu.be/ddMAfJFjzew",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Pассказ",
+            "title": "У снежнай пустыні",
+            "startAt": "1944"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "Помста",
+            "startAt": "1949"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "У добры час",
+            "startAt": "1953"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "Крыніцы",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "п'еса",
+            "title": "Не верце цішыні",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік прозы",
+            "title": "матчыны рукі",
+            "startAt": "1961"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "Сэрца на лодони",
+            "startAt": "1964"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "снежныя зімы",
+            "startAt": "1968"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "Атланты і карыятыды",
+            "startAt": "1974"
+          },
+          {
+            "endAt": null,
+            "genre": "п'еса",
+            "title": "І яны перасталі чуць птушкі",
+            "startAt": "1977"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
+        },
+        "nativeId": 4,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1921",
+            "description": "Нарадзіўся ў вёсцы Карма Гомельскага павета Гомельскай губерні ў сялянскай сям'і"
+          },
+          {
+            "endAt": null,
+            "startAt": "1936",
+            "description": "Скончыў сем класаў Макоўскай школы"
+          },
+          {
+            "endAt": "1940",
+            "startAt": "1936",
+            "description": "Вучобу ў Гомельскім тэхнікуме будаўнічых матэрыялаў"
+          },
+          {
+            "endAt": null,
+            "startAt": "1940",
+            "description": "Быў прызваны ў Рабоча-сялянскую Чырвоную армію, праходзіў службу ў Мурманску ў зенітна-артылерыйскай частцы."
+          },
+          {
+            "endAt": null,
+            "startAt": "1944",
+            "description": "Перадыслакаваны ў Польшчу, прымаў удзел у Вісла-Одэрская аперацыі і ў Берлінскай наступальнай аперацыі ў складзе прожекторных роты"
+          },
+          {
+            "endAt": "1947",
+            "startAt": "1945",
+            "description": "Працаваў выкладчыкам мовы і літаратуры няпоўнай сярэдняй школы ў вёсцы Прокоповка Церахоўскі раёна"
+          },
+          {
+            "endAt": "1950",
+            "startAt": "1948",
+            "description": "Вучыўся ў Рэспубліканскай партыйнай школе."
+          },
+          {
+            "endAt": null,
+            "startAt": "с 1954",
+            "description": "Працаваў намеснікам Старшыні праўлення Саюза Пісьменнікаў БССР."
+          },
+          {
+            "endAt": "1985",
+            "startAt": "1963",
+            "description": "Дэпутат Вярхоўнага Савета БССР"
+          },
+          {
+            "endAt": "1985",
+            "startAt": "1971",
+            "description": "Старшыня Вярхоўнага Савета БССР"
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1980",
+            "description": "Дэпутат Вярхоўнага Савета СССР"
+          },
+          {
+            "endAt": "1992",
+            "startAt": "1980",
+            "description": "Галоўны рэдактар ​​выдавецтва «Беларуская савецкая энцыклапедыя»"
+          }
+        ],
+        "birthCity": "корму",
+        "birthDate": "1921-01-30",
+        "deathDate": "2004-10-14",
+        "description": "Іван Пятровіч Шамякін - беларускі савецкі пісьменнік, сцэнарыст і драматург, грамадскі дзеяч.",
+        "nativeImage": "Shamyakin"
       },
-      "description": "Иван Петрович Шамякин —  белорусский советский писатель, сценарист и драматург, общественный деятель.",
-      "biography": [
-        {
-          "startAt": "1921",
-          "endAt": null,
-          "description": "Родился в деревне Корма Гомельского уезда Гомельской губернии в крестьянской семье"
+      "en": {
+        "name": "Ivan Petrovich Shamyakin",
+        "video": "https://youtu.be/ddMAfJFjzew",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "A story",
+            "title": "In the snowy desert",
+            "startAt": "1944"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Pomsta",
+            "startAt": "1949"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Good afternoon",
+            "startAt": "1953"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Krinitsy",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "Play",
+            "title": "Don't believe the silence",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "Prose Collection",
+            "title": "Maternal hands",
+            "startAt": "1961"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Heart on palm",
+            "startAt": "1964"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Snowy winters",
+            "startAt": "1968"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Atlantes and Caryatids",
+            "startAt": "1974"
+          },
+          {
+            "endAt": null,
+            "genre": "Play",
+            "title": "And the birds died down",
+            "startAt": "1977"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
         },
-        {
-          "startAt": "1936",
-          "endAt": null,
-          "description": "Окончил семь классов Маковской школы"
+        "nativeId": 4,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1921",
+            "description": "Born in the village of Korma in the Gomel county of the Gomel province in a peasant family"
+          },
+          {
+            "endAt": null,
+            "startAt": "1936",
+            "description": "He graduated from the seven classes of the Makovsky school"
+          },
+          {
+            "endAt": "1940",
+            "startAt": "1936",
+            "description": "Studying at the Gomel College of Building Materials"
+          },
+          {
+            "endAt": null,
+            "startAt": "1940",
+            "description": "He was drafted into the Workers 'and Peasants' Red Army, served in Murmansk in the anti-aircraft artillery unit."
+          },
+          {
+            "endAt": null,
+            "startAt": "1944",
+            "description": "Relocated to Poland, took part in the Wisło-Oder operation and in the Berlin offensive operation as part of a searchlight company"
+          },
+          {
+            "endAt": "1947",
+            "startAt": "1945",
+            "description": "He worked as a teacher of language and literature of an incomplete secondary school in the village of Prokopovka in the Terekhov district"
+          },
+          {
+            "endAt": "1950",
+            "startAt": "1948",
+            "description": "Studied at the Republican Party School."
+          },
+          {
+            "endAt": null,
+            "startAt": "since 1954",
+            "description": "He worked as Deputy Chairman of the Board of the Union of Writers of the BSSR."
+          },
+          {
+            "endAt": "1985",
+            "startAt": "1963",
+            "description": "Member of the Supreme Council of the BSSR"
+          },
+          {
+            "endAt": "1985",
+            "startAt": "1971",
+            "description": "Chairman of the Supreme Council of the BSSR"
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1980",
+            "description": "Member of the Supreme Council of the USSR"
+          },
+          {
+            "endAt": "1992",
+            "startAt": "1980",
+            "description": "Editor-in-chief of the Belarusian Soviet Encyclopedia Publishing House"
+          }
+        ],
+        "birthCity": "Stern",
+        "birthDate": "1921-01-30",
+        "deathDate": "2004-10-14",
+        "description": "Ivan Petrovich Shamyakin - Belarusian Soviet writer, screenwriter and playwright, public figure.",
+        "nativeImage": "Shamyakin"
+      },
+      "ru": {
+        "name": "Иван Петрович Шамякин",
+        "video": "https://youtu.be/ddMAfJFjzew",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Pассказ",
+            "title": "В снежной пустыне",
+            "startAt": "1944"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Помста",
+            "startAt": "1949"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "В добрый час",
+            "startAt": "1953"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Криницы",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "Пьеса",
+            "title": "Не верьте тишине",
+            "startAt": "1958"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник прозы",
+            "title": "Материнские руки",
+            "startAt": "1961"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Сердце на лодони",
+            "startAt": "1964"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Снежные зимы",
+            "startAt": "1968"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Атланты и кариатиды",
+            "startAt": "1974"
+          },
+          {
+            "endAt": null,
+            "genre": "Пьеса",
+            "title": "И стихли птицы",
+            "startAt": "1977"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
         },
-        {
-          "startAt": "1936",
-          "endAt": "1940",
-          "description": "Учёбу в Гомельском техникуме строительных материалов"
-        },
-        {
-          "startAt": "1940",
-          "endAt": null,
-          "description": "Был призван в Рабоче-крестьянскую Красную армию, проходил службу в Мурманске в зенитно-артиллерийской части."
-        },
-        {
-          "startAt": "1944",
-          "endAt": null,
-          "description": "Передислоцирован в Польшу, принимал участие в Висло-Одерской операции и в Берлинской наступательной операции в составе прожекторной роты"
-        },
-        {
-          "startAt": "1945",
-          "endAt": "1947",
-          "description": "Работал преподавателем языка и литературы неполной средней школы в деревне Прокоповка Тереховского района"
-        },
-        {
-          "startAt": "1948",
-          "endAt": "1950",
-          "description": "Учился в Республиканской партийной школе."
-        },
-        {
-          "startAt": "с 1954",
-          "endAt": null,
-          "description": "Работал заместителем Председателя правления Союза Писателей БССР."
-        },
-        {
-          "startAt": "1963",
-          "endAt": "1985",
-          "description": "Депутат Верховного Совета БССР"
-        },
-        {
-          "startAt": "1971",
-          "endAt": "1985",
-          "description": "Председатель Верховного Совета БССР"
-        },
-        {
-          "startAt": "1980",
-          "endAt": "1989",
-          "description": "Депутат Верховного Совета СССР"
-        },
-        {
-          "startAt": "1980",
-          "endAt": "1992",
-          "description": "Главный редактор издательства «Белорусская советская энциклопедия»"
-        }
-      ],
-      "works": [
-        {
-          "startAt": "1944",
-          "endAt": null,
-          "genre": "Pассказ",
-          "title": "В снежной пустыне"
-        },
-        {
-          "startAt": "1949",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Помста"
-        },
-        {
-          "startAt": "1953",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "В добрый час"
-        },
-        {
-          "startAt": "1957",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Криницы"
-        },
-        {
-          "startAt": "1958",
-          "endAt": null,
-          "genre": "Пьеса",
-          "title": "Не верьте тишине"
-        },
-        {
-          "startAt": "1961",
-          "endAt": null,
-          "genre": "Сборник прозы",
-          "title": "Материнские руки"
-        },
-        {
-          "startAt": "1964",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Сердце на лодони"
-        },
-        {
-          "startAt": "1968",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Снежные зимы"
-        },
-        {
-          "startAt": "1974",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Атланты и кариатиды"
-        },
-        {
-          "startAt": "1977",
-          "endAt": null,
-          "genre": "Пьеса",
-          "title": "И стихли птицы"
-        }
-      ]
+        "nativeId": 4,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1921",
+            "description": "Родился в деревне Корма Гомельского уезда Гомельской губернии в крестьянской семье"
+          },
+          {
+            "endAt": null,
+            "startAt": "1936",
+            "description": "Окончил семь классов Маковской школы"
+          },
+          {
+            "endAt": "1940",
+            "startAt": "1936",
+            "description": "Учёбу в Гомельском техникуме строительных материалов"
+          },
+          {
+            "endAt": null,
+            "startAt": "1940",
+            "description": "Был призван в Рабоче-крестьянскую Красную армию, проходил службу в Мурманске в зенитно-артиллерийской части."
+          },
+          {
+            "endAt": null,
+            "startAt": "1944",
+            "description": "Передислоцирован в Польшу, принимал участие в Висло-Одерской операции и в Берлинской наступательной операции в составе прожекторной роты"
+          },
+          {
+            "endAt": "1947",
+            "startAt": "1945",
+            "description": "Работал преподавателем языка и литературы неполной средней школы в деревне Прокоповка Тереховского района"
+          },
+          {
+            "endAt": "1950",
+            "startAt": "1948",
+            "description": "Учился в Республиканской партийной школе."
+          },
+          {
+            "endAt": null,
+            "startAt": "с 1954",
+            "description": "Работал заместителем Председателя правления Союза Писателей БССР."
+          },
+          {
+            "endAt": "1985",
+            "startAt": "1963",
+            "description": "Депутат Верховного Совета БССР"
+          },
+          {
+            "endAt": "1985",
+            "startAt": "1971",
+            "description": "Председатель Верховного Совета БССР"
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1980",
+            "description": "Депутат Верховного Совета СССР"
+          },
+          {
+            "endAt": "1992",
+            "startAt": "1980",
+            "description": "Главный редактор издательства «Белорусская советская энциклопедия»"
+          }
+        ],
+        "birthCity": "Корма",
+        "birthDate": "1921-01-30",
+        "deathDate": "2004-10-14",
+        "description": "Иван Петрович Шамякин —  белорусский советский писатель, сценарист и драматург, общественный деятель.",
+        "nativeImage": "Shamyakin"
+      }
     },
     "5": {
-      "nativeId": 5,
-      "nativeImage": "Brovka",
-      "name": "Петрусь Бровка",
-      "birthDate": "1905-06-25",
-      "deathDate": "1980-03-24",
-      "birthCity": "Путилковичи",
-      "description": "Пётр Устинович Бровка, известный как Петрусь Бровка —  белорусский советский писатель, поэт и переводчик, драматург, публицист.",
-      "video": "https://youtu.be/7xHGTr4EbK4",
-      "location": {
-        "longitude": 53.902334,
-        "latitude": 27.5618791
+      "be": {
+        "name": "Пятрусь Броўка",
+        "video": "https://youtu.be/7xHGTr4EbK4",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "зборнік паэзіі",
+            "title": "Гады як шторм",
+            "startAt": "1930"
+          },
+          {
+            "endAt": null,
+            "genre": "нарыс",
+            "title": "ўраджай",
+            "startAt": "1933"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік паэзіі",
+            "title": "Так пачыналася маладосць",
+            "startAt": "1934"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік паэзіі",
+            "title": "Вясна радзімы",
+            "startAt": "1937"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік паэзіі",
+            "title": "насустрач сонцу",
+            "startAt": "1943"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік паэзіі",
+            "title": "Калі зліваюцца рэкі",
+            "startAt": "1954"
+          },
+          {
+            "endAt": null,
+            "genre": "раман",
+            "title": "цвёрдымі крокамі",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік прозы",
+            "title": "Далёка ад дома",
+            "startAt": "1960"
+          },
+          {
+            "endAt": null,
+            "genre": "зборнік паэзіі",
+            "title": "Маладосць і сталасць",
+            "startAt": "1964"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
+        },
+        "nativeId": 5,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1905",
+            "description": "Нарадзіўся ў вёсцы Пуцілкавічы (цяпер Ушацкі раён, Віцебская вобласць, Беларусь) у сялянскай сям'і (9 дзяцей)."
+          },
+          {
+            "endAt": "1924",
+            "startAt": "1918",
+            "description": "Працаваў перапісчыкам, справаводам і рахаўніком."
+          },
+          {
+            "endAt": "1927",
+            "startAt": "1925",
+            "description": "Быў загадчык аддзелам акруговыя камісіі камсамола ў Полацку."
+          },
+          {
+            "endAt": "1928",
+            "startAt": "1927",
+            "description": "Быў адказным сакратаром рэдакцыі газеты «Чырвоная Полаччына»."
+          },
+          {
+            "endAt": "1931",
+            "startAt": "1928",
+            "description": "Вучоба на педагагічным факультэце БДУ"
+          },
+          {
+            "endAt": "1942",
+            "startAt": "1941",
+            "description": "Служыў у Рабоча-сялянскай Чырвонай арміі, працаваў у франтавой і партызанскага друку."
+          },
+          {
+            "endAt": "1948",
+            "startAt": "1945",
+            "description": "Галоўны рэдактар ​​літаратурнага часопіса «Полымя»."
+          },
+          {
+            "endAt": "1967",
+            "startAt": "1948",
+            "description": "Старшынёй Праўлення СП БССР."
+          },
+          {
+            "endAt": "1980",
+            "startAt": "1967",
+            "description": "Галоўны рэдактар ​​Беларускай савецкай энцыклапедыі"
+          }
+        ],
+        "birthCity": "Пуцілкавічы",
+        "birthDate": "1905-06-25",
+        "deathDate": "1980-03-24",
+        "description": "Пётр Усцінавіч Броўка, вядомы як Пятрусь Броўка - беларускі савецкі пісьменнік, паэт і перакладчык, драматург, публіцыст.",
+        "nativeImage": "Brovka"
       },
-      "biography": [
-        {
-          "startAt": "1905",
-          "endAt": null,
-          "description": "Родился в деревне Путилковичи (ныне Ушачский район, Витебская область, Беларусь) в крестьянской семье (9 детей)."
+      "en": {
+        "name": "Petrus Brovka",
+        "video": "https://youtu.be/7xHGTr4EbK4",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Poetry collection",
+            "title": "Years like a storm",
+            "startAt": "1930"
+          },
+          {
+            "endAt": null,
+            "genre": "Sketch",
+            "title": "Harvest",
+            "startAt": "1933"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry collection",
+            "title": "So youth began",
+            "startAt": "1934"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry collection",
+            "title": "Homeland spring",
+            "startAt": "1937"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry collection",
+            "title": "Towards the sun",
+            "startAt": "1943"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry collection",
+            "title": "When rivers merge",
+            "startAt": "1954"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel",
+            "title": "Firm steps",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry collection",
+            "title": "Far from home",
+            "startAt": "1960"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry collection",
+            "title": "Youth and maturity",
+            "startAt": "1964"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
         },
-        {
-          "startAt": "1918",
-          "endAt": "1924",
-          "description": "Работал переписчиком, делопроизводителем и счетоводом."
+        "nativeId": 5,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1905",
+            "description": "Born in the village of Putilkovichi (now Ushachsky district, Vitebsk region, Belarus) in a peasant family (9 children)."
+          },
+          {
+            "endAt": "1924",
+            "startAt": "1918",
+            "description": "Worked as a clerk, clerk and bookkeeper"
+          },
+          {
+            "endAt": "1927",
+            "startAt": "1925",
+            "description": "He was the head of the Komsomol District Committee in Polotsk."
+          },
+          {
+            "endAt": "1928",
+            "startAt": "1927",
+            "description": "He was the executive secretary of the newspaper «Chyrvonaya Polachchyna»."
+          },
+          {
+            "endAt": "1931",
+            "startAt": "1928",
+            "description": "Studying at the pedagogical faculty of BSU"
+          },
+          {
+            "endAt": "1942",
+            "startAt": "1941",
+            "description": "He served in the Workers 'and Peasants' Red Army, worked in the front and partisan press."
+          },
+          {
+            "endAt": "1948",
+            "startAt": "1945",
+            "description": "Editor-in-chief of the literary magazine «Polymya»."
+          },
+          {
+            "endAt": "1967",
+            "startAt": "1948",
+            "description": "Chairman of the Board of the joint venture of the BSSR."
+          },
+          {
+            "endAt": "1980",
+            "startAt": "1967",
+            "description": "Editor-in-chief of the Belarusian Soviet Encyclopedia"
+          }
+        ],
+        "birthCity": "Putilkovichi",
+        "birthDate": "1905-06-25",
+        "deathDate": "1980-03-24",
+        "description": "Pyotr Ustinovich Brovka, known as Petrus Brovka - Belarusian Soviet writer, poet and translator, playwright, publicist.",
+        "nativeImage": "Brovka"
+      },
+      "ru": {
+        "name": "Петрусь Бровка",
+        "video": "https://youtu.be/7xHGTr4EbK4",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Сборник поэзии",
+            "title": "Годы как шторм",
+            "startAt": "1930"
+          },
+          {
+            "endAt": null,
+            "genre": "Очерк",
+            "title": "Урожай",
+            "startAt": "1933"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник поэзии",
+            "title": "Так начиналась молодость",
+            "startAt": "1934"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник поэзии",
+            "title": "Весна родины",
+            "startAt": "1937"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник поэзии",
+            "title": "Навстречу солнцу",
+            "startAt": "1943"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник поэзии",
+            "title": "Когда сливаются реки",
+            "startAt": "1954"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман",
+            "title": "Твёрдыми шагами",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник прозы",
+            "title": "Далеко от дома",
+            "startAt": "1960"
+          },
+          {
+            "endAt": null,
+            "genre": "Сборник поэзии",
+            "title": "Молодость и зрелость",
+            "startAt": "1964"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
         },
-        {
-          "startAt": "1925",
-          "endAt": "1927",
-          "description": "Был завотделом Окружкома комсомола в Полоцке."
-        },
-        {
-          "startAt": "1927",
-          "endAt": "1928",
-          "description": "Был ответственным секретарём редакции газеты «Чырвоная Полаччына»."
-        },
-        {
-          "startAt": "1928",
-          "endAt": "1931",
-          "description": "Учеба на педагогическом факультете БГУ"
-        },
-        {
-          "startAt": "1941",
-          "endAt": "1942",
-          "description": "Служил в Рабоче-крестьянской Красной армии, работал во фронтовой и партизанской печати."
-        },
-        {
-          "startAt": "1945",
-          "endAt": "1948",
-          "description": "Главный редактор литературного журнала «Полымя»."
-        },
-        {
-          "startAt": "1948",
-          "endAt": "1967",
-          "description": "Председателем Правления СП БССР."
-        },
-        {
-          "startAt": "1967",
-          "endAt": "1980",
-          "description": "Главный редактор Белорусской советской энциклопедии"
-        }
-      ],
-      "works": [
-        {
-          "startAt": "1930",
-          "endAt": null,
-          "genre": "Сборник поэзии",
-          "title": "Годы как шторм"
-        },
-        {
-          "startAt": "1933",
-          "endAt": null,
-          "genre": "Очерк",
-          "title": "Урожай"
-        },
-        {
-          "startAt": "1934",
-          "endAt": null,
-          "genre": "Сборник поэзии",
-          "title": "Так начиналась молодость"
-        },
-        {
-          "startAt": "1937",
-          "endAt": null,
-          "genre": "Сборник поэзии",
-          "title": "Весна родины"
-        },
-        {
-          "startAt": "1943",
-          "endAt": null,
-          "genre": "Сборник поэзии",
-          "title": "Навстречу солнцу"
-        },
-        {
-          "startAt": "1954",
-          "endAt": null,
-          "genre": "Сборник поэзии",
-          "title": "Когда сливаются реки"
-        },
-        {
-          "startAt": "1957",
-          "endAt": null,
-          "genre": "Роман",
-          "title": "Твёрдыми шагами"
-        },
-        {
-          "startAt": "1960",
-          "endAt": null,
-          "genre": "Сборник прозы",
-          "title": "Далеко от дома"
-        },
-        {
-          "startAt": "1964",
-          "endAt": null,
-          "genre": "Сборник поэзии",
-          "title": "Молодость и зрелость"
-        }
-      ]
+        "nativeId": 5,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1905",
+            "description": "Родился в деревне Путилковичи (ныне Ушачский район, Витебская область, Беларусь) в крестьянской семье (9 детей)."
+          },
+          {
+            "endAt": "1924",
+            "startAt": "1918",
+            "description": "Работал переписчиком, делопроизводителем и счетоводом."
+          },
+          {
+            "endAt": "1927",
+            "startAt": "1925",
+            "description": "Был завотделом Окружкома комсомола в Полоцке."
+          },
+          {
+            "endAt": "1928",
+            "startAt": "1927",
+            "description": "Был ответственным секретарём редакции газеты «Чырвоная Полаччына»."
+          },
+          {
+            "endAt": "1931",
+            "startAt": "1928",
+            "description": "Учеба на педагогическом факультете БГУ"
+          },
+          {
+            "endAt": "1942",
+            "startAt": "1941",
+            "description": "Служил в Рабоче-крестьянской Красной армии, работал во фронтовой и партизанской печати."
+          },
+          {
+            "endAt": "1948",
+            "startAt": "1945",
+            "description": "Главный редактор литературного журнала «Полымя»."
+          },
+          {
+            "endAt": "1967",
+            "startAt": "1948",
+            "description": "Председателем Правления СП БССР."
+          },
+          {
+            "endAt": "1980",
+            "startAt": "1967",
+            "description": "Главный редактор Белорусской советской энциклопедии"
+          }
+        ],
+        "birthCity": "Путилковичи",
+        "birthDate": "1905-06-25",
+        "deathDate": "1980-03-24",
+        "description": "Пётр Устинович Бровка, известный как Петрусь Бровка —  белорусский советский писатель, поэт и переводчик, драматург, публицист.",
+        "nativeImage": "Brovka"
+      }
     },
     "6": {
-      "nativeId": 6,
-      "nativeImage": "Bykov",
-      "name": "Василь Быков",
-      "birthDate": "1924-06-19",
-      "deathDate": "2003-06-22",
-      "birthCity": "Бычки",
-      "video": "https://youtu.be/N2tOCg7lROk",
-      "location": {
-        "longitude": 53.6834599,
-        "latitude": 23.8342648
+      "be": {
+        "name": "Васіль Быкаў",
+        "video": "https://youtu.be/N2tOCg7lROk",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "Апошні баец",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "Жураўліны крык",
+            "startAt": "1959"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "Альпійская балада",
+            "startAt": "1963"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "Мёртвым не баліць",
+            "startAt": "1965"
+          },
+          {
+            "endAt": null,
+            "genre": "аповяд",
+            "title": "свае людзі",
+            "startAt": "1966"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "сцюжа",
+            "startAt": "1969"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "абеліск",
+            "startAt": "1971"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "Дажыць да світання",
+            "startAt": "1972"
+          },
+          {
+            "endAt": null,
+            "genre": "аповяд",
+            "title": "На ўзыходзе сонца",
+            "startAt": "1975"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "Знак бяды",
+            "startAt": "1982"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "У тумане",
+            "startAt": "1987"
+          }
+        ],
+        "location": {
+          "latitude": 23.8342648,
+          "longitude": 53.6834599
+        },
+        "nativeId": 6,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1924",
+            "description": "Нарадзіўся ў вёсцы Бычкі Ушацкага раёна Віцебскай вобласці ў сялянскай сям'і."
+          },
+          {
+            "endAt": "1940",
+            "startAt": "1939",
+            "description": "Вучыўся на скульптурным аддзяленьні Віцебскай мастацкай вучэльні, якое пакінуў з-за адмены стыпендый"
+          },
+          {
+            "endAt": "1942",
+            "startAt": "1941",
+            "description": "Жыў на ст. Салтыковка і ў горадзе Аткарск Саратаўскай вобласці, вучыўся ў чыгуначнай школе."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "Прызваны ў армію"
+          },
+          {
+            "endAt": null,
+            "startAt": "1943",
+            "description": "Прысвоена званне малодшага лейтэнанта. Удзельнічаў у баях за Крывы Рог, Александрыю, Знаменка. Падчас Кіраваградскай аперацыі паранены ў нагу і жывот"
+          },
+          {
+            "endAt": "1947",
+            "startAt": "1944",
+            "description": "З дзеючай арміяй прайшоў па Балгарыі, Венгрыі, Югаславіі, Аўстрыі; старшы лейтэнант, камандзір узвода палкавой, затым армейскай артылерыі."
+          },
+          {
+            "endAt": "1949",
+            "startAt": "1974",
+            "description": "Жыў у Гродне. Працаваў у майстэрнях, а таксама ў рэдакцыі абласной газеты «Гродзенская праўда»"
+          },
+          {
+            "endAt": "1955",
+            "startAt": "1949",
+            "description": "Служба ў Савецкай арміі"
+          },
+          {
+            "endAt": "1972",
+            "startAt": "1955",
+            "description": "Працаваў у «Гродненской правде»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1959",
+            "description": "Член Саюза пісьменнікаў СССР"
+          },
+          {
+            "endAt": null,
+            "startAt": "1978",
+            "description": "Пераехаў у Мінск"
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1978",
+            "description": "Абіраўся дэпутатам Вярхоўнага Савета Беларускай ССР"
+          },
+          {
+            "endAt": null,
+            "startAt": "с 1997",
+            "description": "Жыў за мяжой у палітычнай эміграцыі"
+          },
+          {
+            "endAt": null,
+            "startAt": "2003",
+            "description": "Вярнуўся на радзіму."
+          }
+        ],
+        "birthCity": "бычкі",
+        "birthDate": "1924-06-19",
+        "deathDate": "2003-06-22",
+        "description": "Васіль Уладзіміравіч Быкаў - беларускі пісьменнік, грамадскі дзеяч, удзельнік Вялікай Айчыннай вайны. Большасць твораў - аповесці, дзеянне якіх адбываецца ў час Вялікай Айчыннай вайны і ў якіх паказаны маральны выбар чалавека ў найбольш драматычныя моманты жыцця.",
+        "nativeImage": "Bykov"
       },
-      "description": "Василь Владимирович Быков — советский и белорусский писатель, общественный деятель, участник Великой Отечественной войны. Большинство произведений — повести, действие которых происходит во время Великой Отечественной войны и в которых показан нравственный выбор человека в наиболее драматичные моменты жизни.",
-      "biography": [
-        {
-          "startAt": "1924",
-          "endAt": null,
-          "description": "Родился в деревне Бычки Ушачского района Витебской области в крестьянской семье."
+      "en": {
+        "name": "Vasil Bykov",
+        "video": "https://youtu.be/N2tOCg7lROk",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Last fighter",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Crane scream",
+            "startAt": "1959"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Alpine ballad",
+            "startAt": "1963"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "It doesn't hurt the dead",
+            "startAt": "1965"
+          },
+          {
+            "endAt": null,
+            "genre": "Рассказ",
+            "title": "Our people",
+            "startAt": "1966"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Cold",
+            "startAt": "1969"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Obelisk",
+            "startAt": "1971"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Survive until dawn",
+            "startAt": "1972"
+          },
+          {
+            "endAt": null,
+            "genre": "Рассказ",
+            "title": "At sunrise",
+            "startAt": "1975"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Sign of trouble",
+            "startAt": "1982"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "In the fog",
+            "startAt": "1987"
+          }
+        ],
+        "location": {
+          "latitude": 23.8342648,
+          "longitude": 53.6834599
         },
-        {
-          "startAt": "1939",
-          "endAt": "1940",
-          "description": "Учился на скульптурном отделении Витебского художественного училища, которое оставил из-за отмены стипендий"
+        "nativeId": 6,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1924",
+            "description": "Born in the village of Bychki, Ushachsky district, Vitebsk region in a peasant family."
+          },
+          {
+            "endAt": "1940",
+            "startAt": "1939",
+            "description": "He studied at the sculpture department of the Vitebsk art school, which he left due to the cancellation of scholarships"
+          },
+          {
+            "endAt": "1942",
+            "startAt": "1941",
+            "description": "He lived at the station. Saltykovka and in the city of Atkarsk, Saratov region, studied at a railway school."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "Drafted into the army"
+          },
+          {
+            "endAt": null,
+            "startAt": "1943",
+            "description": "Assigned the rank of second lieutenant. Participated in the battles of Krivoy Rog, Alexandria, Znamenka. During the Kirovograd operation wounded in the leg and stomach"
+          },
+          {
+            "endAt": "1947",
+            "startAt": "1944",
+            "description": "With the army he went through Bulgaria, Hungary, Yugoslavia, Austria; senior lieutenant, commander of a platoon of regimental, then army artillery."
+          },
+          {
+            "endAt": "1949",
+            "startAt": "1974",
+            "description": "He lived in Grodno. He worked in workshops, as well as in the editorial office of the regional newspaper «Grodno Pravda»"
+          },
+          {
+            "endAt": "1955",
+            "startAt": "1949",
+            "description": "Service in the Soviet Army"
+          },
+          {
+            "endAt": "1972",
+            "startAt": "1955",
+            "description": "Service in the «Soviet Army»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1959",
+            "description": "Member of the Union of Writers of the USSR"
+          },
+          {
+            "endAt": null,
+            "startAt": "1978",
+            "description": "Moved to Minsk"
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1978",
+            "description": "He was elected as a deputy of the Supreme Council of the Belarusian SSR"
+          },
+          {
+            "endAt": null,
+            "startAt": "since 1997",
+            "description": "He lived abroad in political emigration"
+          },
+          {
+            "endAt": null,
+            "startAt": "2003",
+            "description": "He returned to his homeland."
+          }
+        ],
+        "birthCity": "Gobies",
+        "birthDate": "1924-06-19",
+        "deathDate": "2003-06-22",
+        "description": "Vasil Vladimirovich Bykov - Soviet and Belarusian writer, public figure, participant in the Great Patriotic War. Most of the works are novels, the action of which takes place during the Great Patriotic War and which shows the moral choice of a person in the most dramatic moments of life.",
+        "nativeImage": "Bykov"
+      },
+      "ru": {
+        "name": "Василь Быков",
+        "video": "https://youtu.be/N2tOCg7lROk",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Последний боец",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Журавлиный крик",
+            "startAt": "1959"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Альпийская баллада",
+            "startAt": "1963"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Мёртвым не больно",
+            "startAt": "1965"
+          },
+          {
+            "endAt": null,
+            "genre": "Рассказ",
+            "title": "Свои люди",
+            "startAt": "1966"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Стужа",
+            "startAt": "1969"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Обелиск",
+            "startAt": "1971"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Дожить до рассвета",
+            "startAt": "1972"
+          },
+          {
+            "endAt": null,
+            "genre": "Рассказ",
+            "title": "На восходе солнца",
+            "startAt": "1975"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Знак беды",
+            "startAt": "1982"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "В тумане",
+            "startAt": "1987"
+          }
+        ],
+        "location": {
+          "latitude": 23.8342648,
+          "longitude": 53.6834599
         },
-        {
-          "startAt": "1941",
-          "endAt": "1942",
-          "description": "Жил на ст. Салтыковка и в городе Аткарске Саратовской области, учился в железнодорожной школе."
-        },
-        {
-          "startAt": "1942",
-          "endAt": null,
-          "description": "Призван в армию"
-        },
-        {
-          "startAt": "1943",
-          "endAt": null,
-          "description": "Присвоено звание младшего лейтенанта. Участвовал в боях за Кривой Рог, Александрию, Знаменку. Во время Кировоградской операции ранен в ногу и живот"
-        },
-        {
-          "startAt": "1944",
-          "endAt": "1947",
-          "description": "С действующей армией прошёл по Болгарии, Венгрии, Югославии, Австрии; старший лейтенант, командир взвода полковой, затем армейской артиллерии."
-        },
-        {
-          "startAt": "1974",
-          "endAt": "1949",
-          "description": "Жил в Гродно. Работал в мастерских, а также в редакции областной газеты «Гродненская правда»"
-        },
-        {
-          "startAt": "1949",
-          "endAt": "1955",
-          "description": "Служба в Советской армии"
-        },
-        {
-          "startAt": "1955",
-          "endAt": "1972",
-          "description": "Работал в «Гродненской правде»"
-        },
-        {
-          "startAt": "1959",
-          "endAt": null,
-          "description": "Член Союза писателей СССР"
-        },
-        {
-          "startAt": "1978",
-          "endAt": null,
-          "description": "Переехал в Минск"
-        },
-        {
-          "startAt": "1978",
-          "endAt": "1989",
-          "description": "Избирался депутатом Верховного Совета Белорусской ССР"
-        },
-        {
-          "startAt": "с 1997",
-          "endAt": null,
-          "description": "Жил за границей в политической эмиграции"
-        },
-        {
-          "startAt": "2003",
-          "endAt": null,
-          "description": "Вернулся на родину."
-        }
-      ],
-      "works": [
-        {
-          "startAt": "1957",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Последний боец"
-        },
-        {
-          "startAt": "1959",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Журавлиный крик"
-        },
-        {
-          "startAt": "1963",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Альпийская баллада"
-        },
-        {
-          "startAt": "1965",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Мёртвым не больно"
-        },
-        {
-          "startAt": "1966",
-          "endAt": null,
-          "genre": "Рассказ",
-          "title": "Свои люди"
-        },
-        {
-          "startAt": "1969",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Стужа"
-        },
-        {
-          "startAt": "1971",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Обелиск"
-        },
-        {
-          "startAt": "1972",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Дожить до рассвета"
-        },
-        {
-          "startAt": "1975",
-          "endAt": null,
-          "genre": "Рассказ",
-          "title": "На восходе солнца"
-        },
-        {
-          "startAt": "1982",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Знак беды"
-        },
-        {
-          "startAt": "1987",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "В тумане"
-        }
-      ]
+        "nativeId": 6,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1924",
+            "description": "Родился в деревне Бычки Ушачского района Витебской области в крестьянской семье."
+          },
+          {
+            "endAt": "1940",
+            "startAt": "1939",
+            "description": "Учился на скульптурном отделении Витебского художественного училища, которое оставил из-за отмены стипендий"
+          },
+          {
+            "endAt": "1942",
+            "startAt": "1941",
+            "description": "Жил на ст. Салтыковка и в городе Аткарске Саратовской области, учился в железнодорожной школе."
+          },
+          {
+            "endAt": null,
+            "startAt": "1942",
+            "description": "Призван в армию"
+          },
+          {
+            "endAt": null,
+            "startAt": "1943",
+            "description": "Присвоено звание младшего лейтенанта. Участвовал в боях за Кривой Рог, Александрию, Знаменку. Во время Кировоградской операции ранен в ногу и живот"
+          },
+          {
+            "endAt": "1947",
+            "startAt": "1944",
+            "description": "С действующей армией прошёл по Болгарии, Венгрии, Югославии, Австрии; старший лейтенант, командир взвода полковой, затем армейской артиллерии."
+          },
+          {
+            "endAt": "1949",
+            "startAt": "1974",
+            "description": "Жил в Гродно. Работал в мастерских, а также в редакции областной газеты «Гродненская правда»"
+          },
+          {
+            "endAt": "1955",
+            "startAt": "1949",
+            "description": "Служба в Советской армии"
+          },
+          {
+            "endAt": "1972",
+            "startAt": "1955",
+            "description": "Работал в «Гродненской правде»"
+          },
+          {
+            "endAt": null,
+            "startAt": "1959",
+            "description": "Член Союза писателей СССР"
+          },
+          {
+            "endAt": null,
+            "startAt": "1978",
+            "description": "Переехал в Минск"
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1978",
+            "description": "Избирался депутатом Верховного Совета Белорусской ССР"
+          },
+          {
+            "endAt": null,
+            "startAt": "с 1997",
+            "description": "Жил за границей в политической эмиграции"
+          },
+          {
+            "endAt": null,
+            "startAt": "2003",
+            "description": "Вернулся на родину."
+          }
+        ],
+        "birthCity": "Бычки",
+        "birthDate": "1924-06-19",
+        "deathDate": "2003-06-22",
+        "description": "Василь Владимирович Быков — советский и белорусский писатель, общественный деятель, участник Великой Отечественной войны. Большинство произведений — повести, действие которых происходит во время Великой Отечественной войны и в которых показан нравственный выбор человека в наиболее драматичные моменты жизни.",
+        "nativeImage": "Bykov"
+      }
     },
     "7": {
-      "nativeId": 7,
-      "nativeImage": "Hilevich",
-      "name": "Нил Гилевич",
-      "birthDate": "1931-09-30",
-      "deathDate": "2016-03-29",
-      "birthCity": "Слобода",
-      "video": "https://youtu.be/sWPk3sk6m6k",
-      "location": {
-        "longitude": 53.902334,
-        "latitude": 27.5618791
+      "be": {
+        "name": "Ніл Гілевіч",
+        "video": "https://youtu.be/sWPk3sk6m6k",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "паэзія",
+            "title": "Песня ў дарогу",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "паэзія",
+            "title": "неспакой",
+            "startAt": "1961"
+          },
+          {
+            "endAt": null,
+            "genre": "паэзія",
+            "title": "зялёны востраў",
+            "startAt": "1963"
+          },
+          {
+            "endAt": null,
+            "genre": "паэзія",
+            "title": "Русалка на Нарачы",
+            "startAt": "1974"
+          },
+          {
+            "endAt": null,
+            "genre": "паэзія",
+            "title": "У добрай згодзе",
+            "startAt": "1979"
+          },
+          {
+            "endAt": null,
+            "genre": "Раман у вершах",
+            "title": "родныя дзеці",
+            "startAt": "1985"
+          },
+          {
+            "endAt": null,
+            "genre": "паэзія",
+            "title": "добры чалавек",
+            "startAt": "1987"
+          },
+          {
+            "endAt": null,
+            "genre": "аповесць",
+            "title": "перажыўшы вайну",
+            "startAt": "1988"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
+        },
+        "nativeId": 7,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1931",
+            "description": "Нарадзіўся ў в. Слабада Лагойскага раёна Мінскай вобласці ў сялянскай сям'і."
+          },
+          {
+            "endAt": null,
+            "startAt": "1951",
+            "description": "Скончыў Мінскае педагагічнае вучылішча імя Н. К. Крупскай"
+          },
+          {
+            "endAt": null,
+            "startAt": "1956",
+            "description": "Скончыў філалагічны факультэт Беларускага дзяржаўнага універсітэта і аспірантуру пры ім."
+          },
+          {
+            "endAt": "1963",
+            "startAt": "1958",
+            "description": "Працаваў літаратурным кансультантам газеты «Звязда»."
+          },
+          {
+            "endAt": "1986",
+            "startAt": "1960",
+            "description": "Працаваў на кафедры беларускай літаратуры БДУ."
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1980",
+            "description": "Першы сакратар праўлення Саюза пісьменнікаў Беларускай ССР."
+          },
+          {
+            "endAt": null,
+            "startAt": "с 1989",
+            "description": "Старшыня Таварыства беларускай мовы ім. Францыска Скарыны, галоўны рэдактар ​​бюлетэня дадзенай арганізацыі «Наша слова»."
+          }
+        ],
+        "birthCity": "слабада",
+        "birthDate": "1931-09-30",
+        "deathDate": "2016-03-29",
+        "description": "Ніл Сямёнавіч Гілевіч - савецкі і беларускі пісьменнік, перакладчык, літаратуразнаўца, фалькларыст, грамадскі дзеяч.",
+        "nativeImage": "Hilevich"
       },
-      "description": "Нил Семёнович Гилевич — советский и белорусский писатель, переводчик, литературовед, фольклорист, общественный деятель.",
-      "biography": [
-        {
-          "startAt": "1931",
-          "endAt": null,
-          "description": "Родился в д. Слобода Логойского района Минской области в крестьянской семье."
+      "en": {
+        "name": "Neil Gilevich",
+        "video": "https://youtu.be/sWPk3sk6m6k",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Poetry",
+            "title": "Song on the road",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry",
+            "title": "Anxiety",
+            "startAt": "1961"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry",
+            "title": "Green Island",
+            "startAt": "1963"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry",
+            "title": "Mermaid on Naroch",
+            "startAt": "1974"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry",
+            "title": "In good agreement",
+            "startAt": "1979"
+          },
+          {
+            "endAt": null,
+            "genre": "Novel in verse",
+            "title": "Native children",
+            "startAt": "1985"
+          },
+          {
+            "endAt": null,
+            "genre": "Poetry",
+            "title": "Good person",
+            "startAt": "1987"
+          },
+          {
+            "endAt": null,
+            "genre": "Story",
+            "title": "Surviving the war",
+            "startAt": "1988"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
         },
-        {
-          "startAt": "1951",
-          "endAt": null,
-          "description": "Окончил Минское педагогическое училище имени Н. К. Крупской"
+        "nativeId": 7,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1931",
+            "description": "Born in the village of Sloboda, Logoisk district, Minsk region in a peasant family."
+          },
+          {
+            "endAt": null,
+            "startAt": "1951",
+            "description": "Graduated from Minsk Pedagogical College named after N.K. Krupskaya"
+          },
+          {
+            "endAt": null,
+            "startAt": "1956",
+            "description": "ОкHe graduated from the philological faculty of the Belarusian State University and graduate school with him."
+          },
+          {
+            "endAt": "1963",
+            "startAt": "1958",
+            "description": "He worked as a literary consultant for the newspaper «Zvyazda»."
+          },
+          {
+            "endAt": "1986",
+            "startAt": "1960",
+            "description": "He worked at the Department of Belarusian Literature of BSU."
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1980",
+            "description": "First Secretary of the Board of the Union of Writers of the Belarusian SSR."
+          },
+          {
+            "endAt": null,
+            "startAt": "since 1989",
+            "description": "Chairman of the Belarusian Language Society Francis Skorina, editor-in-chief of the newsletter of this organization, «Our Words»."
+          }
+        ],
+        "birthCity": "Sloboda",
+        "birthDate": "1931-09-30",
+        "deathDate": "2016-03-29",
+        "description": "Neil Semenovich Gilevich - Soviet and Belarusian writer, translator, literary critic, folklorist, public figure.",
+        "nativeImage": "Hilevich"
+      },
+      "ru": {
+        "name": "Нил Гилевич",
+        "video": "https://youtu.be/sWPk3sk6m6k",
+        "works": [
+          {
+            "endAt": null,
+            "genre": "Поэзия",
+            "title": "Песня в дорогу",
+            "startAt": "1957"
+          },
+          {
+            "endAt": null,
+            "genre": "Поэзия",
+            "title": "Беспокойство",
+            "startAt": "1961"
+          },
+          {
+            "endAt": null,
+            "genre": "Поэзия",
+            "title": "Зеленый остров",
+            "startAt": "1963"
+          },
+          {
+            "endAt": null,
+            "genre": "Поэзия",
+            "title": "Русалка на Нарочи",
+            "startAt": "1974"
+          },
+          {
+            "endAt": null,
+            "genre": "Поэзия",
+            "title": "В добром согласии",
+            "startAt": "1979"
+          },
+          {
+            "endAt": null,
+            "genre": "Роман в стихах",
+            "title": "Родные дети",
+            "startAt": "1985"
+          },
+          {
+            "endAt": null,
+            "genre": "Поэзия",
+            "title": "Добрый человек",
+            "startAt": "1987"
+          },
+          {
+            "endAt": null,
+            "genre": "Повесть",
+            "title": "Пережив войну",
+            "startAt": "1988"
+          }
+        ],
+        "location": {
+          "latitude": 27.5618791,
+          "longitude": 53.902334
         },
-        {
-          "startAt": "1956",
-          "endAt": null,
-          "description": "Окончил  филологический факультет Белорусского государственного университета и аспирантуру при нём."
-        },
-        {
-          "startAt": "1958",
-          "endAt": "1963",
-          "description": "Работал литературным консультантом газеты «Звязда»."
-        },
-        {
-          "startAt": "1960",
-          "endAt": "1986",
-          "description": "Работал на кафедре белорусской литературы БГУ."
-        },
-        {
-          "startAt": "1980",
-          "endAt": "1989",
-          "description": "Первый секретарь правления Союза писателей Белорусской ССР."
-        },
-        {
-          "startAt": "с 1989",
-          "endAt": null,
-          "description": "Председатель Общества белорусского языка им. Франциска Скорины, главный редактор бюллетеня данной организации «Наша слова»."
-        }
-      ],
-      "works": [
-        {
-          "startAt": "1957",
-          "endAt": null,
-          "genre": "Поэзия",
-          "title": "Песня в дорогу"
-        },
-        {
-          "startAt": "1961",
-          "endAt": null,
-          "genre": "Поэзия",
-          "title": "Беспокойство"
-        },
-        {
-          "startAt": "1963",
-          "endAt": null,
-          "genre": "Поэзия",
-          "title": "Зеленый остров"
-        },
-        {
-          "startAt": "1974",
-          "endAt": null,
-          "genre": "Поэзия",
-          "title": "Русалка на Нарочи"
-        },
-        {
-          "startAt": "1979",
-          "endAt": null,
-          "genre": "Поэзия",
-          "title": "В добром согласии"
-        },
-        {
-          "startAt": "1985",
-          "endAt": null,
-          "genre": "Роман в стихах",
-          "title": "Родные дети"
-        },
-        {
-          "startAt": "1987",
-          "endAt": null,
-          "genre": "Поэзия",
-          "title": "Добрый человек"
-        },
-        {
-          "startAt": "1988",
-          "endAt": null,
-          "genre": "Повесть",
-          "title": "Пережив войну"
-        }
-      ]
+        "nativeId": 7,
+        "biography": [
+          {
+            "endAt": null,
+            "startAt": "1931",
+            "description": "Родился в д. Слобода Логойского района Минской области в крестьянской семье."
+          },
+          {
+            "endAt": null,
+            "startAt": "1951",
+            "description": "Окончил Минское педагогическое училище имени Н. К. Крупской"
+          },
+          {
+            "endAt": null,
+            "startAt": "1956",
+            "description": "Окончил  филологический факультет Белорусского государственного университета и аспирантуру при нём."
+          },
+          {
+            "endAt": "1963",
+            "startAt": "1958",
+            "description": "Работал литературным консультантом газеты «Звязда»."
+          },
+          {
+            "endAt": "1986",
+            "startAt": "1960",
+            "description": "Работал на кафедре белорусской литературы БГУ."
+          },
+          {
+            "endAt": "1989",
+            "startAt": "1980",
+            "description": "Первый секретарь правления Союза писателей Белорусской ССР."
+          },
+          {
+            "endAt": null,
+            "startAt": "с 1989",
+            "description": "Председатель Общества белорусского языка им. Франциска Скорины, главный редактор бюллетеня данной организации «Наша слова»."
+          }
+        ],
+        "birthCity": "Слобода",
+        "birthDate": "1931-09-30",
+        "deathDate": "2016-03-29",
+        "description": "Нил Семёнович Гилевич — советский и белорусский писатель, переводчик, литературовед, фольклорист, общественный деятель.",
+        "nativeImage": "Hilevich"
+      }
     }
   }
 }
