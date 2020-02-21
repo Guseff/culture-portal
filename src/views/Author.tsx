@@ -5,6 +5,7 @@ import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import { AppState } from '../types';
+import { getNumberFromRoute } from 'Utils';
 
 interface AuthorProps {
   pageFromPath?: string;
@@ -14,7 +15,7 @@ const Author: React.FC<AuthorProps> = ({ pageFromPath }) => {
   return (
     <Container>
       <h3>Author Page</h3>
-      <h4>{`Page number ${pageFromPath.slice(-1)}`}</h4>
+      <h4>{`Page number ${getNumberFromRoute(pageFromPath)}`}</h4>
       <Nav.Link as={Link} to={'/list'}>
         Back to Author List
       </Nav.Link>
