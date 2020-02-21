@@ -1,6 +1,7 @@
-import * as React from 'react';
-import { Row, Col, Container, Image } from 'react-bootstrap';
 import '../components/Main/index.scss';
+import * as React from 'react';
+
+import { Row, Col, Container, Image } from 'react-bootstrap';
 
 class Main extends React.Component {
   title: string;

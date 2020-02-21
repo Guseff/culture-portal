@@ -1,0 +1,12 @@
+@import "../../../assets/styles/variables.scss";
+
+.about {
+
+    .card {
+        width: 18rem;
+        margin: 10px;
+        background-color: $bg-header-footer;
+        border: 1px solid $color-text;
+        color: $color-text;
+    }
+}

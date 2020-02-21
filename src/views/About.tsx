@@ -1,7 +1,8 @@
-import * as React from 'react';
 import '../components/About/index.scss';
+import * as React from 'react';
+import Cards from '../components/About/Card/index';
 
-import { Container, Nav, Card } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 class About extends React.Component {
@@ -14,54 +15,7 @@ class About extends React.Component {
     return (
       <Container className="content">
         <section className="about">
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Name</Card.Title>
-              <Card.Text>role</Card.Text>
-              <Card.Text>git</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Name</Card.Title>
-              <Card.Text>role</Card.Text>
-              <Card.Text>git</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Name</Card.Title>
-              <Card.Text>role</Card.Text>
-              <Card.Text>git</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Name</Card.Title>
-              <Card.Text>role</Card.Text>
-              <Card.Text>git</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Name</Card.Title>
-              <Card.Text>role</Card.Text>
-              <Card.Text>git</Card.Text>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Name</Card.Title>
-              <Card.Text>role</Card.Text>
-              <Card.Text>git</Card.Text>
-            </Card.Body>
-          </Card>
+          <Cards />
         </section>
         <Nav.Link as={Link} to="/worklog">
           Worklog
