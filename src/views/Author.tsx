@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { getNumberFromRoute } from '../utils';
 
 interface AuthorProps {
   pageFromPath?: string;
