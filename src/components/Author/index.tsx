@@ -1,4 +1,2 @@
-import './index.css';
-import AuthorMap from './AuthorMap/index';
-
-export default AuthorMap;
+import './index.scss';
+export { default } from './Author';

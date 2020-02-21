@@ -1,6 +1,6 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -14,7 +14,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: './index.html',
-      // favicon: './src/assets/icons/favicon.ico',
+      favicon: './src/assets/icons/favicon.ico',
       template: './src/index.html',
     }),
   ],
@@ -26,22 +26,11 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              modules: true,
-            }
-          },
-        ],
-        include: /\.module\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-        exclude: /\.module\.css$/,
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         enforce: 'pre',
@@ -50,7 +39,7 @@ module.exports = {
         loader: 'eslint-loader',
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|ico)$/,
         use: ['file-loader'],
       },
       {
@@ -73,5 +62,17 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias: {
+      Actions: path.resolve(__dirname, './src/actions'),
+      Assets: path.resolve(__dirname, './src/assets'),
+      Components: path.resolve(__dirname, './src/components'),
+      Constants: path.resolve(__dirname, './src/constants'),
+      Data: path.resolve(__dirname, './src/data'),
+      Reducers: path.resolve(__dirname, './src/reducers'),
+      Store: path.resolve(__dirname, './src/store'),
+      Types: path.resolve(__dirname, './src/types'),
+      Utils: path.resolve(__dirname, './src/utils'),
+      Views: path.resolve(__dirname, './src/views'),
+    },
   },
-}
+};

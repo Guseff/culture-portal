@@ -1,34 +1,33 @@
-import * as React from 'react';
+import logo from '../../assets/images/logo.png';
+import './index.scss';
 
+import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
-import SelectTest from '../SelectTest';
+import { Navbar, Nav, Alert, Image } from 'react-bootstrap';
+
+import SelectLanguage from '../SelectLanguage';
 
 const Header = () => {
   return (
-    <Navbar bg="primary" variant="dark">
-      <Navbar.Brand as={Link} to="/">
-        Logo
-      </Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link as={Link} to="/">
-          Home
-        </Nav.Link>
-        <Nav.Link as={Link} to="/list">
-          Author List
-        </Nav.Link>
-        <Nav.Link as={Link} to="/author">
-          Author
-        </Nav.Link>
-        <Nav.Link as={Link} to="/about">
-          About
-        </Nav.Link>
-        <Nav.Link as={Link} to="/worklog">
-          Work Log
-        </Nav.Link>
-      </Nav>
-      <SelectTest />
-    </Navbar>
+    <Alert variant="primary">
+      <Navbar className="header">
+        <Navbar.Brand className="header_logo" href="/">
+          <Image src={logo} alt="logo" className="header_logo__img" />
+        </Navbar.Brand>
+        <Nav>
+          <Nav.Link as={Link} to="/">
+            На главную
+          </Nav.Link>
+          <Nav.Link as={Link} to="/list">
+            Писатели
+          </Nav.Link>
+          <Nav.Link as={Link} to="/about">
+            О нас
+          </Nav.Link>
+        </Nav>
+        <SelectLanguage />
+      </Navbar>
+    </Alert>
   );
 };
 

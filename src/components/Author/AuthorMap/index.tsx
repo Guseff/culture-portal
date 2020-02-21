@@ -1,3 +1,1 @@
-import AuthorMap from './AuthorMap';
-
-export default AuthorMap;
+export { default } from './AuthorMap';

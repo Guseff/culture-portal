@@ -15,6 +15,7 @@ interface SelectTestProps {
 class SelectTest extends React.Component<SelectTestProps> {
   setLanguageHandle = (e: React.FormEvent<HTMLInputElement>): void => {
     e.preventDefault();
+    console.log(e.currentTarget);
     this.props.dispatch(setLanguage(e.currentTarget.value));
   };
 
