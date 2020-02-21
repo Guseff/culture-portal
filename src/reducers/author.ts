@@ -1,13 +1,19 @@
 import { AUTHOR_GET_LIST, RequestState } from 'Constants';
 
 const initialState = {
+  byId: [],
   author: {},
   pending: null,
 };
 
+interface AuthorPayload {
+  byId: string[];
+  author: {};
+}
+
 export const author = (
   state = initialState,
-  action: { type: string; payload: string } // TODO: поменять на интерфейс response
+  action: { type: string; payload: AuthorPayload }
 ) => {
   const { type, payload } = action;
 
@@ -20,7 +26,7 @@ export const author = (
 
     case `${AUTHOR_GET_LIST}${RequestState.SUCCESS}`:
       return {
-        author: payload,
+        ...payload,
         pending: false,
       };
 

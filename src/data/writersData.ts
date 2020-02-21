@@ -80,7 +80,7 @@ const writersData = [
         'Чёрный замок Ольшанский',
       ],
     },
-    video: 'https://youtu.be/Dpk0KkuAYFE',
+    video: 'https://www.youtube.com/embed/Dpk0KkuAYFE',
     activityPlace: [54.5119008, 30.4254486],
   },
   {
@@ -162,7 +162,7 @@ const writersData = [
         'От сердца',
       ],
     },
-    video: 'https://youtu.be/aJbr-p5cYuI',
+    video: 'https://www.youtube.com/embed/aJbr-p5cYuI',
     location: [54.6870458, 25.2829111],
   },
   {
@@ -238,7 +238,7 @@ const writersData = [
         'Млечный путь',
       ],
     },
-    video: 'https://youtu.be/HGvYNDVLqoI',
+    video: 'https://www.youtube.com/embed/HGvYNDVLqoI',
     location: [54.11213, 26.56134],
   },
   {
@@ -317,7 +317,7 @@ const writersData = [
         'И стихли птицы',
       ],
     },
-    video: 'https://youtu.be/ddMAfJFjzew',
+    video: 'https://www.youtube.com/embed/ddMAfJFjzew',
     location: [53.902334, 27.5618791],
   },
   {
@@ -389,7 +389,7 @@ const writersData = [
         'Молодость и зрелость',
       ],
     },
-    video: 'https://youtu.be/7xHGTr4EbK4',
+    video: 'https://www.youtube.com/embed/7xHGTr4EbK4',
     location: [53.902334, 27.5618791],
   },
   {
@@ -475,7 +475,7 @@ const writersData = [
         'В тумане',
       ],
     },
-    video: 'https://youtu.be/N2tOCg7lROk',
+    video: 'https://www.youtube.com/embed/N2tOCg7lROk',
     location: [53.6834599, 23.8342648],
   },
   {

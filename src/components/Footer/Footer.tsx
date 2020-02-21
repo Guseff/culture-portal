@@ -12,6 +12,9 @@ const Footer = () => {
         <Nav.Link as={Link} to="/about">
           О нас
         </Nav.Link>
+        <Nav.Link as={Link} to="/ex">
+          Example
+        </Nav.Link>
       </Navbar>
     </Container>
   );
