@@ -30,7 +30,7 @@ const Router = (props: any) => {
       <Header />
       <Route exact path="/" component={Main} />
       <Route path="/list" component={AuthorList} />
-      <Route path="/author" component={Author} />
+      <Route path="/author/:id" component={Author} />
       <Route path="/worklog" component={WorkLog} />
       <Route path="/styleguide" render={StyleGuide} />
       <Route path="/about" component={About} />

@@ -2,9 +2,10 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { getNumberFromRoute } from '../utils';
 
-import { AppState } from '../types/';
+import { AppState } from '../types';
+import { getNumberFromRoute } from 'Utils';
+
 import data from '../data/writersData.json';
 
 interface AuthorProps {
