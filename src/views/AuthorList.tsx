@@ -14,7 +14,7 @@ class Main extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container className="content">
         <h3>Author List</h3>
         <Nav.Link as={Link} to="/author">
           Author Page

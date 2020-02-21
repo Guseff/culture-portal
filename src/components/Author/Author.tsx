@@ -13,7 +13,7 @@ interface AuthorProps {
 
 const Author: React.FC<AuthorProps> = ({ id }) => {
   return (
-    <Container>
+    <Container className="content">
       <h3 className="sss">{data[id].name}</h3>
       <p>{data[id].description}</p>
     </Container>
