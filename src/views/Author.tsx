@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Container, Nav } from 'react-bootstrap';
+import AuthorPage from '../components/Author/index';
 import { Link } from 'react-router-dom';
 
 class Author extends React.Component {
@@ -19,6 +20,7 @@ class Author extends React.Component {
         <Nav.Link as={Link} to="/list">
           Back to Author List
         </Nav.Link>
+        <AuthorPage id={1} />
       </Container>
     );
   }
