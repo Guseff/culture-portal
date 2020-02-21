@@ -3,14 +3,14 @@ import './index.scss';
 
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Alert, Image } from 'react-bootstrap';
+import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 
 import SelectLanguage from '../SelectLanguage';
 
 const Header = () => {
   return (
-    <Alert variant="primary">
-      <Navbar className="header">
+    <Container className="header" fluid>
+      <Navbar>
         <Navbar.Brand className="header_logo" href="/">
           <Image src={logo} alt="logo" className="header_logo__img" />
         </Navbar.Brand>
@@ -27,7 +27,7 @@ const Header = () => {
         </Nav>
         <SelectLanguage />
       </Navbar>
-    </Alert>
+    </Container>
   );
 };
 
