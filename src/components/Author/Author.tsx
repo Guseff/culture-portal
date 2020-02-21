@@ -16,12 +16,11 @@ const Author: React.FC<AuthorProps> = ({ id }) => {
   return (
     <Container className="Author-page">
       <Row>
-        <Col md="auto" style={{ backgroundColor: '#80808038' }}>
+        <Col md="auto" className="Author-page--photo-col">
           <Image
+            className="Author-page--photo"
             src={data[id].image}
             alt={data[id].name}
-            className="Author-page--photo"
-            width="150px"
           />
         </Col>
         <Col sm="6">
@@ -39,11 +38,10 @@ const Author: React.FC<AuthorProps> = ({ id }) => {
       <Row>
         <Col md={{ span: 12, offset: 3 }}>
           <iframe
+            className="Author-page--iframe"
             src={data[id].video}
             frameBorder="0"
             allowFullScreen
-            width="400px"
-            height="200px"
           />
         </Col>
       </Row>

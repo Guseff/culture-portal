@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Row, Col } from 'react-bootstrap';
 import ReactMapboxGl from 'react-mapbox-gl';
 
 interface AuthorMapProps {
@@ -15,14 +14,9 @@ const AuthorMap: React.FC<AuthorMapProps> = ({ activityPlace }) => {
 
   return (
     <Map
+      className="Author-page__map-container"
       style="mapbox://styles/mapbox/streets-v11"
       center={[longitude, latitude]}
-      containerStyle={{
-        height: '200px',
-        width: '200px',
-        borderRadius: '10px',
-        marginTop: '15px',
-      }}
     />
   );
 };
