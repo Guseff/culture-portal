@@ -8,7 +8,7 @@ interface DevelopersCardsProps {
 }
 
 const Cards: React.FC<DevelopersCardsProps> = ({ developer }) => {
-  const a = developer.map(i => {
+  const devData = developer.map(i => {
     return (
       <Card key={i.id}>
         <Card.Img variant="top" src={i.photo} />
@@ -20,7 +20,7 @@ const Cards: React.FC<DevelopersCardsProps> = ({ developer }) => {
       </Card>
     );
   });
-  return <section className="about">{a}</section>;
+  return <section className="about">{devData}</section>;
 };
 
 export default Cards;
