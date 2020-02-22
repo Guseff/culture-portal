@@ -1,0 +1,45 @@
+$width-full: 100%;
+
+.row {
+    padding-top: 1rem;
+    justify-content: center;
+}
+
+.card-img {
+    cursor: pointer;
+    max-width: $width-full;
+    width: fit-content;
+    transition: transform 1s cubic-bezier(.23,1,.32,1);
+
+        &:hover {
+            transform: scale(1.07);
+            transition: transform 1s cubic-bezier(.23,1,.32,1);
+        }       
+}
+
+.row-cols-3>* {
+    min-width: 200px;
+    display: flex;
+}
+
+.card {
+    border: none;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: $width-full;
+}
+
+p {
+    width: $width-full;
+}
+
+
