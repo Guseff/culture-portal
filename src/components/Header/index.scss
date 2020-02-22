@@ -1,12 +1,65 @@
-.fade .header {
+@import "../../assets/styles/variables.scss";
+
+.header {
+  margin-bottom: 20px;
+  padding: 0;
   font-size: large;
+  background-color: $bg-header-footer;
+
+  .navbar {
+    padding: 0 1rem;
+
+    .navbar-nav {
+      margin-right: 30px;
+    }
+  }
+
+  .header_logo {
+    flex-grow: 1;
+
+    .header_logo__img {
+      width: 100px;
+      height: 70px;
+    }
+  }
+
+  form {
+
+    .form-control {
+      color: $color-text;
+      background-color: transparent;
+      border: 1px solid $color-text;
+    }
+  }
 }
 
-.header_logo {
-  flex-grow: 1;
+@media (max-width: 800px) {
+  .header {
+
+    .navbar-expand {
+      flex-flow: column nowrap;
+    }
+
+    form {
+
+      .form-control {
+        margin: 20px 0;
+      }
+    }
+  }
 }
 
-.header_logo .header_logo__img {
-  width: 245px;
-  height: 60px;
+
+@media (max-width: 400px) {
+  .header {
+
+    .navbar {
+  
+      .navbar-nav {
+        flex-direction: column;
+      }
+    }
+  }
 }
+
+

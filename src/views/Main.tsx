@@ -1,4 +1,6 @@
+import '../components/Main/index.scss';
 import * as React from 'react';
+
 import { Row, Col, Container, Image } from 'react-bootstrap';
 
 class Main extends React.Component {
@@ -13,11 +15,13 @@ class Main extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container className="content">
         <Row>
-          <Col>
-            <h1>Культурный портал о писателях Беларуси</h1>
-            <p>
+          <Col className="col_item1">
+            <h1 className="main_title">
+              Культурный портал о писателях Беларуси
+            </h1>
+            <p className="main_description">
               Культурный портал о писателях Беларуси — сборник статей о
               выдающихся творческих личностях с их подробным описанием, включая
               годы жизни, фотографии, биографии в виде временной шкалы, списки

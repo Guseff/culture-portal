@@ -1,4 +1,5 @@
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../assets/styles/index.scss';
 
 import * as React from 'react';
 import { Route } from 'react-router-dom';
@@ -14,14 +15,15 @@ import WorkLog from './WorkLog';
 import StyleGuide from './StyleGuide';
 import About from './About';
 import Footer from '../components/Footer/index';
+import { ExampleList } from 'Components';
 
 import { authorGetList } from 'Actions';
 
-const Router = () => {
-  // const { authorGetList } = props;
+const Router = (props: any) => {
+  const { authorGetList } = props;
 
   React.useEffect(() => {
-    // authorGetList();
+    authorGetList();
   }, []);
 
   return (
@@ -33,6 +35,7 @@ const Router = () => {
       <Route path="/worklog" component={WorkLog} />
       <Route path="/styleguide" render={StyleGuide} />
       <Route path="/about" component={About} />
+      <Route path="/ex" component={ExampleList} />
       <Footer />
     </ConnectedRouter>
   );
