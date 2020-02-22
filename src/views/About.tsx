@@ -1,7 +1,6 @@
 import '../components/About/index.scss';
 import * as React from 'react';
 import Cards from '../components/About/Card/index';
-import developers from '../data/developersData';
 
 import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
