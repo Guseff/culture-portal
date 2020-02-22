@@ -15,7 +15,7 @@ export const ExampleList = () => {
   }
 
   return (
-    <>
+    <div className="content">
       <div>
         <span style={{ padding: '10px' }} onClick={() => setLocale('ru')}>
           Ru
@@ -57,6 +57,6 @@ export const ExampleList = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
