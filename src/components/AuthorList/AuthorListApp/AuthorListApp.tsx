@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { AuthorListCards } from './AuthorListCards';
+import { Container } from 'react-bootstrap';
+import { AuthorListCards } from '../AuthorListCards/AuthorListCards';
+import { AuthorListSearch } from '../AuthorListSearch/AuthorListSearch';
 
 interface AuthorListAppState {
   filterList: object[]
@@ -30,7 +32,10 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
       const { filterList } = this.state;
 
       return (
-        <AuthorListCards list={filterList}/>
+        <Container>
+          <AuthorListSearch />
+          <AuthorListCards list={filterList}/>
+        </Container>
       )
     }
 } 

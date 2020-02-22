@@ -1,2 +1,2 @@
 import './index.scss';
-export { default } from './AuthorListApp';
+export { default } from './AuthorListApp/AuthorListApp';

@@ -1,0 +1,18 @@
+.Author-page {
+    .Author-page--photo-col {
+        background-color: '#80808038';
+        .Author-page--photo {
+            width: 150px;
+        }
+    }
+    .Author-page--iframe {
+        width: 400px;
+        height: 200px;
+    }
+    .Author-page__map-container {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+}

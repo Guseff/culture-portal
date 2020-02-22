@@ -1,37 +1,35 @@
-import * as React from 'react';
 import logo from '../../assets/images/logo.png';
 import './index.scss';
 
-import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Alert, Image } from 'react-bootstrap';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Navbar, Nav, Container, Image } from 'react-bootstrap';
+
+import SelectLanguage from '../SelectLanguage';
 
 const Header = () => {
+  const { pathname } = useLocation();
+
   return (
-    <Alert variant="primary">
-      <Navbar className="header">
-        <Navbar.Brand className="header_logo" href="/">
+    <Container className="header" fluid>
+      <Navbar>
+        <Navbar.Brand className="header_logo" as={Link} to="/">
           <Image src={logo} alt="logo" className="header_logo__img" />
         </Navbar.Brand>
         <Nav>
-          <Nav.Link as={Link} to="/">
+          <Nav.Link as={Link} to="/" disabled={pathname === '/'}>
             На главную
           </Nav.Link>
-          <Nav.Link as={Link} to="/list">
+          <Nav.Link as={Link} to="/list" disabled={pathname === '/list'}>
             Писатели
           </Nav.Link>
-          <Nav.Link as={Link} to="/about">
+          <Nav.Link as={Link} to="/about" disabled={pathname === '/about'}>
             О нас
           </Nav.Link>
         </Nav>
-        <Nav>
-          <NavDropdown title="Language" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#ru">ru</NavDropdown.Item>
-            <NavDropdown.Item href="#eng">eng</NavDropdown.Item>
-            <NavDropdown.Item href="#be">be</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
+        <SelectLanguage />
       </Navbar>
-    </Alert>
+    </Container>
   );
 };
 
