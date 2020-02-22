@@ -1,16 +1,12 @@
 import React from 'react';
 import writersData from '../data/writersData';
 import AuthorListApp from '../components/AuthorList/index';
-import { Container, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 const AuthorList:React.FC = () => {
 
   return (
     <Container className="content">
-      <Nav.Link as={Link} to="/author">
-        Author Page
-      </Nav.Link>
       <AuthorListApp data={writersData}/>
     </Container>
   );

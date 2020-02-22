@@ -17,11 +17,6 @@ $width-full: 100%;
         }       
 }
 
-.row-cols-3>* {
-    min-width: 200px;
-    display: flex;
-}
-
 .card {
     border: none;
     text-align: center;
@@ -40,6 +35,11 @@ $width-full: 100%;
 
 p {
     width: $width-full;
+    margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+    margin-bottom: 0 !important;
 }
 
 .no-result {
@@ -48,6 +48,18 @@ p {
     justify-content: center;
     text-align: center;
     height: 10rem;
+}
+
+@media (max-width: 770px) {
+    .card-title {
+    font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.55rem;
+    }
+
 }
 
 

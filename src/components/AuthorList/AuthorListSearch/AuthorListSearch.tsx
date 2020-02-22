@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormControl, Form } from "react-bootstrap";
-import './AuthorListSearch.scss';
 import { FILTER_AUTHOR_LIST } from '../../../constants';
+import './AuthorListSearch.scss';
 
 const selectList = Object.values(FILTER_AUTHOR_LIST)[0];
 
@@ -12,19 +12,19 @@ interface AuthorListSearchProps {
 
 const AuthorListSearch: React.FC<AuthorListSearchProps> = ({ handleFilterSelect, handleInputChange }) => {
     return (
-        <>
-        <Form.Group>
-            <FormControl placeholder="Поиск" onChange={handleInputChange}/>
-        </Form.Group>
-        <Form.Group>
-            <Form.Label>Фильтр поиска</Form.Label>
-                <Form.Control as="select" className="select" onChange={handleFilterSelect}>
+        <Form.Group className="input-group mb-3">
+            <div className="input-group-prepend">
+                <Form.Control as="select" onChange={handleFilterSelect}>
                     {selectList.map((value, index) => {
-                       return <option key={index}>{value}</option>
-                    })}                   
-            </Form.Control>
+                        return <option key={index}>{value}</option>
+                    })}   
+                </Form.Control>  
+            </div> 
+            <FormControl 
+                type="text" 
+                placeholder="Поиск" 
+                onChange={handleInputChange}/>           
         </Form.Group>
-        </>
     )
 }
 
