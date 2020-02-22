@@ -6,8 +6,10 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Alert, Image } from 'react-bootstrap';
 
 import SelectLanguage from '../SelectLanguage';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
   return (
     <Alert variant="primary">
       <Navbar className="header">
@@ -16,13 +18,13 @@ const Header = () => {
         </Navbar.Brand>
         <Nav>
           <Nav.Link as={Link} to="/">
-            На главную
+            {t('На главную')}
           </Nav.Link>
           <Nav.Link as={Link} to="/list">
-            Писатели
+            {t('Писатели')}
           </Nav.Link>
           <Nav.Link as={Link} to="/about">
-            О нас
+            {t('О нас')}
           </Nav.Link>
         </Nav>
         <SelectLanguage />
