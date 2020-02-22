@@ -14,9 +14,7 @@ class About extends React.Component {
   render() {
     return (
       <Container className="content">
-        <section className="about">
-          <Cards developer={developers} />
-        </section>
+        <Cards developer={developers} />
         <Nav.Link as={Link} to="/worklog">
           Worklog
         </Nav.Link>
