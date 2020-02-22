@@ -1,7 +1,8 @@
 import '../components/Main/index.scss';
-import * as React from 'react';
 
+import * as React from 'react';
 import { Row, Col, Container, Image } from 'react-bootstrap';
+import TodayAuthor from '../components/Main/';
 
 class Main extends React.Component {
   title: string;
@@ -36,11 +37,7 @@ class Main extends React.Component {
         </Row>
         <Row>
           <Col>
-            <h2>Имя писателя</h2>
-            <Image src="../171x180" rounded alt="фото писателя" />
-            <h3>годы жизни</h3>
-            <p>Информация о писателе (коротко)</p>
-            <button>Узнать больше</button>
+            <TodayAuthor />
           </Col>
         </Row>
       </Container>
