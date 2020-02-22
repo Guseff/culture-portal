@@ -9,13 +9,11 @@ import { history } from 'Store';
 
 import Header from '../components/Header/index';
 import Main from './Main';
-import AuthorList from './AuthorList';
-import Author from './Author';
+import { AuthorList } from './AuthorList';
 import WorkLog from './WorkLog';
 import StyleGuide from './StyleGuide';
 import About from './About';
 import Footer from '../components/Footer/index';
-import { ExampleList } from 'Components';
 
 import { authorGetList } from 'Actions';
 
@@ -31,11 +29,10 @@ const Router = (props: any) => {
       <Header />
       <Route exact path="/" component={Main} />
       <Route path="/list" component={AuthorList} />
-      <Route path="/author" component={Author} />
+      <Route path="/author" component={AuthorList} />
       <Route path="/worklog" component={WorkLog} />
       <Route path="/styleguide" render={StyleGuide} />
       <Route path="/about" component={About} />
-      <Route path="/ex" component={ExampleList} />
       <Footer />
     </ConnectedRouter>
   );

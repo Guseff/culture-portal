@@ -2,11 +2,10 @@ import * as React from 'react';
 import ReactMapboxGl from 'react-mapbox-gl';
 
 interface AuthorMapProps {
-  activityPlace: number[];
+  activityPlace: [number, number];
 }
 
 const AuthorMap: React.FC<AuthorMapProps> = ({ activityPlace }) => {
-  const [latitude, longitude] = activityPlace;
   const Map = ReactMapboxGl({
     accessToken:
       'pk.eyJ1IjoidWxhZHppbWlyLWF0cm9zaGNoYW5rYSIsImEiOiJjazNoZTNtNGMwYW84M21xdHhwc2hqcXZpIn0.GpqDhq5ctOG4hKxhZ_xKjg',
@@ -16,7 +15,7 @@ const AuthorMap: React.FC<AuthorMapProps> = ({ activityPlace }) => {
     <Map
       className="Author-page__map-container"
       style="mapbox://styles/mapbox/streets-v11"
-      center={[longitude, latitude]}
+      center={activityPlace}
     />
   );
 };

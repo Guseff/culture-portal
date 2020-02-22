@@ -1,45 +1,46 @@
-import './index.scss';
-
 import * as React from 'react';
 import { Container, Image, Row, Col } from 'react-bootstrap';
-// import { connect } from 'react-redux';
-
-import data from '../../data/writersData';
 import AuthorMap from './AuthorMap/index';
-// import { AppState } from '../../types';
+import './index.scss';
 
 interface AuthorProps {
-  id: number;
+  author: any;
 }
 
-const Author: React.FC<AuthorProps> = ({ id }) => {
+export const Author: React.FC<AuthorProps> = ({ author }) => {
   return (
     <Container className="Author-page">
       <Row>
         <Col md="auto" className="Author-page--photo-col">
           <Image
             className="Author-page--photo"
-            src={data[id].image}
-            alt={data[id].name}
+            src={author.photo}
+            alt={author.photo}
           />
         </Col>
         <Col sm="6">
-          <h3>{data[id].name}</h3>
+          <h3>{author.name}</h3>
+          <p>Родился в городе {author.birthCity}</p>
           <p>
-            Родился {data[id].years} в городе {data[id].birthCity}.
+            Годы жизни: {author.birthDate} - {author.deathDate}
           </p>
-          <p>{data[id].description}</p>
+          <p>{author.description}</p>
         </Col>
         <Col md="auto">
           <span>Место деятельности:</span>
-          <AuthorMap activityPlace={data[id].location} />
+          <AuthorMap
+            activityPlace={[
+              author.location.longitude,
+              author.location.latitude,
+            ]}
+          />
         </Col>
       </Row>
       <Row>
         <Col md={{ span: 12, offset: 3 }}>
           <iframe
             className="Author-page--iframe"
-            src={data[id].video}
+            src={author.video}
             frameBorder="0"
             allowFullScreen
           />
@@ -48,9 +49,3 @@ const Author: React.FC<AuthorProps> = ({ id }) => {
     </Container>
   );
 };
-
-// const mapStateToProps = (state: AppState): AuthorProps => {
-//   return { id: state.settings.language };
-// };
-
-export default Author;
