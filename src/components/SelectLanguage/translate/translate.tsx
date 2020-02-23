@@ -4,11 +4,15 @@ import resources from './resources';
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: 'ru',
+  lng: 'en',
   fallbackLng: 'ru',
   keySeparator: false,
   interpolation: {
     escapeValue: false,
+  },
+  react: {
+    wait: true,
+    hashTransKey: defaultValue => defaultValue,
   },
 });
 
