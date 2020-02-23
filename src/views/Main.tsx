@@ -6,14 +6,8 @@ import TodayAuthor from '../components/Main/';
 import Overview from '../components/Main/Overview';
 
 class Main extends React.Component {
-  title: string;
-  name: string;
-  i18nKey: string;
-
   constructor(props: Readonly<{}>) {
     super(props);
-    this.title = '';
-    this.name = '';
   }
 
   render() {

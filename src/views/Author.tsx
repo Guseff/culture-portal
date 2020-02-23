@@ -3,20 +3,20 @@ import * as React from 'react';
 import { Container, Nav, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import data from '../data/writersData';
-import AuthorPhoto from '../components/Author/AuthorPhoto/';
-import AuthorMap from '../components/Author/AuthorMap/';
-import AuthorInfo from '../components/Author/AuthorInfo/AuthorInfo';
-import AuthorFrame from '../components/Author/AuthorFrame/AuthorFrame';
+import {
+  AuthorPhoto,
+  AuthorMap,
+  AuthorInfo,
+  AuthorFrame,
+} from '../components/Author/';
 
 class Author extends React.Component {
-  id: number;
-
   constructor(props: Readonly<{}>) {
     super(props);
   }
 
   render() {
-    const id = 2; //this.props.id
+    const id = 2;
     return (
       <Container className="content">
         <h3>Author Page</h3>
