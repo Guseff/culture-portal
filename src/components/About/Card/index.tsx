@@ -3,17 +3,21 @@ import * as React from 'react';
 
 import { Card } from 'react-bootstrap';
 
-const Cards = () => {
+interface DevelopersCardsProps {
+  developer: any;
+}
+
+const CardItem: React.FC<DevelopersCardsProps> = ({ developer }) => {
   return (
     <Card>
-      <Card.Img variant="top" src="" />
+      <Card.Img variant="top" src={developer.photo} />
       <Card.Body>
-        <Card.Title>Name</Card.Title>
-        <Card.Text>role</Card.Text>
-        <Card.Text>git</Card.Text>
+        <Card.Title>{developer.name}</Card.Title>
+        <Card.Text>{developer.link}</Card.Text>
+        <Card.Text>{developer.role}</Card.Text>
       </Card.Body>
     </Card>
   );
 };
 
-export default Cards;
+export default CardItem;

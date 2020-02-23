@@ -1,6 +1,7 @@
 import '../components/About/index.scss';
 import * as React from 'react';
-import Cards from '../components/About/Card/index';
+import CardItem from '../components/About/Card/index';
+import developers from '../data/developersData';
 
 import { Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -11,11 +12,12 @@ class About extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <Container className="content">
         <section className="about">
-          <Cards />
+          {developers.map(developer => (
+            <CardItem key={developer.id} developer={developer} />
+          ))}
         </section>
         <Nav.Link as={Link} to="/worklog">
           Worklog

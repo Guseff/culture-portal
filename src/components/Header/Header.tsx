@@ -17,6 +17,7 @@ const Header = () => {
       <Navbar>
         <Navbar.Brand className="header_logo" as={Link} to="/">
           <Image src={logo} alt="logo" className="header_logo__img" />
+          <h1>Belarusian Writers</h1>
         </Navbar.Brand>
         <Nav>
           <Nav.Link as={Link} to="/" disabled={pathname === '/'}>
