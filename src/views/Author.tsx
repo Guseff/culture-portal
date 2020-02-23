@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Nav } from 'react-bootstrap';
-import AuthorPage from '../components/Author/index';
 import { Link } from 'react-router-dom';
+import { AuthorPage, AuthorTimeline } from '../components/Author/';
 
 class Author extends React.Component {
   title: string;
@@ -21,6 +21,7 @@ class Author extends React.Component {
           Back to Author List
         </Nav.Link>
         <AuthorPage id={1} />
+        <AuthorTimeline id={1} />
       </Container>
     );
   }
