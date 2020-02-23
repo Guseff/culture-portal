@@ -7,20 +7,17 @@ interface DevelopersCardsProps {
   developer: any;
 }
 
-const Cards: React.FC<DevelopersCardsProps> = ({ developer }) => {
-  const devData = developer.map(i => {
-    return (
-      <Card key={i.id}>
-        <Card.Img variant="top" src={i.photo} />
-        <Card.Body>
-          <Card.Title>{i.name}</Card.Title>
-          <Card.Text>{i.link}</Card.Text>
-          <Card.Text>{i.role}</Card.Text>
-        </Card.Body>
-      </Card>
-    );
-  });
-  return <section className="about">{devData}</section>;
+const CardItem: React.FC<DevelopersCardsProps> = ({ developer }) => {
+  return (
+    <Card>
+      <Card.Img variant="top" src={developer.photo} />
+      <Card.Body>
+        <Card.Title>{developer.name}</Card.Title>
+        <Card.Text>{developer.link}</Card.Text>
+        <Card.Text>{developer.role}</Card.Text>
+      </Card.Body>
+    </Card>
+  );
 };
 
-export default Cards;
+export default CardItem;
