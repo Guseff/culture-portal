@@ -36,7 +36,7 @@ const Author: React.FC<AuthorProps> = ({ id }) => {
         </Col>
       </Row>
       <Row>
-        <Col md={{ span: 12, offset: 3 }}>
+        <Col md={{ span: 6, offset: 3 }}>
           <iframe
             className="Author-page--iframe"
             src={data[id].video}
