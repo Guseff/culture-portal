@@ -1,0 +1,57 @@
+.today-author {
+  background-color: #ffe9ac;
+  border-radius: 6px;
+  padding: 20px 20px 30px 20px;
+  box-shadow: 5px 5px 20px -15px #000000;
+  margin-top: 20px;
+
+  .author-title {
+    text-align: center;
+    margin-bottom: 20px;
+
+    &:after {
+      content: '';
+      display: block;
+      margin: 15px auto;
+      width: 80%;
+      height: 1px;
+      background-color: rgb(151, 151, 151);
+    }
+  }
+
+  .content-col-img {
+    display: flex;
+    justify-content: flex-end;
+
+    .author-photo {
+      width: 200px;
+      align-self: flex-end;
+      border-radius: 6px;
+      box-shadow: 5px 5px 15px -10px #000000;
+    }
+  }
+
+  .content-col-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 50px 0 20px;
+
+    .author-name {
+      font-size: 1.4rem;
+    }
+
+    .author-date {
+      font-size: 0.9rem;
+    }
+
+    .author-description {
+      text-align: justify;
+    }
+  }
+}
+
+.spinner {
+  display: block;
+  margin: 20px auto 0;
+}
