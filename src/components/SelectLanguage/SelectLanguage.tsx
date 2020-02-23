@@ -6,6 +6,8 @@ import { setLanguage } from '../../actions';
 import { Form } from 'react-bootstrap';
 import { LANGUAGES } from '../../constants';
 
+import i18n from 'i18next';
+
 const languages = Object.values(LANGUAGES);
 
 interface SelectTestProps {
@@ -15,8 +17,15 @@ interface SelectTestProps {
 class SelectTest extends React.Component<SelectTestProps> {
   setLanguageHandle = (e: React.FormEvent<HTMLInputElement>): void => {
     e.preventDefault();
-    console.log(e.currentTarget);
     this.props.dispatch(setLanguage(e.currentTarget.value));
+
+    if (e.currentTarget.value === 'english') {
+      i18n.changeLanguage('en');
+    } else if (e.currentTarget.value === 'беларуская') {
+      i18n.changeLanguage('be');
+    } else if (e.currentTarget.value === 'русский') {
+      i18n.changeLanguage('ru');
+    }
   };
 
   render() {

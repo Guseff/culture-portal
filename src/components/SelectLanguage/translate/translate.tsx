@@ -4,7 +4,7 @@ import resources from './resources';
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: 'be',
+  lng: 'ru',
   fallbackLng: 'ru',
   keySeparator: false,
   interpolation: {
