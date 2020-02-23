@@ -19,9 +19,9 @@ class Main extends React.Component {
       <Container className="content">
         <Row>
           <Col className="col_item1">
-            <h1 className="main_title">
+            <h2 className="main_title">
               Культурный портал о писателях Беларуси
-            </h1>
+            </h2>
             <p className="main_description">
               Культурный портал о писателях Беларуси — сборник статей о
               выдающихся творческих личностях с их подробным описанием, включая
