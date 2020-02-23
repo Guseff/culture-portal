@@ -12,7 +12,7 @@ const Footer = () => {
       <Navbar className="footer_item">
         <Navbar.Text>Culture Portal by RSS team #14</Navbar.Text>
         <Nav.Link as={Link} to="/about">
-          {t('О нас')}
+          {t('about')}
         </Nav.Link>
         <Nav.Link as={Link} to="/ex">
           Example

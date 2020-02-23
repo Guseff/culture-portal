@@ -20,13 +20,13 @@ const Header = () => {
         </Navbar.Brand>
         <Nav>
           <Nav.Link as={Link} to="/" disabled={pathname === '/'}>
-            {t('На главную')}
+            {t('home')}
           </Nav.Link>
           <Nav.Link as={Link} to="/list" disabled={pathname === '/list'}>
-            {t('Писатели')}
+            {t('writers')}
           </Nav.Link>
           <Nav.Link as={Link} to="/about" disabled={pathname === '/about'}>
-            {t('О нас')}
+            {t('about')}
           </Nav.Link>
         </Nav>
         <SelectLanguage />

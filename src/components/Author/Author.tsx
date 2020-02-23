@@ -8,11 +8,14 @@ import data from '../../data/writersData';
 import AuthorMap from './AuthorMap/index';
 // import { AppState } from '../../types';
 
+import { useTranslation } from 'react-i18next';
+
 interface AuthorProps {
   id: number;
 }
 
 const Author: React.FC<AuthorProps> = ({ id }) => {
+  const { t } = useTranslation();
   return (
     <Container className="Author-page">
       <Row>
@@ -26,12 +29,12 @@ const Author: React.FC<AuthorProps> = ({ id }) => {
         <Col sm="6">
           <h3>{data[id].name}</h3>
           <p>
-            Родился {data[id].years} в городе {data[id].birthCity}.
+            {t('born')} {data[id].years} {t('inTheTown')} {data[id].birthCity}.
           </p>
           <p>{data[id].description}</p>
         </Col>
         <Col md="auto">
-          <span>Место деятельности:</span>
+          <span>{t('businessPlace')}</span>
           <AuthorMap activityPlace={data[id].location} />
         </Col>
       </Row>

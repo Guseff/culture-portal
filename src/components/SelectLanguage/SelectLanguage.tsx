@@ -25,14 +25,8 @@ class SelectLanguage extends React.Component<
   setLanguageHandle = (e: React.FormEvent<HTMLInputElement>): void => {
     e.preventDefault();
     this.props.dispatch(setLanguage(e.currentTarget.value));
-
-    if (e.currentTarget.value === 'en') {
-      i18n.changeLanguage('en');
-    } else if (e.currentTarget.value === 'be') {
-      i18n.changeLanguage('be');
-    } else if (e.currentTarget.value === 'ru') {
-      i18n.changeLanguage('ru');
-    }
+    i18n.changeLanguage(e.currentTarget.value);
+    localStorage.setItem('language', e.currentTarget.value);
   };
 
   render() {
