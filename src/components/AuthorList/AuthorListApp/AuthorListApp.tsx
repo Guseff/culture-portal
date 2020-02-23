@@ -8,12 +8,14 @@ import './AuthorListApp.scss';
 const selectList = Object.values(FILTER_AUTHOR_LIST);
 
 interface AuthorListAppState {
-  filterList: object[],
+  filterList: string[],
   filterSearch: string
 }
     
 interface AuthorListAppProps {
-  data: object[]
+  data: string[],
+  author: object,
+  lang: string
 }
   
 class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
@@ -28,7 +30,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
     });
   }
 
-  componentWillReceiveProps(nextProps: { data: []; }) {
+  componentWillReceiveProps(nextProps: { data: string[]; }) {
     this.setState({
       filterList: nextProps.data
     });
@@ -43,23 +45,24 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
   }
 
   handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { data, author, lang } = this.props;
     let currentList = [];    
     let newList = [];       
       
     if (e.target.value !== '') {        
-        currentList = this.props.data;
+        currentList = data;
         const { filterSearch } = this.state;
             
-        newList = currentList.filter((item: any) => {   
+        newList = currentList.filter((item: string) => {   
           const searchValue = e.target.value.toLowerCase();            
-          const filter = filterSearch === 'Имя' 
-                          ? item.name.toLowerCase() 
-                          : item.birthCity.toLowerCase();             
+          const filter = filterSearch === selectList[0][0] 
+                          ? author[item][lang].name.toLowerCase() 
+                          : author[item][lang].birthCity.toLowerCase();             
         
           return filter.includes(searchValue);
         });
     } else {
-      newList = this.props.data;
+      newList = data;
     }
 
     this.setState({
@@ -69,12 +72,14 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
 
   render() {
     const { filterList } = this.state;
+    const { data, author, lang } = this.props;
+
     return (
       <Container>
         <AuthorListSearch 
           handleFilterSelect={this.handleFilterSelect} 
           handleInputChange={this.handleInputChange}/>
-        <AuthorListCards list={filterList}/>
+         <AuthorListCards list={filterList} author={author} lang={lang}/> 
       </Container>
     )
   }
