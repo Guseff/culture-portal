@@ -1,18 +1,42 @@
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
 .Author-page {
     .Author-page--photo-col {
         background-color: '#80808038';
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 15rem;
+
         .Author-page--photo {
-            width: 150px;
+            width: 15rem;
         }
     }
-    .Author-page--iframe {
-        width: 400px;
-        height: 200px;
-    }
+
     .Author-page__map-container {
         height: 200px;
         width: 200px;
         border-radius: 10px;
         margin-top: 15px;
     }
+
+    .Author-page_youtube-button {
+        width: 4rem;
+        height: 3rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+
+            &:hover {
+                background-color: #80808070;
+            }
+    }
+
+    .Author-page_youtube-logo {
+        width: 2rem;
+        height: 2rem;
+    }
 }
+

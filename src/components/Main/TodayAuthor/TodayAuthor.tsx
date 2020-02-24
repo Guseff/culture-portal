@@ -19,7 +19,7 @@ const TodayAuthor: React.FC = () => {
   const authorState: IAuthorState = useSelector((store: any) => store.author);
   const { byId, author, pending }: IAuthorState = authorState;
 
-  const locale: string = 'ru'; // language will be taken later
+  const locale = 'ru'; // language will be taken later
 
   if (pending) {
     return <Spinner className="spinner" animation="border" />;

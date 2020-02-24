@@ -8,6 +8,8 @@ import data from '../../data/writersData';
 import AuthorMap from './AuthorMap/index';
 // import { AppState } from '../../types';
 
+import ModalVideoWindow from './ModalVideo/ModalVideoWindow';
+
 interface AuthorProps {
   id: number;
 }
@@ -22,6 +24,7 @@ const Author: React.FC<AuthorProps> = ({ id }) => {
             src={data[id].image}
             alt={data[id].name}
           />
+          <ModalVideoWindow videoId={'HGvYNDVLqoI'} />
         </Col>
         <Col sm="6">
           <h3>{data[id].name}</h3>
@@ -33,16 +36,6 @@ const Author: React.FC<AuthorProps> = ({ id }) => {
         <Col md="auto">
           <span>Место деятельности:</span>
           <AuthorMap activityPlace={data[id].location} />
-        </Col>
-      </Row>
-      <Row>
-        <Col md={{ span: 12, offset: 3 }}>
-          <iframe
-            className="Author-page--iframe"
-            src={data[id].video}
-            frameBorder="0"
-            allowFullScreen
-          />
         </Col>
       </Row>
     </Container>
