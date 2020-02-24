@@ -1,7 +1,7 @@
 import './index.scss';
 
 import React from 'react';
-import { Container, Image, Row, Col, Spinner } from 'react-bootstrap';
+import { Container, Image, Row, Col } from 'react-bootstrap';
 import LearnMoreButton from '../LearnMoreButton/';
 import { useTranslation } from 'react-i18next';
 
