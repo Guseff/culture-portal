@@ -38,26 +38,26 @@ const TodayAuthor: React.FC = () => {
   return (
     <>
       {byId.length && (
-        <Container className="today-author">
+        <Container className="main-block2">
           <Row>
-            <Col>
-              <h2 className="author-title">{t('writerOfTheDay')}</h2>
+            <Col className="main-block2-col1">
+              <h2 className="main-block2__title">{t('writerOfTheDay')}</h2>
             </Col>
           </Row>
           <Row>
-            <Col className="content-col-img" xs={5}>
+            <Col className="main-block2__img" xs={5}>
               <Image
-                className="author-photo"
                 src={author[id].photo}
                 alt={author[id][locale].name}
+                fluid
               />
             </Col>
-            <Col className="content-col-data">
-              <p className="author-name">{author[id][locale].name}</p>
-              <p className="author-date">{`${getPrettyDate(
+            <Col className="main-block2__body">
+              <p className="main-block2__text1">{author[id][locale].name}</p>
+              <p className="main-block2__text2">{`${getPrettyDate(
                 author[id][locale].birthDate
               )} - ${getPrettyDate(author[id][locale].deathDate)}`}</p>
-              <p className="author-description">
+              <p className="main-block2__text3">
                 {author[id][locale].description}
               </p>
               <LearnMoreButton />
