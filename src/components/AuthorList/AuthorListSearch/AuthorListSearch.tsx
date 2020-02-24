@@ -2,7 +2,6 @@ import React from 'react';
 import { FormControl, Form } from 'react-bootstrap';
 import { FILTER_AUTHOR_LIST } from '../../../constants';
 import './AuthorListSearch.scss';
-import { useTranslation } from 'react-i18next';
 
 const selectList = Object.values(FILTER_AUTHOR_LIST)[0];
 
@@ -15,7 +14,6 @@ const AuthorListSearch: React.FC<AuthorListSearchProps> = ({
   handleFilterSelect,
   handleInputChange,
 }) => {
-  const { t } = useTranslation();
   return (
     <Form.Group className="input-group mb-3">
       <div className="input-group-prepend">
@@ -27,7 +25,7 @@ const AuthorListSearch: React.FC<AuthorListSearchProps> = ({
       </div>
       <FormControl
         type="text"
-        placeholder={t('search')}
+        placeholder="Поиск"
         onChange={handleInputChange}
       />
     </Form.Group>
