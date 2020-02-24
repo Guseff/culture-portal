@@ -3,10 +3,31 @@
 .about {
 
     .card {
-        width: 18rem;
+        width: 17rem;
         margin: 10px;
+        padding-top: 0;
         background-color: $bg-header-footer;
-        border: 1px solid $color-text;
+        //border: 1px solid $color-text;
         color: $color-text;
+
+        .card-body {
+            flex-direction: column;
+
+            .card__link {
+                display: flex;
+                margin-bottom: 10px;
+                cursor: pointer;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                }
+
+                a {
+                    color: $color-text;
+                }
+            }
+        }
     }
 }
