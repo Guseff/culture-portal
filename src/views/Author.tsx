@@ -1,10 +1,5 @@
 import '../components/Author/';
 import * as React from 'react';
-<<<<<<< HEAD
-import { Container, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { AuthorPage, AuthorTimeline } from '../components/Author/';
-=======
 import { Container, Nav, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import data from '../data/writersData';
@@ -13,8 +8,8 @@ import {
   AuthorMap,
   AuthorInfo,
   AuthorFrame,
+  AuthorTimeline,
 } from '../components/Author/';
->>>>>>> 5cd5d7f2f47a441376fd73a6bdd72e44f2c90b56
 
 class Author extends React.Component {
   constructor(props: Readonly<{}>) {
@@ -29,10 +24,6 @@ class Author extends React.Component {
         <Nav.Link as={Link} to="/list">
           Back to Author List
         </Nav.Link>
-<<<<<<< HEAD
-        <AuthorPage id={1} />
-        <AuthorTimeline id={1} />
-=======
         <Row>
           <Col md="auto">
             <AuthorPhoto image={data[id].image} name={data[id].name} />
@@ -54,7 +45,7 @@ class Author extends React.Component {
             <AuthorFrame videoUrl={data[id].video} />
           </Col>
         </Row>
->>>>>>> 5cd5d7f2f47a441376fd73a6bdd72e44f2c90b56
+        <AuthorTimeline id={1} />
       </Container>
     );
   }
