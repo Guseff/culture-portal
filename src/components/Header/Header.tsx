@@ -6,8 +6,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container, Image } from 'react-bootstrap';
 
 import SelectLanguage from '../SelectLanguage';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
   const { pathname } = useLocation();
 
   return (
@@ -19,13 +21,13 @@ const Header = () => {
         </Navbar.Brand>
         <Nav>
           <Nav.Link as={Link} to="/" disabled={pathname === '/'}>
-            На главную
+            {t('home')}
           </Nav.Link>
           <Nav.Link as={Link} to="/list" disabled={pathname === '/list'}>
-            Писатели
+            {t('writers')}
           </Nav.Link>
           <Nav.Link as={Link} to="/about" disabled={pathname === '/about'}>
-            О нас
+            {t('about')}
           </Nav.Link>
         </Nav>
         <SelectLanguage />
