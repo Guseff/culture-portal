@@ -7,25 +7,29 @@ import {
   AuthorPhoto,
   AuthorMap,
   AuthorInfo,
-  AuthorFrame,
+  ModalVideoWindow,
 } from '../components/Author/';
 
-class Author extends React.Component {
-  constructor(props: Readonly<{}>) {
-    super(props);
-  }
+interface AuthorProps {
+  id: number;
+}
 
+interface AuthorState {}
+
+class Author extends React.Component<AuthorProps, AuthorState> {
   render() {
-    const id = 2;
+    const id = 2; // have to change to data from CMS
+    const idVideo = 'HGvYNDVLqoI'; // have to change to data from CMS
+
     return (
       <Container className="content">
-        <h3>Author Page</h3>
         <Nav.Link as={Link} to="/list">
           Back to Author List
         </Nav.Link>
         <Row>
-          <Col md="auto">
+          <Col md="auto" className="Author-page--photo-col">
             <AuthorPhoto image={data[id].image} name={data[id].name} />
+            <ModalVideoWindow videoId={idVideo} />
           </Col>
           <Col sm="6">
             <AuthorInfo
@@ -37,11 +41,6 @@ class Author extends React.Component {
           </Col>
           <Col md="auto">
             <AuthorMap activityPlace={data[id].location} />
-          </Col>
-        </Row>
-        <Row>
-          <Col md={{ span: 12, offset: 3 }}>
-            <AuthorFrame videoUrl={data[id].video} />
           </Col>
         </Row>
       </Container>

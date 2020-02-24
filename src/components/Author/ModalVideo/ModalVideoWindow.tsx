@@ -49,7 +49,7 @@ class ModalVideoWindow extends Component<ModalVideoProps, ModalVideoState> {
             src={ModalLogo}
             alt="youtube-logo"
             className="Author-page_youtube-logo"
-          ></Image>
+          />
         </Button>
       </>
     );
