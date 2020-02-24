@@ -1,12 +1,12 @@
 export const getLanguageString = lang => {
   switch (lang) {
     case 'ru':
-      return 'русский';
+      return 'RU';
 
     case 'be':
-      return 'беларуская';
+      return 'BE';
 
     default:
-      return 'english';
+      return 'EN';
   }
 };
