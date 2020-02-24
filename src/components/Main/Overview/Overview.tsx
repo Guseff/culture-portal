@@ -1,15 +1,21 @@
-import * as React from 'react';
+import React from 'react';
 
-import { useTranslation } from 'react-i18next';
+import { IAboutProject } from 'Types';
 
-const Overview = () => {
-  const { t } = useTranslation();
+interface IOverviewProps {
+  overview: IAboutProject;
+  language: string;
+}
 
+const Overview: React.FC<IOverviewProps> = ({
+  overview,
+  language,
+}: IOverviewProps) => {
   return (
-    <React.Fragment>
-      <h1 className="main_title">{t('mainCaption')}</h1>
-      <p className="main_description">{t('mainDescription')}</p>
-    </React.Fragment>
+    <>
+      <h1 className="main_title">{overview[language].title}</h1>
+      <p className="main_description">{overview[language].description}</p>
+    </>
   );
 };
 
