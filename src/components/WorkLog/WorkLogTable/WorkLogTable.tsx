@@ -8,11 +8,11 @@ const WorkLogTable = ({ data }) => {
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
-            <th>Subtask description</th>
-            <th>Started</th>
-            <th>Ended</th>
-            <th>Time spent</th>
-            <th>Implemented by</th>
+            <th>{data.headers.feature}</th>
+            <th>{data.headers.from}</th>
+            <th>{data.headers.to}</th>
+            <th>{data.headers.spent}</th>
+            <th>{data.headers.who}</th>
           </tr>
         </thead>
         <tbody>

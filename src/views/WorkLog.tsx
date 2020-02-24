@@ -13,7 +13,7 @@ const WorkLog = () => {
   const { language } = settings;
 
   return (
-    <Container>
+    <Container className="content">
       <WorkLogTable data={data[language]} />
       <WorkLogDifficulties language={language} />
       <WorkLogSelfCheck language={language} />
