@@ -10,6 +10,7 @@ export const REST = {
       Author: 'author',
       Developer: 'developers',
       AboutProject: 'aboutProject',
+      Worklog: 'worklog',
     },
   },
 };

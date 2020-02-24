@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Image } from 'react-bootstrap';
 
 interface AuthorPhotoProps {
-  name: any;
+  name: string;
   photo: string;
   authorId: number;
 }
