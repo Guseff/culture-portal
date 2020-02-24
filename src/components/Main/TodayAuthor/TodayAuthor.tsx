@@ -4,6 +4,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container, Image, Row, Col, Spinner } from 'react-bootstrap';
 import LearnMoreButton from '../LearnMoreButton/';
+import { useTranslation } from 'react-i18next';
 
 const currentDay: number = new Date().getDay();
 
@@ -16,6 +17,7 @@ interface IAuthorState {
 type PrettyDate = (date: string) => string;
 
 const TodayAuthor: React.FC = () => {
+  const { t } = useTranslation();
   const authorState: IAuthorState = useSelector((store: any) => store.author);
   const { byId, author, pending }: IAuthorState = authorState;
 
@@ -39,7 +41,7 @@ const TodayAuthor: React.FC = () => {
         <Container className="main-block2">
           <Row>
             <Col className="main-block2-col1">
-              <h2 className="main-block2__title">Писатель дня</h2>
+              <h2 className="main-block2__title">{t('writerOfTheDay')}</h2>
             </Col>
           </Row>
           <Row>
