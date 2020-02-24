@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 import { AppState } from '../types';
 
 import data from '../data/worklog-data.json';
+import WorkLogDifficulties from '../components/WorkLog/WorkLogDifficulties';
+import WorkLogSelfCheck from '../components/WorkLog/WorkLogSelfCheck';
 import WorkLogTable from '../components/WorkLog/WorkLogTable';
 
 const WorkLog = () => {
@@ -11,10 +13,11 @@ const WorkLog = () => {
   const { language } = settings;
 
   return (
-    <Container className="content">
+    <Container>
       <h3>Work Log</h3>
-      <h5>Lang: {language}</h5>
       <WorkLogTable data={data[language]} />
+      <WorkLogDifficulties />
+      <WorkLogSelfCheck />
     </Container>
   );
 };
