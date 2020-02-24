@@ -30,7 +30,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
     });
   }
 
-  componentWillReceiveProps(nextProps: { data: string[] }) {
+  UNSAFE_componentWillReceiveProps(nextProps: { data: string[] }) {
     this.setState({
       filterList: nextProps.data,
     });
