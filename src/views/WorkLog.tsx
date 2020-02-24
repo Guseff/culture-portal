@@ -14,10 +14,10 @@ const WorkLog = () => {
 
   return (
     <Container>
-      <h3>Work Log</h3>
+      <h3>Team Work Log table</h3>
       <WorkLogTable data={data[language]} />
-      <WorkLogDifficulties />
-      <WorkLogSelfCheck />
+      <WorkLogDifficulties language={language} />
+      <WorkLogSelfCheck language={language} />
     </Container>
   );
 };

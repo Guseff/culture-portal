@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const WorkLogSelfCheck = () => {
+const WorkLogSelfCheck = ({ language }) => {
   return <h3>Selfcheck</h3>;
 };
 
