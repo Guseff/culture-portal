@@ -8,11 +8,23 @@ interface WorkLog {
   who: string;
 }
 
+interface WorkLogInOneLanguage {
+  title: string;
+  headers: {
+    feature: string;
+    from: string;
+    to: string;
+    spent: string;
+    who: string;
+  };
+  body: WorkLog[];
+}
+
 interface WorkLogPayload {
   workLog: {
-    ru: WorkLog[];
-    en: WorkLog[];
-    be: WorkLog[];
+    ru: WorkLogInOneLanguage[];
+    en: WorkLogInOneLanguage[];
+    be: WorkLogInOneLanguage[];
   };
 }
 
