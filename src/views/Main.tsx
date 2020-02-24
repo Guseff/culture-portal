@@ -26,6 +26,7 @@ const Main: React.FC = () => {
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
   // const { aboutProject }: IAboutProjectState = aboutProjectState;
+  // i guess it will be able after setting data in the CMS
 
   const aboutProjectPending: boolean | null = aboutProjectState.pending;
 
