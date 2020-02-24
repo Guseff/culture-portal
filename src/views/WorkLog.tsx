@@ -14,7 +14,6 @@ const WorkLog = () => {
 
   return (
     <Container>
-      <h3>Team Work Log table</h3>
       <WorkLogTable data={data[language]} />
       <WorkLogDifficulties language={language} />
       <WorkLogSelfCheck language={language} />
