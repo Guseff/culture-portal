@@ -1,27 +1,25 @@
-import * as React from 'react';
-import { Container, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import AuthorListApp from '../components/AuthorList/index';
+import { Container, Spinner } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
-class Main extends React.Component {
-  title: string;
-  name: string;
+const AuthorList:React.FC = () => {
+  const authorState = useSelector((store: any) => store.author);
+  const settingsState = useSelector((store: any) => store.settings);
+  const { language } = settingsState;
+  const { byId, author, pending } = authorState;
 
-  constructor(props: Readonly<{}>) {
-    super(props);
-    this.title = 'Mr.';
-    this.name = 'Ronnie';
+  if (pending) {
+    return <Spinner animation="grow" variant="info" />;
   }
 
-  render() {
-    return (
-      <Container className="content">
-        <h3>Author List</h3>
-        <Nav.Link as={Link} to="/author">
-          Author Page
-        </Nav.Link>
-      </Container>
-    );
-  }
+  return (
+    <Container className="content">
+      <AuthorListApp data={byId} author={author} lang={language}/>
+    </Container>
+  );
 }
 
-export default Main;
+export default AuthorList;
+
+
