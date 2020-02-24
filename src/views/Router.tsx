@@ -17,13 +17,26 @@ import About from './About';
 import Footer from '../components/Footer/index';
 import { ExampleList } from 'Components';
 
-import { authorGetList } from 'Actions';
+import {
+  authorGetList,
+  developerGetList,
+  aboutProjectGet,
+  worklogGet,
+} from 'Actions';
 
 const Router = (props: any) => {
-  const { authorGetList } = props;
+  const {
+    authorGetList,
+    developerGetList,
+    aboutProjectGet,
+    worklogGet,
+  } = props;
 
   React.useEffect(() => {
     authorGetList();
+    developerGetList();
+    aboutProjectGet();
+    worklogGet();
   }, []);
 
   return (
@@ -41,4 +54,9 @@ const Router = (props: any) => {
   );
 };
 
-export default connect(null, { authorGetList })(Router);
+export default connect(null, {
+  authorGetList,
+  developerGetList,
+  aboutProjectGet,
+  worklogGet,
+})(Router);
