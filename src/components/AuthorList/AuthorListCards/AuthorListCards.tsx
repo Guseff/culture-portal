@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './AuthorListCards.scss';
+import { useTranslation } from 'react-i18next';
 
 interface AuthorListCardsProps {
   list: string[],
@@ -10,7 +11,7 @@ interface AuthorListCardsProps {
 }
 
 const AuthorListCards: React.FC<AuthorListCardsProps> = ({ list, author, lang }) => {
-
+  const { t } = useTranslation();
   return (
     list.length
     ? <ul className="row row-cols-3 list-unstyled list">        
@@ -28,7 +29,7 @@ const AuthorListCards: React.FC<AuthorListCardsProps> = ({ list, author, lang })
                   {author[item][lang].birthCity}
                 </Card.Text>
                 <Link to={`/author/${item}`}>
-                  <Button variant="outline-info">Узнать больше</Button>
+                  <Button variant="outline-info">{t('learnMore')}</Button>
                 </Link>
               </Card.Body>
             </Card>  
@@ -36,7 +37,7 @@ const AuthorListCards: React.FC<AuthorListCardsProps> = ({ list, author, lang })
         ))}          
       </ul>
     : <div className="no-result">
-        <span>Ничего не найдено</span>
+        <span>{t('nothingHere')}</span>
       </div>
   )    
 }

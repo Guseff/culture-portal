@@ -26,7 +26,6 @@ class SelectLanguage extends React.Component<
     e.preventDefault();
     this.props.dispatch(setLanguage(e.currentTarget.value));
     i18n.changeLanguage(e.currentTarget.value);
-    localStorage.setItem('language', e.currentTarget.value);
   };
 
   render() {
