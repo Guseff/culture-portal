@@ -1,8 +1,9 @@
 import './index.scss';
 
 import React from 'react';
-import { Container, Image, Row, Col } from 'react-bootstrap';
+import { Container, Image, Row, Col, Spinner } from 'react-bootstrap';
 import LearnMoreButton from '../LearnMoreButton/';
+import { useTranslation } from 'react-i18next';
 
 const currentDay: number = new Date().getDay();
 
@@ -19,6 +20,8 @@ const TodayAuthor: React.FC<ITodayAuthorProps> = ({
   author,
   lang,
 }: ITodayAuthorProps) => {
+  const { t } = useTranslation();
+
   const id: string = data[currentDay];
 
   const getPrettyDate: PrettyDate = (date: string) =>
@@ -28,26 +31,22 @@ const TodayAuthor: React.FC<ITodayAuthorProps> = ({
       .join('.');
 
   return data.length ? (
-    <Container className="today-author">
+    <Container className="main-block2">
       <Row>
-        <Col>
-          <h2 className="author-title">Писатель дня</h2>
+        <Col className="main-block2-col1">
+          <h2 className="main-block2__title">{t('writerOfTheDay')}</h2>
         </Col>
       </Row>
       <Row>
-        <Col className="content-col-img" xs={5}>
-          <Image
-            className="author-photo"
-            src={author[id].photo}
-            alt={author[id][lang].name}
-          />
+        <Col className="main-block2__img" xs={5}>
+          <Image src={author[id].photo} alt={author[id][lang].name} fluid />
         </Col>
-        <Col className="content-col-data">
-          <p className="author-name">{author[id][lang].name}</p>
-          <p className="author-date">{`${getPrettyDate(
+        <Col className="main-block2__body">
+          <p className="main-block2__text1">{author[id][lang].name}</p>
+          <p className="main-block2__text2">{`${getPrettyDate(
             author[id][lang].birthDate
           )} - ${getPrettyDate(author[id][lang].deathDate)}`}</p>
-          <p className="author-description">{author[id][lang].description}</p>
+          <p className="main-block2__text3">{author[id][lang].description}</p>
           <LearnMoreButton />
         </Col>
       </Row>

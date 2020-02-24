@@ -4,6 +4,7 @@ import * as React from 'react';
 import { useSelector } from 'react-redux';
 import { Row, Col, Container, Spinner } from 'react-bootstrap';
 import TodayAuthor from '../components/Main/';
+import Overview from '../components/Main/Overview';
 
 interface IAuthorState {
   byId: string[];
@@ -32,20 +33,7 @@ const Main: React.FC = () => {
   return (
     <Container className="content">
       <Row>
-        <Col className="col_item1">
-          <h2 className="main_title">Культурный портал о писателях Беларуси</h2>
-          <p className="main_description">
-            Культурный портал о писателях Беларуси — сборник статей о выдающихся
-            творческих личностях с их подробным описанием, включая годы жизни,
-            фотографии, биографии в виде временной шкалы, списки авторских
-            работ, видеозаписи, а также карты с обозначением их основной
-            деятельности. Вы можете выбрать автора из списка и узнать о нём
-            подробнее. Кроме того, каждый день меняется писатель в секции
-            «Писатель дня». В графе «О нас» Вы сможете узнать о разработчиках
-            сайта, увидеть ход рабочего процесса и посмотреть на шаблон стилей
-            сайта.
-          </p>
-        </Col>
+        <Overview />
       </Row>
       <Row>
         <Col>

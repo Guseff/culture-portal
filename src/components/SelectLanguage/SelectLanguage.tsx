@@ -8,6 +8,8 @@ import { LANGUAGES } from '../../constants';
 import { AppState } from '../../types';
 import { getLanguageString } from '../../utils';
 
+import i18n from 'i18next';
+
 const languages = Object.values(LANGUAGES);
 
 interface SelectLanguageProps {
@@ -23,6 +25,8 @@ class SelectLanguage extends React.Component<
   setLanguageHandle = (e: React.FormEvent<HTMLInputElement>): void => {
     e.preventDefault();
     this.props.dispatch(setLanguage(e.currentTarget.value));
+    i18n.changeLanguage(e.currentTarget.value);
+    localStorage.setItem('language', e.currentTarget.value);
   };
 
   render() {
