@@ -8,6 +8,7 @@ import {
   AuthorMap,
   AuthorInfo,
   AuthorFrame,
+  AuthorTimeline,
 } from '../components/Author/';
 
 class Author extends React.Component {
@@ -44,6 +45,7 @@ class Author extends React.Component {
             <AuthorFrame videoUrl={data[id].video} />
           </Col>
         </Row>
+        <AuthorTimeline id={1} />
       </Container>
     );
   }
