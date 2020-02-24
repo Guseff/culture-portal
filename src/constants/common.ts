@@ -13,7 +13,7 @@ export const FILTER_AUTHOR_LIST = {
 export const SEARCH_SEL_TRANSLATES = {
   ru: ['По имени', 'По городу рождения'],
   en: ['By Name', 'By City of birth'],
-  be: ['Па iмяни', 'Па гораду нараджэння'],
+  be: ['Па iмi', 'Па горадзе нараджэння'],
 };
 
 export const SEARCH_TRANSLATES = {
