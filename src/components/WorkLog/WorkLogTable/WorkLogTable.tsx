@@ -16,14 +16,14 @@ const WorkLogTable = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data.body.map((x, i) => {
-            return x.feature ? (
+          {data.body.map((tableRow, i) => {
+            return tableRow.feature ? (
               <tr key={i}>
-                <td>{x.feature}</td>
-                <td>{x.from}</td>
-                <td>{x.to}</td>
-                <td>{x.spent}</td>
-                <td>{x.who}</td>
+                <td>{tableRow.feature}</td>
+                <td>{tableRow.from}</td>
+                <td>{tableRow.to}</td>
+                <td>{tableRow.spent}</td>
+                <td>{tableRow.who}</td>
               </tr>
             ) : null;
           })}
