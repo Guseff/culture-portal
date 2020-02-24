@@ -1,6 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 
-const AuthorFrame = ({ videoUrl }) => {
+interface IAuthorFrame {
+  videoUrl: string;
+}
+
+const AuthorFrame: React.FC<IAuthorFrame> = ({ videoUrl }: IAuthorFrame) => {
   return (
     <iframe
       className="Author-page--iframe"

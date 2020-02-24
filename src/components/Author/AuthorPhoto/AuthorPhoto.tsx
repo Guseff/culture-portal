@@ -1,13 +1,15 @@
-import * as React from 'react';
+import React from 'react';
 import { Image } from 'react-bootstrap';
 
-interface AuthorPhotoProps {
+interface IAuthorPhotoProps {
   name: string;
   photo: string;
-  authorId: number;
 }
 
-const AuthorPhoto: React.FC<AuthorPhotoProps> = ({ photo, name }) => {
+const AuthorPhoto: React.FC<IAuthorPhotoProps> = ({
+  photo,
+  name,
+}: IAuthorPhotoProps) => {
   return <Image className="Author-page--photo" src={photo} alt={name} />;
 };
 

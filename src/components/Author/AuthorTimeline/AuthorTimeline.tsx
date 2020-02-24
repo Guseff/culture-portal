@@ -1,14 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { Timeline } from 'vertical-timeline-component-for-react';
-import { Spinner } from 'react-bootstrap';
 import AuthorTimelineItem from '../AuthorTimelineItem';
-
-interface IAuthorTimelineState {
-  byId: number[];
-  author: object;
-  pending: boolean;
-}
 
 interface IAuthorTimelineFacts {
   endAt: string | null;
@@ -17,34 +9,26 @@ interface IAuthorTimelineFacts {
 }
 
 interface IAuthorTimelineProps {
-  id: number;
+  id: string;
+  author: object;
+  language: string;
 }
 
-const AuthorTimeline: React.FC<IAuthorTimelineProps> = ({ id }) => {
-  const authorState: IAuthorTimelineState = useSelector(
-    (store: any) => store.author
-  );
-  const { byId, author, pending }: IAuthorTimelineState = authorState;
-  const locale = 'ru';
+const timelineStyles = {
+  lineColor: '#ddd', // if you want to change the color -- change here
+};
 
-  if (pending) {
-    return <Spinner className="spinner" animation="border" />;
-  }
-
-  id = byId[id];
-
+const AuthorTimeline: React.FC<IAuthorTimelineProps> = ({
+  id,
+  author,
+  language,
+}: IAuthorTimelineProps) => {
   return (
-    <>
-      {byId.length && (
-        <Timeline lineColor={'#ddd'}>
-          {author[id][locale].biography.map(
-            (fact: IAuthorTimelineFacts, idx) => (
-              <AuthorTimelineItem key={idx} fact={fact} />
-            )
-          )}
-        </Timeline>
-      )}
-    </>
+    <Timeline lineColor={timelineStyles.lineColor}>
+      {author[id][language].biography.map((fact: IAuthorTimelineFacts, idx) => (
+        <AuthorTimelineItem key={idx} fact={fact} />
+      ))}
+    </Timeline>
   );
 };
 
