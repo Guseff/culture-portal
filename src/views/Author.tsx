@@ -7,6 +7,7 @@ import {
   AuthorMap,
   AuthorInfo,
   AuthorFrame,
+  AuthorTimeline,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 
@@ -60,6 +61,7 @@ const Author: React.FC = () => {
               <AuthorFrame videoUrl={author[id][language].video} />
             </Col>
           </Row>
+          <AuthorTimeline id={1} />
         </React.Fragment>
       )}
     </Container>
