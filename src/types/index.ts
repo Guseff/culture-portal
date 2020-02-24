@@ -32,4 +32,9 @@ export interface IStoreState {
   settings: ISettingsState;
   author: IAuthorState;
   aboutProject: IAboutProjectState;
+  router: {
+    location: {
+      pathname: string;
+    };
+  };
 }
