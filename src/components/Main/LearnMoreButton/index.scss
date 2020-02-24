@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables.scss';
+
 .btn-container {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,7 @@
 
 .btn-outline-secondary {
   color: black;
+  font-family: $font-over;
   background: rgba(250, 235, 215, 0.8);
 }
 

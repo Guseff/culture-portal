@@ -9,12 +9,10 @@
             
             .main_title {
                 margin-bottom: 20px;
+                font-family: $font-h;
+                font-size: 3rem;
                 color: $color-text;
                 text-align: center;
-            }
-
-            .main_description {
-                font-family: 'Raleway Dots', sans-serif;
             }
         }
     }

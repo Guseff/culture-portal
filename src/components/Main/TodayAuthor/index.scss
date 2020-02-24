@@ -3,7 +3,7 @@
 .main-block2 {
   margin-top: 20px;
   padding: 20px 20px 30px 20px;
-  background: url('https://image.jimcdn.com/app/cms/image/transf/none/path/s192ce046446959c6/backgroundarea/ide929ee0b592ac99/version/1562095549/image.jpg') no-repeat;
+  background: url('../../../assets/images/fon-main-block2.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -20,6 +20,7 @@
   }
  
   .main-block2__title {
+    font-family: $font-h;
     background: $color-bg-main-block2;
     margin-bottom: 20px;
     border-radius: $radius;
@@ -50,6 +51,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 50px 20px 20px;
+    font-family: $font-h;
     background: $color-bg-main-block2;
 
     .main-block2__text1 {
@@ -70,6 +72,7 @@
     }
 
     .main-block2__text3 {
+      font-family: $font-text;
       font-size: 1.2rem;
       text-align: justify;
     }
