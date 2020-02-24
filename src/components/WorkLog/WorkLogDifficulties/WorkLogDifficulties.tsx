@@ -5,7 +5,9 @@ const WorkLogDifficulties = ({ language }) => {
   return (
     <div>
       <h3>{data[language].title}</h3>
-      <p>{data[language].text1}</p>
+      {data[language].text.map((x, i) => {
+        return <p key={i}>{x}</p>;
+      })}
     </div>
   );
 };
