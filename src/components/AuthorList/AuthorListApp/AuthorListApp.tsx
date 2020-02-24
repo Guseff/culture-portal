@@ -68,11 +68,11 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
     this.setState({
       filterList: newList
     });
-}
+  }
 
   render() {
     const { filterList } = this.state;
-    const { data, author, lang } = this.props;
+    const { author, lang } = this.props;
 
     return (
       <Container>
