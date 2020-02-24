@@ -5,38 +5,46 @@ import { useSelector } from 'react-redux';
 import { Row, Col, Container, Spinner } from 'react-bootstrap';
 import TodayAuthor from '../components/Main/';
 import Overview from '../components/Main/Overview';
-import { AppState } from '../types';
-
-interface IAuthorState {
-  byId: string[];
-  author: object;
-  pending: boolean;
-}
-
-interface ISettingsState {
-  language: string;
-}
+import {
+  IStoreState,
+  ISettingsState,
+  IAuthorState,
+  IAboutProjectState,
+} from 'Types';
+import aboutProject from '../data/normalizedAboutProject.json';
 
 const Main: React.FC = () => {
   const authorState: IAuthorState = useSelector(
-    (store: AppState) => store.author
+    (store: IStoreState) => store.author
   );
-  const settingsState = useSelector((store: AppState) => store.settings);
+  const settingsState: ISettingsState = useSelector(
+    (store: IStoreState) => store.settings
+  );
+  const aboutProjectState: IAboutProjectState = useSelector(
+    (store: IStoreState) => store.aboutProject
+  );
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
+  // const { aboutProject }: IAboutProjectState = aboutProjectState;
+
+  const aboutProjectPending: boolean | null = aboutProjectState.pending;
 
   return (
     <Container className="content">
-      {pending ? (
+      {pending || aboutProjectPending ? (
         <Spinner className="spinner" animation="border" />
       ) : (
         <>
           <Row>
-            <Overview />
+            <Overview overview={aboutProject} language={language} />
           </Row>
           <Row>
             <Col>
-              <TodayAuthor data={byId} author={author} lang={language} />
+              <TodayAuthor
+                authorIds={byId}
+                author={author}
+                language={language}
+              />
             </Col>
           </Row>
         </>
