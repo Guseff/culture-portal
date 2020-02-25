@@ -7,6 +7,7 @@ import {
   AuthorMap,
   AuthorInfo,
   AuthorTimeline,
+  AuthorModalVideo,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
@@ -38,10 +39,13 @@ const Author: React.FC = () => {
         byId.length && (
           <>
             <Row>
-              <Col md="auto">
+              <Col md="auto" className="Author-page--photo-col">
                 <AuthorPhoto
                   photo={author[currentAuthorId].photo}
                   name={author[currentAuthorId][language].name}
+                />
+                <AuthorModalVideo
+                  videoId={author[currentAuthorId][language].video}
                 />
               </Col>
               <Col sm="6">
