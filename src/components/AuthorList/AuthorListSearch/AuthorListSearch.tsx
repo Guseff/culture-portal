@@ -22,6 +22,7 @@ const AuthorListSearch: React.FC<AuthorListSearchProps> = ({
   searchValue,
   searchOption,
 }) => {
+  const options = Object.keys(SEARCH_OPTIONS);
   return (
     <Form.Group className="input-group mb-3">
       <div className="input-group-prepend">
@@ -30,7 +31,7 @@ const AuthorListSearch: React.FC<AuthorListSearchProps> = ({
           onChange={handleFilterSelect}
           value={searchOption}
         >
-          {Object.keys(SEARCH_OPTIONS).map((option, index) => {
+          {options.map((option, index) => {
             return (
               <option key={index} value={option}>
                 {SEARCH_SEL_TRANSLATES[lang][option]}
