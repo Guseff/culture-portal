@@ -1,13 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import ReactMapboxGl from 'react-mapbox-gl';
 import { useTranslation } from 'react-i18next';
 
-interface AuthorMapProps {
+interface IAuthorMapProps {
   longitude: number;
   latitude: number;
 }
 
-const AuthorMap: React.FC<AuthorMapProps> = ({ longitude, latitude }) => {
+const AuthorMap: React.FC<IAuthorMapProps> = ({ longitude, latitude }) => {
   const { t } = useTranslation();
   const Map = ReactMapboxGl({
     accessToken:
@@ -15,14 +15,14 @@ const AuthorMap: React.FC<AuthorMapProps> = ({ longitude, latitude }) => {
   });
 
   return (
-    <React.Fragment>
+    <>
       <span className="Author-page__map--text">{t('businessPlace')}</span>
       <Map
         className="Author-page__map-container"
         style="mapbox://styles/mapbox/streets-v11"
         center={[latitude, longitude]}
       />
-    </React.Fragment>
+    </>
   );
 };
 

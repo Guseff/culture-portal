@@ -1,28 +1,29 @@
-import * as React from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-interface AuthorInfoProps {
+interface IAuthorInfoProps {
   name: string;
   years: string;
   birthCity: string;
   description: string;
 }
 
-const AuthorInfo: React.FC<AuthorInfoProps> = ({
+const AuthorInfo: React.FC<IAuthorInfoProps> = ({
   name,
   years,
   birthCity,
   description,
 }) => {
   const { t } = useTranslation();
+
   return (
-    <React.Fragment>
+    <>
       <h3>{name}</h3>
       <p>
         {t('born')} {years} {t('inTheTown')} {birthCity}.
       </p>
       <p>{description}</p>
-    </React.Fragment>
+    </>
   );
 };
 

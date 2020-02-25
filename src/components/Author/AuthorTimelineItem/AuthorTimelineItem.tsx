@@ -11,12 +11,17 @@ interface IAuthorTimelineItemProps {
   fact: IAuthorTimelineItemFacts;
 }
 
+const timelineItemStyles = {
+  background: '#ff962e', // if you want to change the color -- change here
+  color: '#ff962e',
+};
+
 const AuthorTimelineItem: React.FC<IAuthorTimelineItemProps> = ({ fact }) => {
   return (
     <TimelineItem
       dateText={fact.endAt ? `${fact.startAt} - ${fact.endAt}` : fact.startAt}
-      dateInnerStyle={{ background: '#ff962e' }}
-      style={{ color: '#ff962e' }}
+      dateInnerStyle={{ background: timelineItemStyles.background }}
+      style={{ color: timelineItemStyles.color }}
     >
       <p>{fact.description}</p>
     </TimelineItem>
