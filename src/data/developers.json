@@ -1,44 +1,44 @@
 {
-    "1": {
-        "id": "1",
-        "name": "Olga Bugrova",
-        "link": "https://github.com/lyolya95",
-        "photo": "assets/images/Bugrova.jpeg",
-        "role": "Front-end developer"
-    },
-    "2": {
-        "id": "2",
-        "name": "Volha Soika",
-        "link": "https://github.com/vsoika",
-        "photo": "assets/images/Soika.jpeg",
-        "role": "Front-end developer"
-    },
-    "3": {
-        "id": "3",
-        "name": "Diana Ivanova",
-        "link": "https://github.com/melk0sha",
-        "photo": "assets/images/Ivanova.jpeg",
-        "role": "Team Leader"
-    },
-    "4": {
-        "id": "4",
-        "name": "Vladimir Otroshchenko",
-        "link": "https://github.com/VladimirOtroshchenko",
-        "photo": "assets/images/Otroshchenko.jpeg",
-        "role": ""
-    },
-    "5": {
-        "id": "5",
-        "name": "Vasily Gusev",
-        "link": "https://github.com/Guseff",
-        "photo": "assets/images/Gusev.jpeg",
-        "role": ""
-    },
-    "6": {
-        "id": "6",
-        "name": "Igor Barbashov",
-        "link": "https://github.com/IgorBarbashov",
-        "photo": "assets/images/Barbashov.jpeg",
-        "role": ""
-    }
+  "1": {
+    "id": "1",
+    "name": "Olga Bugrova",
+    "link": "https://github.com/lyolya95",
+    "photo": "assets/images/Bugrova.jpg",
+    "role": "Front-end developer"
+  },
+  "2": {
+    "id": "2",
+    "name": "Volha Soika",
+    "link": "https://github.com/vsoika",
+    "photo": "assets/images/Soika.jpg",
+    "role": "Front-end developer"
+  },
+  "3": {
+    "id": "3",
+    "name": "Diana Ivanova",
+    "link": "https://github.com/melk0sha",
+    "photo": "assets/images/Ivanova.jpg",
+    "role": "Team Leader"
+  },
+  "4": {
+    "id": "4",
+    "name": "Vladimir Otroshchenko",
+    "link": "https://github.com/VladimirOtroshchenko",
+    "photo": "assets/images/Otroshchenko.jpg",
+    "role": "Front-end developer"
+  },
+  "5": {
+    "id": "5",
+    "name": "Vasily Gusev",
+    "link": "https://github.com/Guseff",
+    "photo": "assets/images/Gusev.jpg",
+    "role": "Front-end developer"
+  },
+  "6": {
+    "id": "6",
+    "name": "Igor Barbashov",
+    "link": "https://github.com/IgorBarbashov",
+    "photo": "assets/images/Barbashov.jpg",
+    "role": "Front-end developer"
+  }
 }

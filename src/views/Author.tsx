@@ -6,24 +6,24 @@ import {
   AuthorPhoto,
   AuthorMap,
   AuthorInfo,
-  AuthorFrame,
   AuthorTimeline,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
+import { IStoreState, ISettingsState, IAuthorState } from 'Types';
 
 const Author: React.FC = () => {
-  const authorState = useSelector((store: any) => store.author);
-  const settingsState = useSelector((store: any) => store.settings);
-  const id = useSelector((store: any) =>
+  const authorState: IAuthorState = useSelector(
+    (store: IStoreState) => store.author
+  );
+  const settingsState: ISettingsState = useSelector(
+    (store: IStoreState) => store.settings
+  );
+  const currentAuthorId: string = useSelector((store: IStoreState) =>
     store.router.location.pathname.slice(8)
   );
 
-  const { byId, author, pending } = authorState;
-  const { language } = settingsState;
-
-  if (pending) {
-    return <Spinner animation="grow" variant="info" />;
-  }
+  const { byId, author, pending }: IAuthorState = authorState;
+  const { language }: ISettingsState = settingsState;
 
   return (
     <Container className="content">
@@ -31,38 +31,42 @@ const Author: React.FC = () => {
       <Nav.Link as={Link} to="/list">
         Back to Author List
       </Nav.Link>
-      {byId.length && (
-        <React.Fragment>
-          <Row>
-            <Col md="auto">
-              <AuthorPhoto
-                name={author[id][language].name}
-                photo={author[id].photo}
-                authorId={1}
-              />
-            </Col>
-            <Col sm="6">
-              <AuthorInfo
-                name={author[id][language].name}
-                years={author[id][language].years}
-                birthCity={author[id][language].birthCity}
-                description={author[id][language].description}
-              />
-            </Col>
-            <Col md="auto">
-              <AuthorMap
-                longitude={author[id][language].location.longitude}
-                latitude={author[id][language].location.latitude}
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col md={{ span: 8, offset: 3 }}>
-              <AuthorFrame videoUrl={author[id][language].video} />
-            </Col>
-          </Row>
-          <AuthorTimeline id={1} />
-        </React.Fragment>
+      {pending ? (
+        <Spinner animation="grow" variant="info" />
+      ) : (
+        byId.length && (
+          <>
+            <Row>
+              <Col md="auto">
+                <AuthorPhoto
+                  photo={author[currentAuthorId].photo}
+                  name={author[currentAuthorId][language].name}
+                />
+              </Col>
+              <Col sm="6">
+                <AuthorInfo
+                  name={author[currentAuthorId][language].name}
+                  years={author[currentAuthorId][language].years}
+                  birthCity={author[currentAuthorId][language].birthCity}
+                  description={author[currentAuthorId][language].description}
+                />
+              </Col>
+              <Col md="auto">
+                <AuthorMap
+                  longitude={
+                    author[currentAuthorId][language].location.longitude
+                  }
+                  latitude={author[currentAuthorId][language].location.latitude}
+                />
+              </Col>
+            </Row>
+            <AuthorTimeline
+              author={author}
+              id={currentAuthorId}
+              language={language}
+            />
+          </>
+        )
       )}
     </Container>
   );

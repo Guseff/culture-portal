@@ -10,3 +10,7 @@ export const getLanguageString = lang => {
       return 'EN';
   }
 };
+
+export const isNotEmptyObj = obj => {
+  return obj ? Object.keys(obj).length !== 0 : false;
+};

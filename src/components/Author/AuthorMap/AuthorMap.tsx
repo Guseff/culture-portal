@@ -1,13 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import ReactMapboxGl from 'react-mapbox-gl';
 import { useTranslation } from 'react-i18next';
 
-interface AuthorMapProps {
+interface IAuthorMapProps {
   longitude: number;
   latitude: number;
 }
 
-const AuthorMap: React.FC<AuthorMapProps> = ({ longitude, latitude }) => {
+const AuthorMap: React.FC<IAuthorMapProps> = ({ longitude, latitude }) => {
   const { t } = useTranslation();
   const Map = ReactMapboxGl({
     accessToken:
