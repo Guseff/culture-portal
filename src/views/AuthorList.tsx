@@ -3,7 +3,7 @@ import AuthorListApp from '../components/AuthorList/index';
 import { Container, Spinner } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 
-const AuthorList:React.FC = () => {
+const AuthorList: React.FC = () => {
   const authorState = useSelector((store: any) => store.author);
   const settingsState = useSelector((store: any) => store.settings);
   const { language } = settingsState;
@@ -13,13 +13,12 @@ const AuthorList:React.FC = () => {
     return <Spinner animation="grow" variant="info" />;
   }
 
+  console.log(author);
   return (
     <Container className="content">
-      <AuthorListApp data={byId} author={author} lang={language}/>
+      <AuthorListApp data={byId} author={author} lang={language} />
     </Container>
   );
-}
+};
 
 export default AuthorList;
-
-

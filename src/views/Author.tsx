@@ -18,8 +18,9 @@ const Author: React.FC = () => {
   const settingsState: ISettingsState = useSelector(
     (store: IStoreState) => store.settings
   );
-  const currentAuthorId: string = useSelector((store: IStoreState) =>
-    store.router.location.pathname.slice(8)
+  const currentAuthorId: string = useSelector(
+    (store: IStoreState) =>
+      store.router.location.pathname.slice(8) || store.author.byId[0]
   );
 
   const { byId, author, pending }: IAuthorState = authorState;
