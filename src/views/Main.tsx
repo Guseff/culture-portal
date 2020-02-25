@@ -1,10 +1,7 @@
-import '../components/Main/index.scss';
-
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Row, Col, Container, Spinner } from 'react-bootstrap';
-import TodayAuthor from '../components/Main/';
-import Overview from '../components/Main/Overview';
+import { Overview, TodayAuthor } from '../components/Main/';
 import {
   IStoreState,
   ISettingsState,
