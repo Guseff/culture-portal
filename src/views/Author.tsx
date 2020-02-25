@@ -8,6 +8,7 @@ import {
   AuthorInfo,
   AuthorTimeline,
   AuthorModalVideo,
+  AuthorSlider,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
@@ -26,6 +27,8 @@ const Author: React.FC = () => {
 
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
+
+  console.log(author)
 
   return (
     <Container className="content">
@@ -70,6 +73,7 @@ const Author: React.FC = () => {
               id={currentAuthorId}
               language={language}
             />
+            <AuthorSlider gallery={author[currentAuthorId].gallery}/>
           </>
         )
       )}

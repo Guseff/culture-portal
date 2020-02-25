@@ -14,24 +14,24 @@
 }
 
 .Author-page__map_text {
-    position: relative;
-	background: #faebd7;
-    border-radius: .4em;
-    padding: 4%;
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border: 10px solid transparent;
-        border-top-color: #faebd7;
-        border-bottom: 0;
-        border-left: 0;
-        margin-left: -11.5px;
-        margin-bottom: -10px;
-    }
+  position: relative;
+  background: #faebd7;
+  border-radius: 0.4em;
+  padding: 4%;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #faebd7;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -11.5px;
+    margin-bottom: -10px;
+  }
 }
 
 .Author-page__map-container {
@@ -57,4 +57,32 @@
 .Author-page_youtube-logo {
   width: 2rem;
   height: 2rem;
+}
+
+.carousel {
+  width: 400px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.carousel-inner {
+  width: 400px;
+  height: 600px;
+}
+
+.carousel-indicators {
+  bottom: 60px;
+}
+
+.carousel-item.active {
+  width: 400px;
+  height: 600px;
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
 }
