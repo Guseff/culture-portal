@@ -1,10 +1,10 @@
 import '../components/About/index.scss';
 import * as React from 'react';
 import CardItem from '../components/About/Card/index';
+import AboutButton from '../components/About/AboutButtons/index';
 import developers from '../data/developersData';
 
-import { Container, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 class About extends React.Component {
   constructor(props: Readonly<{}>) {
@@ -14,17 +14,12 @@ class About extends React.Component {
   render() {
     return (
       <Container className="content">
-        <section className="about">
+        <AboutButton />
+        <section className="about__cards">
           {developers.map(developer => (
             <CardItem key={developer.id} developer={developer} />
           ))}
         </section>
-        <Nav.Link as={Link} to="/worklog">
-          Worklog
-        </Nav.Link>
-        <Nav.Link as={Link} to="/styleguide">
-          StyleGuide
-        </Nav.Link>
       </Container>
     );
   }

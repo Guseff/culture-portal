@@ -1,0 +1,14 @@
+@import '../../../assets//styles/variables.scss';
+@import '../../../assets/styles/fonts.scss';
+
+.about__button {
+    display: flex;
+    justify-content: center;
+     
+    .btn {
+        margin: 15px;
+        width: 400px;
+        color: $color-text;
+        font-family: $font-button;
+    }
+}
