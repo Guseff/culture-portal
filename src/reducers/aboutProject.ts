@@ -38,7 +38,7 @@ export const aboutProject = (
 
     case `${ABOUT_PROJECT_GET}${RequestState.SUCCESS}`:
       return {
-        ...payload,
+        aboutProject: payload,
         pending: false,
       };
 

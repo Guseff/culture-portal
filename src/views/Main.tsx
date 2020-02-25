@@ -11,7 +11,6 @@ import {
   IAuthorState,
   IAboutProjectState,
 } from 'Types';
-import aboutProject from '../data/normalizedAboutProject.json';
 
 const Main: React.FC = () => {
   const authorState: IAuthorState = useSelector(
@@ -25,9 +24,7 @@ const Main: React.FC = () => {
   );
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
-  // const { aboutProject }: IAboutProjectState = aboutProjectState;
-  // i guess it will be able after setting data in the CMS
-
+  const { aboutProject }: IAboutProjectState = aboutProjectState;
   const aboutProjectPending: boolean | null = aboutProjectState.pending;
 
   return (
