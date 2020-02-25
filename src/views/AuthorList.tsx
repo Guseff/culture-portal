@@ -13,7 +13,6 @@ const AuthorList: React.FC = () => {
     return <Spinner animation="grow" variant="info" />;
   }
 
-  console.log(author);
   return (
     <Container className="content">
       <AuthorListApp data={byId} author={author} lang={language} />
