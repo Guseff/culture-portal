@@ -6,7 +6,6 @@ module.exports = {
   ).parse,
   sections: [
     {
-      name: 'Typographica',
       content: 'src/components/StyleGuide/StyleGuide.md',
     },
   ],
