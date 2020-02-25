@@ -1,10 +1,11 @@
-@import "../../assets/styles/variables.scss";
+@import '../../assets/styles/variables.scss';
 
 .header {
   margin-bottom: 20px;
   padding: 0;
   font-size: large;
   background-color: $bg-header-footer;
+  box-shadow: $box-shadow-header;
 
   .navbar {
     padding: 0 1rem;
@@ -31,7 +32,6 @@
   }
 
   form {
-
     .form-control {
       color: $color-text;
       background-color: transparent;
@@ -42,13 +42,11 @@
 
 @media (max-width: 800px) {
   .header {
-
     .navbar-expand {
       flex-flow: column nowrap;
     }
 
     form {
-
       .form-control {
         margin: 20px 0;
       }
@@ -56,17 +54,12 @@
   }
 }
 
-
 @media (max-width: 400px) {
   .header {
-
     .navbar {
-  
       .navbar-nav {
         flex-direction: column;
       }
     }
   }
 }
-
-

@@ -16,10 +16,10 @@ const CardItem: React.FC<DevelopersCardsProps> = ({ developer }) => {
       <Card.Img variant="top" src={developer.photo} />
       <Card.Body>
         <Card.Title>{developer.name}</Card.Title>
-        <div className="card__link">
+        <Card.Link href={developer.link} className="card__link" target="_blank">
           <Card.Img src={git} />
-          <Card.Link href={developer.link}>{itemLink}</Card.Link>
-        </div>
+          <Card.Text>{itemLink}</Card.Text>
+        </Card.Link>
         <Card.Text>{developer.role}</Card.Text>
       </Card.Body>
     </Card>

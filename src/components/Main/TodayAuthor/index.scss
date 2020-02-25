@@ -9,7 +9,7 @@
   color: white;
   text-align: center;
   border-radius: $radius;
-  box-shadow: 5px 5px 20px -15px #000000;
+  box-shadow: $box-shadow;
 
   .row {
     margin: 0;
@@ -18,7 +18,7 @@
       padding: 0;
     }
   }
- 
+
   .main-block2__title {
     font-family: $font-title;
     background: $color-bg-main-block2;

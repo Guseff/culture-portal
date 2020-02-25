@@ -3,6 +3,7 @@
 .footer {
   margin-top: 20px;
   background-color: $bg-header-footer;
+  box-shadow: $box-shadow-footer;
 
   .footer_item {
     justify-content: space-between;
