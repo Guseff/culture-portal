@@ -16,7 +16,7 @@ const AuthorMap: React.FC<AuthorMapProps> = ({ longitude, latitude }) => {
 
   return (
     <React.Fragment>
-      <span className="Author-page__map--text">{t('businessPlace')}</span>
+      <span className="Author-page__map_text">{t('businessPlace')}</span>
       <Map
         className="Author-page__map-container"
         style="mapbox://styles/mapbox/streets-v11"
