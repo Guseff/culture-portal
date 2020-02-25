@@ -1,8 +1,21 @@
+@import '../../../assets/styles/variables.scss';
+
 .btn-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: auto;
+}
+
+.btn-outline-secondary {
+  color: #000000;
+  font-family: $font-button;
+  background: rgba(250, 235, 215, 0.8);
+
+  &:hover {
+    color: #000000;
+    background: $bg-header-footer;
+  }
 }
 
 a:hover {

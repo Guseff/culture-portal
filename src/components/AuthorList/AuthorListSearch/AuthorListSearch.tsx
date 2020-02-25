@@ -1,31 +1,54 @@
 import React from 'react';
-import { FormControl, Form } from "react-bootstrap";
-import { FILTER_AUTHOR_LIST } from '../../../constants';
+import { FormControl, Form } from 'react-bootstrap';
+import {
+  SEARCH_SEL_TRANSLATES,
+  SEARCH_TRANSLATES,
+  SEARCH_OPTIONS,
+} from '../../../constants';
 import './AuthorListSearch.scss';
 
-const selectList = Object.values(FILTER_AUTHOR_LIST)[0];
-
-interface AuthorListSearchProps {
-    handleFilterSelect: (e: React.ChangeEvent<HTMLInputElement>) => any,
-    handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => any
+interface IAuthorListSearchProps {
+  handleFilterSelect: (e: React.ChangeEvent<HTMLInputElement>) => any;
+  handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => any;
+  lang: string;
+  searchValue: string;
+  searchOption: string;
 }
 
-const AuthorListSearch: React.FC<AuthorListSearchProps> = ({ handleFilterSelect, handleInputChange }) => {
-    return (
-        <Form.Group className="input-group mb-3">
-            <div className="input-group-prepend">
-                <Form.Control as="select" onChange={handleFilterSelect}>
-                    {selectList.map((value, index) => {
-                        return <option key={index}>{value}</option>
-                    })}   
-                </Form.Control>  
-            </div> 
-            <FormControl 
-                type="text" 
-                placeholder="Поиск" 
-                onChange={handleInputChange}/>           
-        </Form.Group>
-    )
-}
+const AuthorListSearch: React.FC<IAuthorListSearchProps> = ({
+  handleFilterSelect,
+  handleInputChange,
+  lang,
+  searchValue,
+  searchOption,
+}) => {
+  const options = Object.keys(SEARCH_OPTIONS);
+  return (
+    <Form.Group className="input-group mb-3">
+      <div className="input-group-prepend">
+        <Form.Control
+          as="select"
+          onChange={handleFilterSelect}
+          value={searchOption}
+        >
+          {options.map((option, index) => {
+            return (
+              <option key={index} value={option}>
+                {SEARCH_SEL_TRANSLATES[lang][option]}
+              </option>
+            );
+          })}
+        </Form.Control>
+      </div>
+
+      <FormControl
+        type="text"
+        placeholder={SEARCH_TRANSLATES[lang]}
+        onChange={handleInputChange}
+        value={searchValue}
+      />
+    </Form.Group>
+  );
+};
 
 export { AuthorListSearch };

@@ -1,18 +1,60 @@
-.Author-page {
-    .Author-page--photo-col {
-        background-color: '#80808038';
-        .Author-page--photo {
-            width: 150px;
-        }
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+.Author-page--photo-col {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 13rem;
+}
+
+.Author-page_photo {
+  width: 13rem;
+  padding: 6%;
+  background-color: antiquewhite;
+}
+
+.Author-page__map_text {
+    position: relative;
+	background: #faebd7;
+    border-radius: .4em;
+    padding: 4%;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: #faebd7;
+        border-bottom: 0;
+        border-left: 0;
+        margin-left: -11.5px;
+        margin-bottom: -10px;
     }
-    .Author-page--iframe {
-        width: 400px;
-        height: 200px;
-    }
-    .Author-page__map-container {
-        height: 200px;
-        width: 200px;
-        border-radius: 10px;
-        margin-top: 15px;
-    }
+}
+
+.Author-page__map-container {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.Author-page_youtube-button {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 1rem;
+
+  &:hover {
+    background-color: #faebd7;
+  }
+}
+
+.Author-page_youtube-logo {
+  width: 2rem;
+  height: 2rem;
 }

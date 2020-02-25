@@ -53,7 +53,7 @@ export const worklog = (
 
     case `${WORKLOG_GET}${RequestState.SUCCESS}`:
       return {
-        ...payload,
+        worklog: payload,
         pending: false,
       };
 

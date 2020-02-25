@@ -1,33 +1,29 @@
 import '../components/About/index.scss';
 import * as React from 'react';
 import CardItem from '../components/About/Card/index';
-import developers from '../data/developersData';
+import AboutButton from '../components/About/AboutButtons/index';
+import { useSelector } from 'react-redux';
 
-import { Container, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Spinner } from 'react-bootstrap';
 
-class About extends React.Component {
-  constructor(props: Readonly<{}>) {
-    super(props);
+const About: React.FC = () => {
+  const developerState = useSelector((store: any) => store.developer);
+  const settingsState = useSelector((store: any) => store.settings);
+  const { language } = settingsState;
+  const { byId, developer, pending } = developerState;
+
+  if (pending) {
+    return <Spinner animation="grow" variant="info" />;
   }
 
-  render() {
-    return (
-      <Container className="content">
-        <section className="about">
-          {developers.map(developer => (
-            <CardItem key={developer.id} developer={developer} />
-          ))}
-        </section>
-        <Nav.Link as={Link} to="/worklog">
-          Worklog
-        </Nav.Link>
-        <Nav.Link as={Link} to="/styleguide">
-          StyleGuide
-        </Nav.Link>
-      </Container>
-    );
-  }
-}
+  return (
+    <Container className="content">
+      <AboutButton />
+      <section>
+        <CardItem list={byId} developer={developer} lang={language} />
+      </section>
+    </Container>
+  );
+};
 
 export default About;
