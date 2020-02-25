@@ -4,12 +4,6 @@ export const LANGUAGES = {
   BE: 'be',
 };
 
-export const FILTER_AUTHOR_LIST = {
-  RU: ['Имя', 'Город рождения'],
-  EN: ['Name', 'City of birth'],
-  BE: ['Iмя', 'Горад нараджэння']
-};
-
 export const SEARCH_SEL_TRANSLATES = {
   ru: ['По имени', 'По городу рождения'],
   en: ['By name', 'By city of birth'],
