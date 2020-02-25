@@ -4,10 +4,15 @@ export const LANGUAGES = {
   BE: 'be',
 };
 
+export const SEARCH_OPTIONS = {
+  name: 'name',
+  city: 'city',
+};
+
 export const SEARCH_SEL_TRANSLATES = {
-  ru: ['По имени', 'По городу рождения'],
-  en: ['By name', 'By city of birth'],
-  be: ['Па iмi', 'Па горадзе нараджэння'],
+  ru: { name: 'По имени', city: 'По городу рождения' },
+  en: { name: 'By name', city: 'By city of birth' },
+  be: { name: 'Па iмi', city: 'Па горадзе нараджэння' },
 };
 
 export const SEARCH_TRANSLATES = {

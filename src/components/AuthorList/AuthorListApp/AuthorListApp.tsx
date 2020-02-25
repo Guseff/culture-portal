@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import { AuthorListCards } from '../AuthorListCards/AuthorListCards';
 import { AuthorListSearch } from '../AuthorListSearch/AuthorListSearch';
-import { SEARCH_SEL_TRANSLATES } from '../../../constants';
+import { SEARCH_OPTIONS } from '../../../constants';
 import './AuthorListApp.scss';
 
 interface AuthorListAppState {
   filterList: string[];
-  filterSearch: string;
   searchValue: string;
+  searchOption: string;
 }
 
 interface AuthorListAppProps {
@@ -20,8 +20,8 @@ interface AuthorListAppProps {
 class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
   state = {
     filterList: [],
-    filterSearch: SEARCH_SEL_TRANSLATES[this.props.lang][0],
     searchValue: '',
+    searchOption: SEARCH_OPTIONS.name,
   };
 
   componentDidMount() {
@@ -35,7 +35,6 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
       this.setState({
         searchValue: '',
         filterList: this.props.data,
-        filterSearch: SEARCH_SEL_TRANSLATES[this.props.lang][0],
       });
     }
   }
@@ -44,9 +43,9 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
     const target = e.target.value;
 
     this.setState({
-      filterSearch: target,
       searchValue: '',
       filterList: this.props.data,
+      searchOption: target,
     });
   };
 
@@ -57,12 +56,12 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
 
     if (e.target.value !== '') {
       currentList = data;
-      const { filterSearch } = this.state;
+      const { searchOption } = this.state;
 
       newList = currentList.filter((item: string) => {
         const searchValueString = e.target.value.toLowerCase();
         const filter =
-          filterSearch === SEARCH_SEL_TRANSLATES[lang][0]
+          searchOption === SEARCH_OPTIONS.name
             ? author[item][lang].name.toLowerCase()
             : author[item][lang].birthCity.toLowerCase();
 
@@ -79,7 +78,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
   };
 
   render() {
-    const { filterList, searchValue } = this.state;
+    const { filterList, searchValue, searchOption } = this.state;
     const { author, lang } = this.props;
 
     return (
@@ -89,6 +88,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
           handleInputChange={this.handleInputChange}
           lang={lang}
           searchValue={searchValue}
+          searchOption={searchOption}
         />
         <AuthorListCards list={filterList} author={author} lang={lang} />
       </Container>
