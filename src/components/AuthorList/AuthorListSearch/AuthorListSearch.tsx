@@ -7,7 +7,7 @@ import {
 } from '../../../constants';
 import './AuthorListSearch.scss';
 
-interface AuthorListSearchProps {
+interface IAuthorListSearchProps {
   handleFilterSelect: (e: React.ChangeEvent<HTMLInputElement>) => any;
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => any;
   lang: string;
@@ -15,7 +15,7 @@ interface AuthorListSearchProps {
   searchOption: string;
 }
 
-const AuthorListSearch: React.FC<AuthorListSearchProps> = ({
+const AuthorListSearch: React.FC<IAuthorListSearchProps> = ({
   handleFilterSelect,
   handleInputChange,
   lang,
