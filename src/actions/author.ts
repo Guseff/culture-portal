@@ -20,7 +20,8 @@ export const authorGetList = () => {
           payload,
         });
       })
-      .catch(() => {
+      .catch(e => {
+        console.log(e);
         dispatch({ type: `${AUTHOR_GET_LIST}${RequestState.FAIL}` });
       });
   };
