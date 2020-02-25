@@ -5,16 +5,21 @@
   flex-direction: column;
   justify-content: flex-end;
   height: auto;
-}
 
-.btn-outline-secondary {
-  color: #000000;
-  font-family: $font-button;
-  background: rgba(250, 235, 215, 0.8);
+  .btn-outline-secondary {
+    color: $color-text-black;
+    font-family: $font-button;
+    background-color: $color-btn;
 
-  &:hover {
-    color: #000000;
-    background: $bg-header-footer;
+    &:hover {
+      color: $color-text-black;
+      background-color: $color-btn-hover;
+    }
+
+    &:active {
+      color: $color-text-black !important;
+      background-color: $color-btn-active !important;
+    }
   }
 }
 

@@ -13,11 +13,12 @@ const resources = {
       noMatchInfo: 'Sorry, we could not find the page you were looking for.',
       noMatchSuggest: 'Maybe you should just',
       noMatchLinkToHome: 'start over at the homepage',
+      signature: 'proudly created by',
     },
   },
   ru: {
     translation: {
-      home: 'На главную',
+      home: 'Главная',
       writers: 'Писатели',
       about: 'О нас',
       writerOfTheDay: 'Писатель дня',
@@ -29,11 +30,12 @@ const resources = {
       noMatchInfo: 'Извините, мы не нашли страницу, которую Вы искали.',
       noMatchSuggest: 'Может быть, Вам стоит',
       noMatchLinkToHome: 'начать сначала с домашней страницы.',
+      signature: 'гордо создано командой',
     },
   },
   be: {
     translation: {
-      home: 'На галоўную',
+      home: 'Галоўная',
       writers: 'Пісьменнікі',
       about: 'Пра нас',
       writerOfTheDay: 'Пісьменнік дня',
@@ -45,6 +47,7 @@ const resources = {
       noMatchInfo: 'Выбачайце, мы не знайшлі старонку, якую вы шукалі.',
       noMatchSuggest: 'Можа быць, Вам варта',
       noMatchLinkToHome: 'пачаць усё спачатку з хатняй старонкі.',
+      signature: 'горда створана камандай',
     },
   },
 };

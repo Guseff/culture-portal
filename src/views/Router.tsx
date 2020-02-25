@@ -16,7 +16,6 @@ import StyleGuide from './StyleGuide';
 import About from './About';
 import NoMatch from './NoMatch';
 import Footer from '../components/Footer/index';
-import { ExampleList } from 'Components';
 
 import {
   authorGetList,
@@ -50,7 +49,6 @@ const Router = (props: any) => {
         <Route path="/worklog" component={WorkLog} />
         <Route path="/styleguide" render={StyleGuide} />
         <Route path="/about" component={About} />
-        <Route path="/ex" component={ExampleList} />
         <Route path="*" component={NoMatch} />
       </Switch>
       <Footer />

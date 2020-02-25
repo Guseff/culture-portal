@@ -2,14 +2,31 @@
 
 .footer {
   margin-top: 20px;
-  background-color: $bg-header-footer;
+  background-color: $color-bg-header-footer;
   box-shadow: $box-shadow-footer;
 
   .footer_item {
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 
     a {
-      color: $color-text;
+      color: $color-nav-text;
+
+      &:hover {
+        color: $color-nav-text-hover;
+      }
+    }
+
+    .navbar-text {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      color: $color-nav-text;
+
+      .copyright {
+        font-size: 1.2rem;
+      }
     }
   }
 }

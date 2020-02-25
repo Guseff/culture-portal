@@ -4,7 +4,7 @@
   margin-bottom: 20px;
   padding: 0;
   font-size: large;
-  background-color: $bg-header-footer;
+  background-color: $color-bg-header-footer;
   box-shadow: $box-shadow-header;
 
   .navbar {
@@ -12,6 +12,19 @@
 
     .navbar-nav {
       margin-right: 30px;
+
+      a {
+        color: $color-nav-text;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: $color-nav-text-hover;
+        }
+      }
+
+      .disabled {
+        color: $color-nav-text-disabled;
+      }
     }
   }
 
@@ -24,18 +37,38 @@
       width: 100px;
       height: 68px;
     }
+
     h1 {
+      margin-left: 5px;
       font-size: 16px;
-      color: $color-text;
+      color: $color-nav-text;
       font-family: $font-title;
     }
   }
 
   form {
     .form-control {
-      color: $color-text;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+      color: #ffffff;
+      color: $color-nav-text;
       background-color: transparent;
-      border: 1px solid $color-text;
+      border: 1px solid $color-nav-text;
+      transition: background 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #ffffff2f;
+      }
+
+      .form-option {
+        background-color: $color-bg-header-footer;
+        min-height: 20px;
+        height: 100px !important;
+        transition: all 1s ease-in-out;
+      }
     }
   }
 }

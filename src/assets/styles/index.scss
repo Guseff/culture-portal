@@ -1,14 +1,20 @@
 @import '../styles/variables.scss';
 
-html,
+html {
+  min-height: 100vh;
+}
+
 body {
+  min-height: 100vh;
   height: 100%;
 
   #root {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     height: 100%;
     font-family: $font-text;
+    background: $color-body-gradient;
   }
 }
 
