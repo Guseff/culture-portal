@@ -35,6 +35,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
       this.setState({
         searchValue: '',
         filterList: this.props.data,
+        filterSearch: SEARCH_SEL_TRANSLATES[this.props.lang][0],
       });
     }
   }
@@ -59,13 +60,13 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
       const { filterSearch } = this.state;
 
       newList = currentList.filter((item: string) => {
-        const searchValue = e.target.value.toLowerCase();
+        const searchValueString = e.target.value.toLowerCase();
         const filter =
           filterSearch === SEARCH_SEL_TRANSLATES[lang][0]
             ? author[item][lang].name.toLowerCase()
             : author[item][lang].birthCity.toLowerCase();
 
-        return filter.includes(searchValue);
+        return filter.includes(searchValueString);
       });
     } else {
       newList = data;
