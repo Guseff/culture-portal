@@ -22,7 +22,7 @@ const AuthorTimeline: React.FC<IAuthorTimelineProps> = ({
   id,
   author,
   language,
-}: IAuthorTimelineProps) => {
+}) => {
   return (
     <Timeline lineColor={timelineStyles.lineColor}>
       {author[id][language].biography.map((fact: IAuthorTimelineFacts, idx) => (

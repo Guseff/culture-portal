@@ -9,9 +9,7 @@ interface LearnMoreButtonProps {
   id: string;
 }
 
-const LearnMoreButton: React.FC<LearnMoreButtonProps> = ({
-  id,
-}: LearnMoreButtonProps) => {
+const LearnMoreButton: React.FC<LearnMoreButtonProps> = ({ id }) => {
   const { t } = useTranslation();
 
   return (

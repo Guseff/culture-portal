@@ -19,7 +19,7 @@ const TodayAuthor: React.FC<ITodayAuthorProps> = ({
   authorIds,
   author,
   language,
-}: ITodayAuthorProps) => {
+}) => {
   const { t } = useTranslation();
 
   const todayAuthorId: string = authorIds[currentDay];

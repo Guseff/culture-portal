@@ -7,10 +7,7 @@ interface IOverviewProps {
   language: string;
 }
 
-const Overview: React.FC<IOverviewProps> = ({
-  overview,
-  language,
-}: IOverviewProps) => {
+const Overview: React.FC<IOverviewProps> = ({ overview, language }) => {
   return (
     <>
       <h1 className="main_title">{overview[language].title}</h1>

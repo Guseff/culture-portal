@@ -6,7 +6,6 @@ import {
   AuthorPhoto,
   AuthorMap,
   AuthorInfo,
-  AuthorFrame,
   AuthorTimeline,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
@@ -55,18 +54,9 @@ const Author: React.FC = () => {
               <Col md="auto">
                 <AuthorMap
                   longitude={
-                    author[currentAuthorId][language].activityPlace.longitude
+                    author[currentAuthorId][language].location.longitude
                   }
-                  latitude={
-                    author[currentAuthorId][language].activityPlace.latitude
-                  }
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col md={{ span: 8, offset: 3 }}>
-                <AuthorFrame
-                  videoUrl={author[currentAuthorId][language].video}
+                  latitude={author[currentAuthorId][language].location.latitude}
                 />
               </Col>
             </Row>

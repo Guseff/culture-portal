@@ -6,10 +6,7 @@ interface IAuthorPhotoProps {
   photo: string;
 }
 
-const AuthorPhoto: React.FC<IAuthorPhotoProps> = ({
-  photo,
-  name,
-}: IAuthorPhotoProps) => {
+const AuthorPhoto: React.FC<IAuthorPhotoProps> = ({ photo, name }) => {
   return <Image className="Author-page--photo" src={photo} alt={name} />;
 };
 

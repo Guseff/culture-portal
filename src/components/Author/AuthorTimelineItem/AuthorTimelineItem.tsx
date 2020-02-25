@@ -16,9 +16,7 @@ const timelineItemStyles = {
   color: '#ff962e',
 };
 
-const AuthorTimelineItem: React.FC<IAuthorTimelineItemProps> = ({
-  fact,
-}: IAuthorTimelineItemProps) => {
+const AuthorTimelineItem: React.FC<IAuthorTimelineItemProps> = ({ fact }) => {
   return (
     <TimelineItem
       dateText={fact.endAt ? `${fact.startAt} - ${fact.endAt}` : fact.startAt}

@@ -13,7 +13,7 @@ const AuthorInfo: React.FC<IAuthorInfoProps> = ({
   years,
   birthCity,
   description,
-}: IAuthorInfoProps) => {
+}) => {
   const { t } = useTranslation();
 
   return (

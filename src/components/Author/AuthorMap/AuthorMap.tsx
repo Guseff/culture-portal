@@ -7,10 +7,7 @@ interface IAuthorMapProps {
   latitude: number;
 }
 
-const AuthorMap: React.FC<IAuthorMapProps> = ({
-  longitude,
-  latitude,
-}: IAuthorMapProps) => {
+const AuthorMap: React.FC<IAuthorMapProps> = ({ longitude, latitude }) => {
   const { t } = useTranslation();
   const Map = ReactMapboxGl({
     accessToken:
