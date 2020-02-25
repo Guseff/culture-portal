@@ -7,7 +7,7 @@ import {
   AuthorMap,
   AuthorInfo,
   AuthorTimeline,
-  ModalVideoWindow,
+  AuthorModalVideo,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
@@ -43,7 +43,7 @@ const Author: React.FC = () => {
                   photo={author[currentAuthorId].photo}
                   name={author[currentAuthorId][language].name}
                 />
-                <ModalVideoWindow
+                <AuthorModalVideo
                   videoId={author[currentAuthorId][language].video}
                 />
               </Col>

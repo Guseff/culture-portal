@@ -3,15 +3,15 @@ import { Button, Image } from 'react-bootstrap';
 import ModalVideo from 'react-modal-video';
 import ModalLogo from '../../../assets/images/youtube-icon.png';
 
-interface ModalVideoState {
+interface AuthorModalVideoState {
   isOpen: boolean;
 }
 
-interface ModalVideoProps {
+interface AuthorModalVideoProps {
   videoId: string;
 }
 
-class ModalVideoWindow extends Component<ModalVideoProps, ModalVideoState> {
+class AuthorModalVideo extends Component<AuthorModalVideoProps, AuthorModalVideoState> {
   state = {
     isOpen: false,
   };
@@ -56,4 +56,4 @@ class ModalVideoWindow extends Component<ModalVideoProps, ModalVideoState> {
   }
 }
 
-export default ModalVideoWindow;
+export default AuthorModalVideo;
