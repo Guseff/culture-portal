@@ -32,21 +32,21 @@ const developersData = [
     name: 'Vladimir Otroshchenko',
     link: 'https://github.com/VladimirOtroshchenko',
     photo: Otroshchenko,
-    role: '',
+    role: 'Front-end developer',
   },
   {
     id: 5,
     name: 'Vasily Gusev',
     link: 'https://github.com/Guseff',
     photo: Gusev,
-    role: '',
+    role: 'Front-end developer',
   },
   {
     id: 6,
     name: 'Igor Barbashov',
     link: 'https://github.com/IgorBarbashov',
     photo: Barbashov,
-    role: '',
+    role: 'Front-end developer',
   },
 ];
 

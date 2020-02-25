@@ -1,31 +1,54 @@
 import '../components/Main/index.scss';
 
-import * as React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Row, Col, Container, Spinner } from 'react-bootstrap';
 import TodayAuthor from '../components/Main/';
 import Overview from '../components/Main/Overview';
+import {
+  IStoreState,
+  ISettingsState,
+  IAuthorState,
+  IAboutProjectState,
+} from 'Types';
 
-class Main extends React.Component {
-  constructor(props: Readonly<{}>) {
-    super(props);
-  }
+const Main: React.FC = () => {
+  const authorState: IAuthorState = useSelector(
+    (store: IStoreState) => store.author
+  );
+  const settingsState: ISettingsState = useSelector(
+    (store: IStoreState) => store.settings
+  );
+  const aboutProjectState: IAboutProjectState = useSelector(
+    (store: IStoreState) => store.aboutProject
+  );
+  const { byId, author, pending }: IAuthorState = authorState;
+  const { language }: ISettingsState = settingsState;
+  const { aboutProject }: IAboutProjectState = aboutProjectState;
+  const aboutProjectPending: boolean | null = aboutProjectState.pending;
 
-  render() {
-    return (
-      <Container className="content">
-        <Row>
-          <Col className="col_item1">
-            <Overview />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <TodayAuthor />
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
-}
+  return (
+    <Container className="content">
+      {pending || aboutProjectPending ? (
+        <Spinner className="spinner" animation="border" />
+      ) : (
+        <>
+          <Row>
+            <Overview overview={aboutProject} language={language} />
+          </Row>
+          <Row>
+            <Col>
+              <TodayAuthor
+                authorIds={byId}
+                author={author}
+                language={language}
+              />
+            </Col>
+          </Row>
+        </>
+      )}
+    </Container>
+  );
+};
 
 export default Main;

@@ -1,51 +1,77 @@
 import '../components/Author/';
-import * as React from 'react';
-import { Container, Nav, Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { Container, Spinner, Nav, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import data from '../data/writersData';
 import {
   AuthorPhoto,
   AuthorMap,
   AuthorInfo,
-  ModalVideoWindow,
+  AuthorTimeline,
+  ModalVideoWindow
 } from '../components/Author/';
+import { useSelector } from 'react-redux';
+import { IStoreState, ISettingsState, IAuthorState } from 'Types';
 
-interface AuthorProps {
-  id: number;
-}
+const Author: React.FC = () => {
+  const authorState: IAuthorState = useSelector(
+    (store: IStoreState) => store.author
+  );
+  const settingsState: ISettingsState = useSelector(
+    (store: IStoreState) => store.settings
+  );
+  const currentAuthorId: string = useSelector((store: IStoreState) =>
+    store.router.location.pathname.slice(8)
+  );
 
-interface AuthorState {}
+  const { byId, author, pending }: IAuthorState = authorState;
+  const { language }: ISettingsState = settingsState;
 
-class Author extends React.Component<AuthorProps, AuthorState> {
-  render() {
-    const id = 2; // have to change to data from CMS
-    const idVideo = 'HGvYNDVLqoI'; // have to change to data from CMS
-
-    return (
-      <Container className="content">
-        <Nav.Link as={Link} to="/list">
-          Back to Author List
-        </Nav.Link>
-        <Row>
-          <Col md="auto" className="Author-page--photo-col">
-            <AuthorPhoto image={data[id].image} name={data[id].name} />
-            <ModalVideoWindow videoId={idVideo} />
-          </Col>
-          <Col sm="6">
-            <AuthorInfo
-              name={data[id].name}
-              years={data[id].years}
-              birthCity={data[id].birthCity}
-              description={data[id].description}
+  return (
+    <Container className="content">
+      <h3>Author Page</h3>
+      <Nav.Link as={Link} to="/list">
+        Back to Author List
+      </Nav.Link>
+      {pending ? (
+        <Spinner animation="grow" variant="info" />
+      ) : (
+        byId.length && (
+          <>
+            <Row>
+              <Col md="auto" className="Author-page--photo-col">
+                <AuthorPhoto
+                  photo={author[currentAuthorId].photo}
+                  name={author[currentAuthorId][language].name}
+                />
+                {/* <ModalVideoWindow videoId={idVideo} /> */}
+              </Col>
+              <Col sm="6">
+                <AuthorInfo
+                  name={author[currentAuthorId][language].name}
+                  years={author[currentAuthorId][language].years}
+                  birthCity={author[currentAuthorId][language].birthCity}
+                  description={author[currentAuthorId][language].description}
+                />
+              </Col>
+              <Col md="auto">
+                <AuthorMap
+                  longitude={
+                    author[currentAuthorId][language].location.longitude
+                  }
+                  latitude={author[currentAuthorId][language].location.latitude}
+                />
+              </Col>
+            </Row>
+            <AuthorTimeline
+              author={author}
+              id={currentAuthorId}
+              language={language}
             />
-          </Col>
-          <Col md="auto">
-            <AuthorMap activityPlace={data[id].location} />
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
-}
+          </>
+        )
+      )}
+    </Container>
+  );
+};
 
 export default Author;

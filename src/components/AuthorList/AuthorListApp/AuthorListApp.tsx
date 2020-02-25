@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import { Container } from 'react-bootstrap';
 import { AuthorListCards } from '../AuthorListCards/AuthorListCards';
 import { AuthorListSearch } from '../AuthorListSearch/AuthorListSearch';
-import { FILTER_AUTHOR_LIST } from '../../../constants';
+import { SEARCH_OPTIONS } from '../../../constants';
 import './AuthorListApp.scss';
-
-const selectList = Object.values(FILTER_AUTHOR_LIST);
 
 interface AuthorListAppState {
   filterList: string[];
-  filterSearch: string;
+  searchValue: string;
+  searchOption: string;
 }
 
 interface AuthorListAppProps {
@@ -21,7 +20,8 @@ interface AuthorListAppProps {
 class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
   state = {
     filterList: [],
-    filterSearch: selectList[0][0],
+    searchValue: '',
+    searchOption: SEARCH_OPTIONS.name,
   };
 
   componentDidMount() {
@@ -30,17 +30,22 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
     });
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps: { data: string[] }) {
-    this.setState({
-      filterList: nextProps.data,
-    });
+  componentDidUpdate(prevProps) {
+    if (this.props.lang !== prevProps.lang) {
+      this.setState({
+        searchValue: '',
+        filterList: this.props.data,
+      });
+    }
   }
 
   handleFilterSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const target = e.target.value;
 
     this.setState({
-      filterSearch: target,
+      searchValue: '',
+      filterList: this.props.data,
+      searchOption: target,
     });
   };
 
@@ -51,16 +56,16 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
 
     if (e.target.value !== '') {
       currentList = data;
-      const { filterSearch } = this.state;
+      const { searchOption } = this.state;
 
       newList = currentList.filter((item: string) => {
-        const searchValue = e.target.value.toLowerCase();
+        const searchValueString = e.target.value.toLowerCase();
         const filter =
-          filterSearch === selectList[0][0]
+          searchOption === SEARCH_OPTIONS.name
             ? author[item][lang].name.toLowerCase()
             : author[item][lang].birthCity.toLowerCase();
 
-        return filter.includes(searchValue);
+        return filter.includes(searchValueString);
       });
     } else {
       newList = data;
@@ -68,11 +73,12 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
 
     this.setState({
       filterList: newList,
+      searchValue: e.target.value,
     });
   };
 
   render() {
-    const { filterList } = this.state;
+    const { filterList, searchValue, searchOption } = this.state;
     const { author, lang } = this.props;
 
     return (
@@ -80,6 +86,9 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
         <AuthorListSearch
           handleFilterSelect={this.handleFilterSelect}
           handleInputChange={this.handleInputChange}
+          lang={lang}
+          searchValue={searchValue}
+          searchOption={searchOption}
         />
         <AuthorListCards list={filterList} author={author} lang={lang} />
       </Container>

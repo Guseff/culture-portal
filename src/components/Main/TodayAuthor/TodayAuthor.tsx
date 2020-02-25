@@ -1,33 +1,28 @@
 import './index.scss';
 
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { Container, Image, Row, Col, Spinner } from 'react-bootstrap';
+import { Container, Image, Row, Col } from 'react-bootstrap';
 import LearnMoreButton from '../LearnMoreButton/';
 import { useTranslation } from 'react-i18next';
 
 const currentDay: number = new Date().getDay();
 
-interface IAuthorState {
-  byId: number[];
+interface ITodayAuthorProps {
+  authorIds: string[];
   author: object;
-  pending: boolean;
+  language: string;
 }
 
 type PrettyDate = (date: string) => string;
 
-const TodayAuthor: React.FC = () => {
+const TodayAuthor: React.FC<ITodayAuthorProps> = ({
+  authorIds,
+  author,
+  language,
+}) => {
   const { t } = useTranslation();
-  const authorState: IAuthorState = useSelector((store: any) => store.author);
-  const { byId, author, pending }: IAuthorState = authorState;
 
-  const locale = 'ru'; // language will be taken later
-
-  if (pending) {
-    return <Spinner className="spinner" animation="border" />;
-  }
-
-  const id: number = byId[currentDay];
+  const todayAuthorId: string = authorIds[currentDay];
 
   const getPrettyDate: PrettyDate = (date: string) =>
     date
@@ -36,36 +31,38 @@ const TodayAuthor: React.FC = () => {
       .join('.');
 
   return (
-    <>
-      {byId.length && (
-        <Container className="main-block2">
-          <Row>
-            <Col className="main-block2-col1">
-              <h2 className="main-block2__title">{t('writerOfTheDay')}</h2>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="main-block2__img" xs={5}>
-              <Image
-                src={author[id].photo}
-                alt={author[id][locale].name}
-                fluid
-              />
-            </Col>
-            <Col className="main-block2__body">
-              <p className="main-block2__text1">{author[id][locale].name}</p>
-              <p className="main-block2__text2">{`${getPrettyDate(
-                author[id][locale].birthDate
-              )} - ${getPrettyDate(author[id][locale].deathDate)}`}</p>
-              <p className="main-block2__text3">
-                {author[id][locale].description}
-              </p>
-              <LearnMoreButton />
-            </Col>
-          </Row>
-        </Container>
-      )}
-    </>
+    authorIds.length && (
+      <Container className="main-block2">
+        <Row>
+          <Col className="main-block2-col1">
+            <h2 className="main-block2__title">{t('writerOfTheDay')}</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="main-block2__img" xs={5}>
+            <Image
+              src={author[todayAuthorId].photo}
+              alt={author[todayAuthorId][language].name}
+              fluid
+            />
+          </Col>
+          <Col className="main-block2__body">
+            <p className="main-block2__text1">
+              {author[todayAuthorId][language].name}
+            </p>
+            <p className="main-block2__text2">{`${getPrettyDate(
+              author[todayAuthorId][language].birthDate
+            )} - ${getPrettyDate(
+              author[todayAuthorId][language].deathDate
+            )}`}</p>
+            <p className="main-block2__text3">
+              {author[todayAuthorId][language].description}
+            </p>
+            <LearnMoreButton id={todayAuthorId} />
+          </Col>
+        </Row>
+      </Container>
+    )
   );
 };
 

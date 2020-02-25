@@ -1,18 +1,10 @@
 {
-  "byId": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
-  ],
+  "byId": [1, 2, 3, 4, 5, 6, 7],
   "author": {
     "1": {
       "be": {
         "name": "Уладзімір Сямёнавіч Караткевіч",
-        "video": "https://youtu.be/Dpk0KkuAYFE",
+        "video": "Dpk0KkuAYFE",
         "works": [
           {
             "endAt": null,
@@ -134,14 +126,14 @@
         "deathDate": "1984-07-25",
         "description": "Беларускі савецкі пісьменнік, паэт, драматург, сцэнарыст і публіцыст, класік беларускай літаратуры. З'яўляецца адной з найбольш яркіх фігур у беларускай літаратуры XX стагоддзя. Стаў першым беларускім пісьменнікам, які звярнуўся да жанру гістарычнага дэтэктыва.",
         "nativeImage": "Korotkevich",
-        "activityPlace": {
+        "location": {
           "latitude": 30.4254486,
           "longitude": 54.5119008
         }
       },
       "en": {
         "name": "Vladimir Semenovich Korotkevich",
-        "video": "https://youtu.be/Dpk0KkuAYFE",
+        "video": "Dpk0KkuAYFE",
         "works": [
           {
             "endAt": null,
@@ -263,14 +255,14 @@
         "deathDate": "1984-07-25",
         "description": "Belarusian Soviet writer, poet, playwright, screenwriter and publicist, classic of Belarusian literature. It is one of the most striking figures in Belarusian literature of the 20th century. He became the first Belarusian writer to turn to the genre of historical detective story.",
         "nativeImage": "Korotkevich",
-        "activityPlace": {
+        "location": {
           "latitude": 30.4254486,
           "longitude": 54.5119008
         }
       },
       "ru": {
         "name": "Владимир Семёнович Короткевич",
-        "video": "https://youtu.be/Dpk0KkuAYFE",
+        "video": "Dpk0KkuAYFE",
         "works": [
           {
             "endAt": null,
@@ -392,7 +384,7 @@
         "deathDate": "1984-07-25",
         "description": "Белорусский советский писатель, поэт, драматург, сценарист и публицист, классик белорусской литературы. Является одной из наиболее ярких фигур в белорусской литературе XX столетия. Стал первым белорусским писателем, обратившимся к жанру исторического детектива.",
         "nativeImage": "Korotkevich",
-        "activityPlace": {
+        "location": {
           "latitude": 30.4254486,
           "longitude": 54.5119008
         }
@@ -401,7 +393,7 @@
     "2": {
       "be": {
         "name": "Янка Купала",
-        "video": "https://youtu.be/aJbr-p5cYuI",
+        "video": "aJbr-p5cYuI",
         "works": [
           {
             "endAt": null,
@@ -538,14 +530,14 @@
         "deathDate": "1942-07-28",
         "description": "Янка Купала (сапраўднае імя Іван Дамінікавіч Луцэвіч) - беларускі савецкі паэт і перакладчык, драматург, публіцыст. Класік беларускай літаратуры.",
         "nativeImage": "Kupala",
-        "activityPlace": {
+        "location": {
           "latitude": 25.2829111,
           "longitude": 54.6870458
         }
       },
       "en": {
         "name": "Yanka Kupala",
-        "video": "https://youtu.be/aJbr-p5cYuI",
+        "video": "aJbr-p5cYuI",
         "works": [
           {
             "endAt": null,
@@ -682,14 +674,14 @@
         "deathDate": "1942-07-28",
         "description": "Yanka Kupala (real name Ivan Dominicovich Lutsevich) - Belarusian Soviet poet and translator, playwright, publicist. Classic of Belarusian literature.",
         "nativeImage": "Kupala",
-        "activityPlace": {
+        "location": {
           "latitude": 25.2829111,
           "longitude": 54.6870458
         }
       },
       "ru": {
         "name": "Янка Купала",
-        "video": "https://youtu.be/aJbr-p5cYuI",
+        "video": "aJbr-p5cYuI",
         "works": [
           {
             "endAt": null,
@@ -826,7 +818,7 @@
         "deathDate": "1942-07-28",
         "description": "Янка Купала (настоящее имя Иван Доминикович Луцевич) — белорусский советский поэт и переводчик, драматург, публицист. Классик белорусской литературы.",
         "nativeImage": "Kupala",
-        "activityPlace": {
+        "location": {
           "latitude": 25.2829111,
           "longitude": 54.6870458
         }
@@ -835,7 +827,7 @@
     "3": {
       "be": {
         "name": "Кузьма Чорны",
-        "video": "https://youtu.be/HGvYNDVLqoI",
+        "video": "HGvYNDVLqoI",
         "works": [
           {
             "endAt": null,
@@ -956,7 +948,7 @@
       },
       "en": {
         "name": "Kuzma Chorny",
-        "video": "https://youtu.be/HGvYNDVLqoI",
+        "video": "HGvYNDVLqoI",
         "works": [
           {
             "endAt": null,
@@ -1077,7 +1069,7 @@
       },
       "ru": {
         "name": "Кузьма Чорный",
-        "video": "https://youtu.be/HGvYNDVLqoI",
+        "video": "HGvYNDVLqoI",
         "works": [
           {
             "endAt": null,
@@ -1200,7 +1192,7 @@
     "4": {
       "be": {
         "name": "Іван Пятровіч Шамякін",
-        "video": "https://youtu.be/ddMAfJFjzew",
+        "video": "ddMAfJFjzew",
         "works": [
           {
             "endAt": null,
@@ -1338,7 +1330,7 @@
       },
       "en": {
         "name": "Ivan Petrovich Shamyakin",
-        "video": "https://youtu.be/ddMAfJFjzew",
+        "video": "ddMAfJFjzew",
         "works": [
           {
             "endAt": null,
@@ -1476,7 +1468,7 @@
       },
       "ru": {
         "name": "Иван Петрович Шамякин",
-        "video": "https://youtu.be/ddMAfJFjzew",
+        "video": "ddMAfJFjzew",
         "works": [
           {
             "endAt": null,
@@ -1616,7 +1608,7 @@
     "5": {
       "be": {
         "name": "Пятрусь Броўка",
-        "video": "https://youtu.be/7xHGTr4EbK4",
+        "video": "7xHGTr4EbK4",
         "works": [
           {
             "endAt": null,
@@ -1733,7 +1725,7 @@
       },
       "en": {
         "name": "Petrus Brovka",
-        "video": "https://youtu.be/7xHGTr4EbK4",
+        "video": "7xHGTr4EbK4",
         "works": [
           {
             "endAt": null,
@@ -1850,7 +1842,7 @@
       },
       "ru": {
         "name": "Петрусь Бровка",
-        "video": "https://youtu.be/7xHGTr4EbK4",
+        "video": "7xHGTr4EbK4",
         "works": [
           {
             "endAt": null,
@@ -1969,7 +1961,7 @@
     "6": {
       "be": {
         "name": "Васіль Быкаў",
-        "video": "https://youtu.be/N2tOCg7lROk",
+        "video": "N2tOCg7lROk",
         "works": [
           {
             "endAt": null,
@@ -2123,7 +2115,7 @@
       },
       "en": {
         "name": "Vasil Bykov",
-        "video": "https://youtu.be/N2tOCg7lROk",
+        "video": "N2tOCg7lROk",
         "works": [
           {
             "endAt": null,
@@ -2277,7 +2269,7 @@
       },
       "ru": {
         "name": "Василь Быков",
-        "video": "https://youtu.be/N2tOCg7lROk",
+        "video": "N2tOCg7lROk",
         "works": [
           {
             "endAt": null,
@@ -2433,7 +2425,7 @@
     "7": {
       "be": {
         "name": "Ніл Гілевіч",
-        "video": "https://youtu.be/sWPk3sk6m6k",
+        "video": "sWPk3sk6m6k",
         "works": [
           {
             "endAt": null,
@@ -2534,7 +2526,7 @@
       },
       "en": {
         "name": "Neil Gilevich",
-        "video": "https://youtu.be/sWPk3sk6m6k",
+        "video": "sWPk3sk6m6k",
         "works": [
           {
             "endAt": null,
@@ -2635,7 +2627,7 @@
       },
       "ru": {
         "name": "Нил Гилевич",
-        "video": "https://youtu.be/sWPk3sk6m6k",
+        "video": "sWPk3sk6m6k",
         "works": [
           {
             "endAt": null,

@@ -1,28 +1,28 @@
-import * as React from 'react';
+import React from 'react';
 import ReactMapboxGl from 'react-mapbox-gl';
 import { useTranslation } from 'react-i18next';
 
-interface AuthorMapProps {
-  activityPlace: number[];
+interface IAuthorMapProps {
+  longitude: number;
+  latitude: number;
 }
 
-const AuthorMap: React.FC<AuthorMapProps> = ({ activityPlace }) => {
+const AuthorMap: React.FC<IAuthorMapProps> = ({ longitude, latitude }) => {
   const { t } = useTranslation();
-  const [latitude, longitude] = activityPlace;
   const Map = ReactMapboxGl({
     accessToken:
       'pk.eyJ1IjoidWxhZHppbWlyLWF0cm9zaGNoYW5rYSIsImEiOiJjazNoZTNtNGMwYW84M21xdHhwc2hqcXZpIn0.GpqDhq5ctOG4hKxhZ_xKjg',
   });
 
   return (
-    <React.Fragment>
-      <span>{t('businessPlace')}</span>
+    <>
+      <span className="Author-page__map--text">{t('businessPlace')}</span>
       <Map
         className="Author-page__map-container"
         style="mapbox://styles/mapbox/streets-v11"
-        center={[longitude, latitude]}
+        center={[latitude, longitude]}
       />
-    </React.Fragment>
+    </>
   );
 };
 
