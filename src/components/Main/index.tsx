@@ -1,3 +1,4 @@
-import './index.scss';
+import Overview from './Overview';
+import TodayAuthor from './TodayAuthor';
 
-export { default } from './TodayAuthor/';
+export { Overview, TodayAuthor };
