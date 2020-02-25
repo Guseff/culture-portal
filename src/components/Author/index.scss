@@ -4,34 +4,34 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 220px;
+  width: 13rem;
 }
 
-.Author-page--photo {
-  width: 220px;
+.Author-page_photo {
+  width: 13rem;
   padding: 6%;
   background-color: antiquewhite;
 }
 
-.Author-page__map--text {
-  position: relative;
-  background: #faebd7;
-  border-radius: 0.4em;
-  padding: 4%;
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: #faebd7;
-    border-bottom: 0;
-    border-left: 0;
-    margin-left: -11.5px;
-    margin-bottom: -10px;
-  }
+.Author-page__map_text {
+    position: relative;
+	background: #faebd7;
+    border-radius: .4em;
+    padding: 4%;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: #faebd7;
+        border-bottom: 0;
+        border-left: 0;
+        margin-left: -11.5px;
+        margin-bottom: -10px;
+    }
 }
 
 .Author-page__map-container {

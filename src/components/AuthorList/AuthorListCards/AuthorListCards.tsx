@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import './AuthorListCards.scss';
 import { useTranslation } from 'react-i18next';
 
-interface AuthorListCardsProps {
+interface IAuthorListCardsProps {
   list: string[];
   author: object;
   lang: string;
 }
 
-const AuthorListCards: React.FC<AuthorListCardsProps> = ({
+const AuthorListCards: React.FC<IAuthorListCardsProps> = ({
   list,
   author,
   lang,
