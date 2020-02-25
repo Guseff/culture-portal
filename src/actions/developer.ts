@@ -20,7 +20,8 @@ export const developerGetList = () => {
           payload,
         });
       })
-      .catch(() => {
+      .catch(e => {
+        console.log(e);
         dispatch({ type: `${DEVELOPER_GET_LIST}${RequestState.FAIL}` });
       });
   };
