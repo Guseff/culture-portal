@@ -7,12 +7,14 @@ interface AuthorListSearchProps {
   handleFilterSelect: (e: React.ChangeEvent<HTMLInputElement>) => any;
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => any;
   lang: string;
+  searchValue: string;
 }
 
 const AuthorListSearch: React.FC<AuthorListSearchProps> = ({
   handleFilterSelect,
   handleInputChange,
   lang,
+  searchValue,
 }) => {
   return (
     <Form.Group className="input-group mb-3">
@@ -27,6 +29,7 @@ const AuthorListSearch: React.FC<AuthorListSearchProps> = ({
         type="text"
         placeholder={SEARCH_TRANSLATES[lang]}
         onChange={handleInputChange}
+        value={searchValue}
       />
     </Form.Group>
   );

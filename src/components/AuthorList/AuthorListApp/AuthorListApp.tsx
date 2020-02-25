@@ -8,6 +8,7 @@ import './AuthorListApp.scss';
 interface AuthorListAppState {
   filterList: string[];
   filterSearch: string;
+  searchValue: string;
 }
 
 interface AuthorListAppProps {
@@ -20,6 +21,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
   state = {
     filterList: [],
     filterSearch: SEARCH_SEL_TRANSLATES[this.props.lang][0],
+    searchValue: '',
   };
 
   componentDidMount() {
@@ -28,17 +30,22 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
     });
   }
 
-  // componentWillReceiveProps(nextProps: { data: string[] }) {
-  //   this.setState({
-  //     filterList: nextProps.data,
-  //   });
-  // }
+  componentDidUpdate(prevProps) {
+    if (this.props.lang !== prevProps.lang) {
+      this.setState({
+        searchValue: '',
+        filterList: this.props.data,
+      });
+    }
+  }
 
   handleFilterSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const target = e.target.value;
 
     this.setState({
       filterSearch: target,
+      searchValue: '',
+      filterList: this.props.data,
     });
   };
 
@@ -66,11 +73,12 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
 
     this.setState({
       filterList: newList,
+      searchValue: e.target.value,
     });
   };
 
   render() {
-    const { filterList } = this.state;
+    const { filterList, searchValue } = this.state;
     const { author, lang } = this.props;
 
     return (
@@ -79,6 +87,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
           handleFilterSelect={this.handleFilterSelect}
           handleInputChange={this.handleInputChange}
           lang={lang}
+          searchValue={searchValue}
         />
         <AuthorListCards list={filterList} author={author} lang={lang} />
       </Container>
