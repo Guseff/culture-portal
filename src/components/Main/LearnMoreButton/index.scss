@@ -8,11 +8,15 @@
 }
 
 .btn-outline-secondary {
-  color: black;
+  color: #000000;
   font-family: $font-button;
   background: rgba(250, 235, 215, 0.8);
-}
 
+  &:hover {
+    color: #000000;
+    background: $bg-header-footer;
+  }
+}
 
 a:hover {
   text-decoration: none;
