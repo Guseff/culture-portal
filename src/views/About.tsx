@@ -2,27 +2,28 @@ import '../components/About/index.scss';
 import * as React from 'react';
 import CardItem from '../components/About/Card/index';
 import AboutButton from '../components/About/AboutButtons/index';
-import developers from '../data/developersData';
+import { useSelector } from 'react-redux';
 
-import { Container } from 'react-bootstrap';
+import { Container, Spinner } from 'react-bootstrap';
 
-class About extends React.Component {
-  constructor(props: Readonly<{}>) {
-    super(props);
+const About: React.FC = () => {
+  const developerState = useSelector((store: any) => store.developer);
+  const settingsState = useSelector((store: any) => store.settings);
+  const { language } = settingsState;
+  const { byId, developer, pending } = developerState;
+
+  if (pending) {
+    return <Spinner animation="grow" variant="info" />;
   }
 
-  render() {
-    return (
-      <Container className="content">
-        <AboutButton />
-        <section className="about__cards">
-          {developers.map(developer => (
-            <CardItem key={developer.id} developer={developer} />
-          ))}
-        </section>
-      </Container>
-    );
-  }
-}
+  return (
+    <Container className="content">
+      <AboutButton />
+      <section>
+        <CardItem list={byId} developer={developer} lang={language} />
+      </section>
+    </Container>
+  );
+};
 
 export default About;
