@@ -32,7 +32,7 @@ const AuthorListCards: React.FC<IAuthorListCardsProps> = ({
               <Card.Title>{author[item][lang].name}</Card.Title>
               <Card.Text>{author[item][lang].birthCity}</Card.Text>
               <Link to={`/author/${item}`}>
-                <Button variant="outline-info">{t('learnMore')}</Button>
+                <Button variant="outline-secondary">{t('learnMore')}</Button>
               </Link>
             </Card.Body>
           </Card>
