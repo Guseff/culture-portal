@@ -27,10 +27,10 @@ const Author: React.FC = () => {
   );
 
   const hasAuthor = authorState.byId.includes(currentAuthorId);
-  if (!hasAuthor) return <Redirect to="../404" />;
-
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
+
+  if (!pending && !hasAuthor) return <Redirect to="../404" />;
 
   return (
     <Container className="content">
