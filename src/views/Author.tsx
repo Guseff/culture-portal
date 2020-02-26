@@ -28,8 +28,6 @@ const Author: React.FC = () => {
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
 
-  console.log(author)
-
   return (
     <Container className="content">
       <h3>Author Page</h3>
@@ -59,7 +57,7 @@ const Author: React.FC = () => {
                   description={author[currentAuthorId][language].description}
                 />
               </Col>
-              <Col md="auto">
+              <Col md="auto" className="map">
                 <AuthorMap
                   longitude={
                     author[currentAuthorId][language].location.longitude

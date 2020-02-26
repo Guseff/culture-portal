@@ -1,5 +1,25 @@
 @import 'node_modules/react-modal-video/scss/modal-video.scss';
 
+$carousel-width: 300px;
+$carousel-height: 500px;
+
+@mixin carousel-size($w, $h) {
+  width: $w;
+  height: $h;
+
+  @media (max-width: 700px) {
+    width: $w - 50px;
+    height: $h - 50px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 450px) {
+    width: $w - 100px;
+    height: $h - 150px;
+    margin-bottom: 0;
+  }
+}
+
 .Author-page--photo-col {
   display: flex;
   justify-content: center;
@@ -17,7 +37,7 @@
   position: relative;
   background: #faebd7;
   border-radius: 0.4em;
-  padding: 4%;
+  padding: 2%;
   &:after {
     content: '';
     position: absolute;
@@ -59,24 +79,31 @@
   height: 2rem;
 }
 
+.map {
+  width: auto;
+  padding: 10px;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+}
+
 .carousel {
-  width: 400px;
+  @include carousel-size($carousel-width, $carousel-height);
   margin: 0 auto;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .carousel-inner {
-  width: 400px;
-  height: 600px;
+  @include carousel-size($carousel-width, $carousel-height);
 }
 
 .carousel-indicators {
-  bottom: 60px;
+  bottom: 100px;
 }
 
 .carousel-item.active {
-  width: 400px;
-  height: 600px;
+  @include carousel-size($carousel-width, $carousel-height);
 }
 
 .carousel-control-prev {
