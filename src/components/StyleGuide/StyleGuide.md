@@ -11,3 +11,10 @@ import Buttons from './Buttons/Buttons.tsx';
 
 <Buttons title='Click me' />
 ```
+
+## Inputs
+```js
+import Inputs from './Inputs/Inputs.tsx';
+
+<Inputs title='Enter something' />
+```

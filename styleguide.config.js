@@ -6,6 +6,7 @@ module.exports = {
   ).parse,
   sections: [
     {
+      name: 'Culture Portal by Team#14 - StyleGuide',
       content: 'src/components/StyleGuide/StyleGuide.md',
     },
   ],
