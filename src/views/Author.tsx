@@ -1,7 +1,7 @@
 import '../components/Author/';
 import React from 'react';
 import { Container, Spinner, Nav, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import {
   AuthorPhoto,
   AuthorMap,
@@ -24,6 +24,9 @@ const Author: React.FC = () => {
     (store: IStoreState) =>
       store.router.location.pathname.slice(8) || store.author.byId[0]
   );
+
+  const hasAuthor = authorState.byId.includes(currentAuthorId);
+  if (!hasAuthor) return <Redirect to="../404" />;
 
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
@@ -71,7 +74,7 @@ const Author: React.FC = () => {
               id={currentAuthorId}
               language={language}
             />
-            <AuthorSlider gallery={author[currentAuthorId].gallery}/>
+            <AuthorSlider gallery={author[currentAuthorId].gallery} />
           </>
         )
       )}
