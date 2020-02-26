@@ -8,6 +8,7 @@ import {
   AuthorInfo,
   AuthorTimeline,
   AuthorModalVideo,
+  AuthorSlider,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
@@ -56,7 +57,7 @@ const Author: React.FC = () => {
                   description={author[currentAuthorId][language].description}
                 />
               </Col>
-              <Col md="auto">
+              <Col md="auto" className="map">
                 <AuthorMap
                   longitude={
                     author[currentAuthorId][language].location.longitude
@@ -70,6 +71,7 @@ const Author: React.FC = () => {
               id={currentAuthorId}
               language={language}
             />
+            <AuthorSlider gallery={author[currentAuthorId].gallery}/>
           </>
         )
       )}
