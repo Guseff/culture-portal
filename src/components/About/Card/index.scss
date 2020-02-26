@@ -6,6 +6,8 @@
     margin: 10px;
     padding-top: 0;
     border-radius: $radius;
+    border: none;
+    background: transparent;
     color: $color-text;
     box-shadow: $box-shadow;
     transition: transform 0.2s ease-in-out;
@@ -18,13 +20,13 @@
     }
 
     .card-body {
-      flex-direction: column;
       margin-top: 5px;
-      border: 1px solid $color-text;
+      flex-direction: column;
+      border: 1.5px solid $color-text;
       background: linear-gradient(
         to right,
         rgba(255, 255, 255, 0) 50%,
-        rgb(209, 194, 176) 50%
+        rgb(196, 166, 131) 50%
       );
       background-size: 200%;
       background-position: 0 0;
@@ -44,6 +46,10 @@
         a {
           color: $color-text;
         }
+      }
+
+      p {
+        text-align: center;
       }
     }
   }
