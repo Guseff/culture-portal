@@ -17,6 +17,7 @@ const CardItem: React.FC<IDevelopersCardsProps> = ({
   lang,
 }) => {
   const { t } = useTranslation();
+
   return list.length ? (
     <div className="about__cards">
       {list.map((i: string) => (
@@ -24,12 +25,16 @@ const CardItem: React.FC<IDevelopersCardsProps> = ({
           <Card.Img variant="top" src={developer[i].photo} />
           <Card.Body>
             <Card.Title>{developer[i][lang].name}</Card.Title>
-            <div className="card__link">
+            <Card.Link
+              href={developer[i][lang].link}
+              className="card__link"
+              target="_blank"
+            >
               <Card.Img src={git} />
-              <Card.Link href={developer[i][lang].link}>
+              <Card.Text>
                 {developer[i][lang].link.replace('https://github.com/', '')}
-              </Card.Link>
-            </div>
+              </Card.Text>
+            </Card.Link>
             <Card.Text>{developer[i][lang].role}</Card.Text>
           </Card.Body>
         </Card>

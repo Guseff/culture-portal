@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { Form } from 'react-bootstrap';
@@ -15,6 +15,7 @@ const languages = Object.values(LANGUAGES);
 interface SelectLanguageProps {
   dispatch: Dispatch;
 }
+
 interface SelectLanguagePropsS {
   language?: string;
 }
@@ -29,17 +30,18 @@ class SelectLanguage extends React.Component<
   };
 
   render() {
+    const { language } = this.props;
     return (
       <Form>
         <Form.Control
           as="select"
-          value={this.props.language}
+          value={language}
           onChange={this.setLanguageHandle}
         >
-          {languages.map((x, i) => {
+          {languages.map((language, i) => {
             return (
-              <option key={i} value={x}>
-                {getLanguageString(x)}
+              <option className="form-option" key={i} value={language}>
+                {getLanguageString(language)}
               </option>
             );
           })}

@@ -1,5 +1,6 @@
-import React from 'react';
+import './index.scss';
 
+import React from 'react';
 import { IAboutProject } from 'Types';
 import { isNotEmptyObj } from 'Utils';
 

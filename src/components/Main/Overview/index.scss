@@ -1,0 +1,29 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/fonts.scss';
+
+.content {
+  .row {
+    .main_title {
+      margin-bottom: 20px;
+      font-family: $font-title;
+      font-size: 3rem;
+      color: $color-text;
+      text-align: center;
+    }
+
+    .main_description {
+      text-align: center;
+      color: $color-text;
+
+      &:after,
+      &:before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 90%;
+        background-color: $color-text;
+        margin: 10px auto;
+      }
+    }
+  }
+}
