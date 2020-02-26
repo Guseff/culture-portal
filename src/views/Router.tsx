@@ -2,7 +2,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../assets/styles/index.scss';
 
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { connect } from 'react-redux';
 import { history } from 'Store';
@@ -49,7 +49,10 @@ const Router = (props: any) => {
         <Route path="/worklog" component={WorkLog} />
         <Route path="/styleguide" render={StyleGuide} />
         <Route path="/about" component={About} />
-        <Route path="*" component={NoMatch} />
+        <Route path="/404" component={NoMatch} />
+        <Route path="*">
+          <Redirect to="/404" />
+        </Route>
       </Switch>
       <Footer />
     </ConnectedRouter>
