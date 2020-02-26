@@ -5,21 +5,21 @@
   flex-direction: column;
   justify-content: flex-end;
   height: auto;
+}
 
-  .btn-outline-secondary {
+.btn-outline-secondary {
+  color: $color-text-black;
+  font-family: $font-button;
+  background-color: $color-btn;
+
+  &:hover {
     color: $color-text-black;
-    font-family: $font-button;
-    background-color: $color-btn;
+    background-color: $color-btn-hover;
+  }
 
-    &:hover {
-      color: $color-text-black;
-      background-color: $color-btn-hover;
-    }
-
-    &:active {
-      color: $color-text-black !important;
-      background-color: $color-btn-active !important;
-    }
+  &:active {
+    color: $color-text-black !important;
+    background-color: $color-btn-active !important;
   }
 }
 
