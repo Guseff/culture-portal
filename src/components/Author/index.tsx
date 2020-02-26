@@ -6,5 +6,6 @@ import AuthorInfo from './AuthorInfo/';
 import AuthorTimeline from './AuthorTimeline/';
 import AuthorModalVideo from './AuthorModalVideo';
 import AuthorSlider from './AuthorSlider';
+import AuthorWorks from './AuthorWorks';
 
-export { AuthorPhoto, AuthorMap, AuthorInfo, AuthorTimeline, AuthorModalVideo, AuthorSlider };
+export { AuthorPhoto, AuthorMap, AuthorInfo, AuthorTimeline, AuthorModalVideo, AuthorSlider, AuthorWorks };
