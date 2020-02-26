@@ -1,0 +1,13 @@
+.inputs {
+    color: green;
+    margin: 5px;
+    border-radius: 10%;
+
+    &.standard {
+        border: red;
+    }
+
+    &.disabled {
+        border: blue;
+    }
+}
