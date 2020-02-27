@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container, Row, Spinner } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import { CardList } from '../components/About';
+import CardList from '../components/About/CardList';
 import RedirectButton from '../components/RedirectButton';
 import { IStoreState, ISettingsState, IDeveloperState } from 'Types';
 
@@ -11,7 +11,6 @@ const About: React.FC = () => {
   const settingsState = useSelector((store: IStoreState) => store.settings);
   const { language }: ISettingsState = settingsState;
   const { byId, developer, pending }: IDeveloperState = developerState;
-
   const { t } = useTranslation();
 
   return (
