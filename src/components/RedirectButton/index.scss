@@ -1,0 +1,40 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/fonts.scss';
+
+.about__button {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    margin: 15px;
+    width: 400px;
+    color: $color-text-btn;
+  }
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.btn-outline-secondary {
+  color: $color-text-btn;
+  font-family: $font-text;
+  background-color: $color-btn;
+
+  &:hover {
+    color: $color-text-black;
+    background-color: $color-btn-hover;
+  }
+
+  &:active {
+    color: $color-text-black !important;
+    background-color: $color-btn-active !important;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
