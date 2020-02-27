@@ -1,4 +1,16 @@
-@import '../../../assets/styles/variables.scss';
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/fonts.scss';
+
+.about__button {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    margin: 15px;
+    width: 400px;
+    color: $color-text-btn;
+  }
+}
 
 .btn-container {
   display: flex;
@@ -8,8 +20,8 @@
 }
 
 .btn-outline-secondary {
-  color: $color-text-black;
-  font-family: $font-button;
+  color: $color-text-btn;
+  font-family: $font-text;
   background-color: $color-btn;
 
   &:hover {
