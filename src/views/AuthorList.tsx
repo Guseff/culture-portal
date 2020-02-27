@@ -1,5 +1,5 @@
 import React from 'react';
-import AuthorListApp from '../components/AuthorList/index';
+import AuthorListApp from '../components/AuthorList';
 import { Container, Spinner } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 
@@ -10,12 +10,15 @@ const AuthorList: React.FC = () => {
   const { byId, author, pending } = authorState;
 
   if (pending) {
-    return <Spinner animation="grow" variant="info" />;
   }
 
   return (
     <Container className="content">
-      <AuthorListApp data={byId} author={author} lang={language} />
+      {pending ? (
+        <Spinner className="spinner" animation="border" />
+      ) : (
+        <AuthorListApp data={byId} author={author} language={language} />
+      )}
     </Container>
   );
 };

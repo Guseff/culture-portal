@@ -1,9 +1,9 @@
+import './index.scss';
+
 import React, { Component } from 'react';
-import { Container } from 'react-bootstrap';
-import { AuthorListCards } from '../AuthorListCards/AuthorListCards';
-import { AuthorListSearch } from '../AuthorListSearch/AuthorListSearch';
+import AuthorListCards from '../AuthorListCards';
+import AuthorListSearch from '../AuthorListSearch';
 import { SEARCH_OPTIONS } from '../../../constants';
-import './AuthorListApp.scss';
 
 interface AuthorListAppState {
   filterList: string[];
@@ -14,7 +14,7 @@ interface AuthorListAppState {
 interface AuthorListAppProps {
   data: string[];
   author: object;
-  lang: string;
+  language: string;
 }
 
 class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
@@ -31,7 +31,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.lang !== prevProps.lang) {
+    if (this.props.language !== prevProps.language) {
       this.setState({
         searchValue: '',
         filterList: this.props.data,
@@ -50,7 +50,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
   };
 
   handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { data, author, lang } = this.props;
+    const { data, author, language } = this.props;
     let currentList = [];
     let newList = [];
 
@@ -62,8 +62,8 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
         const searchValueString = e.target.value.toLowerCase();
         const filter =
           searchOption === SEARCH_OPTIONS.name
-            ? author[item][lang].name.toLowerCase()
-            : author[item][lang].birthCity.toLowerCase();
+            ? author[item][language].name.toLowerCase()
+            : author[item][language].birthCity.toLowerCase();
 
         return filter.includes(searchValueString);
       });
@@ -79,18 +79,22 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
 
   render() {
     const { filterList, searchValue, searchOption } = this.state;
-    const { author, lang } = this.props;
+    const { author, language } = this.props;
 
     return (
       <>
         <AuthorListSearch
           handleFilterSelect={this.handleFilterSelect}
           handleInputChange={this.handleInputChange}
-          lang={lang}
+          language={language}
           searchValue={searchValue}
           searchOption={searchOption}
         />
-        <AuthorListCards list={filterList} author={author} lang={lang} />
+        <AuthorListCards
+          list={filterList}
+          author={author}
+          language={language}
+        />
       </>
     );
   }

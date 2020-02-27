@@ -1,21 +1,23 @@
+import './index.scss';
+
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './AuthorListCards.scss';
 import { useTranslation } from 'react-i18next';
 
 interface IAuthorListCardsProps {
   list: string[];
   author: object;
-  lang: string;
+  language: string;
 }
 
 const AuthorListCards: React.FC<IAuthorListCardsProps> = ({
   list,
   author,
-  lang,
+  language,
 }) => {
   const { t } = useTranslation();
+
   return list.length ? (
     <ul className="row row-cols-3 list-unstyled list">
       {list.map((item: string) => (
@@ -25,12 +27,12 @@ const AuthorListCards: React.FC<IAuthorListCardsProps> = ({
               <Card.Img
                 className="shadow rounded"
                 src={author[item].photo}
-                alt={author[item][lang].name}
+                alt={author[item][language].name}
               />
             </Link>
             <Card.Body>
-              <Card.Title>{author[item][lang].name}</Card.Title>
-              <Card.Text>{author[item][lang].birthCity}</Card.Text>
+              <Card.Title>{author[item][language].name}</Card.Title>
+              <Card.Text>{author[item][language].birthCity}</Card.Text>
               <Link to={`/author/${item}`}>
                 <Button variant="outline-secondary">{t('learnMore')}</Button>
               </Link>
@@ -46,4 +48,4 @@ const AuthorListCards: React.FC<IAuthorListCardsProps> = ({
   );
 };
 
-export { AuthorListCards };
+export default AuthorListCards;

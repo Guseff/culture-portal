@@ -1,3 +1,5 @@
+import './index.scss';
+
 import React from 'react';
 import { FormControl, Form } from 'react-bootstrap';
 import {
@@ -5,12 +7,11 @@ import {
   SEARCH_TRANSLATES,
   SEARCH_OPTIONS,
 } from '../../../constants';
-import './AuthorListSearch.scss';
 
 interface IAuthorListSearchProps {
   handleFilterSelect: (e: React.ChangeEvent<HTMLInputElement>) => any;
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => any;
-  lang: string;
+  language: string;
   searchValue: string;
   searchOption: string;
 }
@@ -18,11 +19,12 @@ interface IAuthorListSearchProps {
 const AuthorListSearch: React.FC<IAuthorListSearchProps> = ({
   handleFilterSelect,
   handleInputChange,
-  lang,
+  language,
   searchValue,
   searchOption,
 }) => {
   const options = Object.keys(SEARCH_OPTIONS);
+
   return (
     <Form.Group className="input-group mb-3">
       <div className="input-group-prepend">
@@ -34,7 +36,7 @@ const AuthorListSearch: React.FC<IAuthorListSearchProps> = ({
           {options.map((option, index) => {
             return (
               <option key={index} value={option}>
-                {SEARCH_SEL_TRANSLATES[lang][option]}
+                {SEARCH_SEL_TRANSLATES[language][option]}
               </option>
             );
           })}
@@ -43,7 +45,7 @@ const AuthorListSearch: React.FC<IAuthorListSearchProps> = ({
 
       <FormControl
         type="text"
-        placeholder={SEARCH_TRANSLATES[lang]}
+        placeholder={SEARCH_TRANSLATES[language]}
         onChange={handleInputChange}
         value={searchValue}
       />
@@ -51,4 +53,4 @@ const AuthorListSearch: React.FC<IAuthorListSearchProps> = ({
   );
 };
 
-export { AuthorListSearch };
+export default AuthorListSearch;
