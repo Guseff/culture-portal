@@ -6,8 +6,8 @@
   justify-content: center;
 
   .btn {
-    margin: 15px;
-    width: 400px;
+    margin: 10px;
+    width: 270px;
     color: $color-text-btn;
   }
 }
@@ -37,4 +37,10 @@
 
 a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 570px) {
+  .about__button {
+    flex-direction: column;
+  } 
 }
