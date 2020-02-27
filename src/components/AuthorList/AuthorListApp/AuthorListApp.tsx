@@ -5,19 +5,22 @@ import { AuthorListSearch } from '../AuthorListSearch/AuthorListSearch';
 import { SEARCH_OPTIONS } from '../../../constants';
 import './AuthorListApp.scss';
 
-interface AuthorListAppState {
+interface IAuthorListAppState {
   filterList: string[];
   searchValue: string;
   searchOption: string;
 }
 
-interface AuthorListAppProps {
+interface IAuthorListAppProps {
   data: string[];
   author: object;
   lang: string;
 }
 
-class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
+class AuthorListApp extends Component<
+  IAuthorListAppProps,
+  IAuthorListAppState
+> {
   state = {
     filterList: [],
     searchValue: '',

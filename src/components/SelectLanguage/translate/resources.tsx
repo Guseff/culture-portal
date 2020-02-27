@@ -21,6 +21,9 @@ const resources = {
       genre: 'Literary genre',
       workTitle: 'Title of the work',
       worksTableTitle: 'Main works of the author',
+      byName: 'By name',
+      byBornPlace: 'By city of birth',
+      search: 'Search...',
     },
   },
   ru: {
@@ -45,6 +48,9 @@ const resources = {
       genre: 'Литературный жанр',
       workTitle: 'Название произведения',
       worksTableTitle: 'Основные работы автора',
+      byName: 'По имени',
+      byBornPlace: 'По месту рождения',
+      search: 'Поиск...',
     },
   },
   be: {
@@ -69,6 +75,9 @@ const resources = {
       genre: 'Лiтaратурны жанр',
       workTitle: 'Назва твора',
       worksTableTitle: 'Асноўныя працы аўтара',
+      byName: 'Па імені',
+      byBornPlace: 'Па горадзе нараджэння',
+      search: 'Пошук...',
     },
   },
 };
