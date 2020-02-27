@@ -21,8 +21,8 @@ const About: React.FC = () => {
         <>
           <Row>
             <section className="about__button">
-              <RedirectButton link="worklog" text={t('worklog')} />
-              <RedirectButton link="styleguide" text={t('styleguide')} />
+              <RedirectButton link="/worklog" text={t('worklog')} />
+              <RedirectButton link="/styleguide" text={t('styleguide')} />
             </section>
           </Row>
           <Row>

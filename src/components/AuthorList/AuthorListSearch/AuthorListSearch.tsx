@@ -2,16 +2,12 @@ import './index.scss';
 
 import React from 'react';
 import { FormControl, Form } from 'react-bootstrap';
-import {
-  SEARCH_SEL_TRANSLATES,
-  SEARCH_TRANSLATES,
-  SEARCH_OPTIONS,
-} from '../../../constants';
+import { useTranslation } from 'react-i18next';
+import { SEARCH_OPTIONS } from '../../../constants';
 
 interface IAuthorListSearchProps {
-  handleFilterSelect: (e: React.ChangeEvent<HTMLInputElement>) => any;
-  handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => any;
-  language: string;
+  handleFilterSelect: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   searchValue: string;
   searchOption: string;
 }
@@ -19,33 +15,29 @@ interface IAuthorListSearchProps {
 const AuthorListSearch: React.FC<IAuthorListSearchProps> = ({
   handleFilterSelect,
   handleInputChange,
-  language,
   searchValue,
   searchOption,
 }) => {
-  const options = Object.keys(SEARCH_OPTIONS);
+  const { t } = useTranslation();
+  const { name, city } = SEARCH_OPTIONS;
 
   return (
     <Form.Group className="input-group mb-3">
       <div className="input-group-prepend">
         <Form.Control
           as="select"
+          className="input-group-select"
           onChange={handleFilterSelect}
           value={searchOption}
         >
-          {options.map((option, index) => {
-            return (
-              <option key={index} value={option}>
-                {SEARCH_SEL_TRANSLATES[language][option]}
-              </option>
-            );
-          })}
+          <option value={name}>{t('byName')}</option>
+          <option value={city}>{t('byBornPlace')}</option>
         </Form.Control>
       </div>
 
       <FormControl
         type="text"
-        placeholder={SEARCH_TRANSLATES[language]}
+        placeholder={t('search')}
         onChange={handleInputChange}
         value={searchValue}
       />

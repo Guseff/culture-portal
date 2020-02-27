@@ -17,7 +17,7 @@ const AuthorList: React.FC = () => {
       {pending ? (
         <Spinner className="spinner" animation="border" />
       ) : (
-        <AuthorListApp data={byId} author={author} language={language} />
+        <AuthorListApp authorIds={byId} author={author} language={language} />
       )}
     </Container>
   );

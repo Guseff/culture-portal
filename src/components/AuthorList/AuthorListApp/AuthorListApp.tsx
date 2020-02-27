@@ -1,23 +1,24 @@
-import './index.scss';
-
 import React, { Component } from 'react';
-import AuthorListCards from '../AuthorListCards';
+import AuthorListCardList from '../AuthorListCardList';
 import AuthorListSearch from '../AuthorListSearch';
 import { SEARCH_OPTIONS } from '../../../constants';
 
-interface AuthorListAppState {
+interface IAuthorListAppState {
   filterList: string[];
   searchValue: string;
   searchOption: string;
 }
 
-interface AuthorListAppProps {
-  data: string[];
+interface IAuthorListAppProps {
+  authorIds: string[];
   author: object;
   language: string;
 }
 
-class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
+class AuthorListApp extends Component<
+  IAuthorListAppProps,
+  IAuthorListAppState
+> {
   state = {
     filterList: [],
     searchValue: '',
@@ -25,41 +26,51 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
   };
 
   componentDidMount() {
+    const { authorIds } = this.props;
+
     this.setState({
-      filterList: this.props.data,
+      filterList: authorIds,
     });
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.language !== prevProps.language) {
+    const { language, authorIds } = this.props;
+
+    if (language !== prevProps.language) {
       this.setState({
         searchValue: '',
-        filterList: this.props.data,
+        filterList: authorIds,
       });
     }
   }
 
-  handleFilterSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const target = e.target.value;
+  handleFilterSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { authorIds } = this.props;
+    const {
+      target: { value },
+    } = event;
 
     this.setState({
       searchValue: '',
-      filterList: this.props.data,
-      searchOption: target,
+      filterList: authorIds,
+      searchOption: value,
     });
   };
 
-  handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { data, author, language } = this.props;
+  handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { authorIds, author, language } = this.props;
+    const {
+      target: { value },
+    } = event;
     let currentList = [];
     let newList = [];
 
-    if (e.target.value !== '') {
-      currentList = data;
+    if (value !== '') {
+      currentList = authorIds;
       const { searchOption } = this.state;
 
       newList = currentList.filter((item: string) => {
-        const searchValueString = e.target.value.toLowerCase();
+        const searchValueString = value.toLowerCase();
         const filter =
           searchOption === SEARCH_OPTIONS.name
             ? author[item][language].name.toLowerCase()
@@ -68,12 +79,12 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
         return filter.includes(searchValueString);
       });
     } else {
-      newList = data;
+      newList = authorIds;
     }
 
     this.setState({
       filterList: newList,
-      searchValue: e.target.value,
+      searchValue: value,
     });
   };
 
@@ -86,12 +97,11 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
         <AuthorListSearch
           handleFilterSelect={this.handleFilterSelect}
           handleInputChange={this.handleInputChange}
-          language={language}
           searchValue={searchValue}
           searchOption={searchOption}
         />
-        <AuthorListCards
-          list={filterList}
+        <AuthorListCardList
+          authorList={filterList}
           author={author}
           language={language}
         />

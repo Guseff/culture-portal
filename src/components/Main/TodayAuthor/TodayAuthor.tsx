@@ -59,7 +59,7 @@ const TodayAuthor: React.FC<ITodayAuthorProps> = ({
               {author[todayAuthorId][language].description}
             </p>
             <RedirectButton
-              link={`author/${todayAuthorId}`}
+              link={`/author/${todayAuthorId}`}
               text={t('learnMore')}
             />
           </Col>
