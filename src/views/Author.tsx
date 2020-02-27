@@ -1,5 +1,5 @@
 import '../components/Author/';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Spinner, Nav, Row, Col } from 'react-bootstrap';
 import { Link, Redirect } from 'react-router-dom';
 import {
@@ -25,6 +25,10 @@ const Author: React.FC = () => {
       store.router.location.pathname.slice(8) || store.author.byId[0]
   );
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const hasAuthor = authorState.byId.includes(currentAuthorId);
   if (!hasAuthor) return <Redirect to="../404" />;
 
@@ -38,7 +42,7 @@ const Author: React.FC = () => {
         Back to Author List
       </Nav.Link>
       {pending ? (
-        <Spinner animation="grow" variant="info" />
+        <Spinner className="spinner" animation="border" />
       ) : (
         byId.length && (
           <>

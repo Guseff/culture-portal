@@ -14,6 +14,9 @@ const resources = {
       noMatchSuggest: 'Maybe you should just',
       noMatchLinkToHome: 'start over at the homepage',
       signature: 'proudly created by',
+      noData: 'Sorry, but the server is not responding at the moment.',
+      worklog: 'Worklog',
+      styleguide: 'Styleguide',
     },
   },
   ru: {
@@ -31,6 +34,9 @@ const resources = {
       noMatchSuggest: 'Может быть, Вам стоит',
       noMatchLinkToHome: 'начать сначала с домашней страницы.',
       signature: 'гордо создано командой',
+      noData: 'Извините, но в данный момент сервер не отвечает.',
+      worklog: 'Журнал работ (Worklog)',
+      styleguide: 'Правила стилей (Styleguide)',
     },
   },
   be: {
@@ -48,6 +54,9 @@ const resources = {
       noMatchSuggest: 'Можа быць, Вам варта',
       noMatchLinkToHome: 'пачаць усё спачатку з хатняй старонкі.',
       signature: 'горда створана камандай',
+      noData: 'Выбачайце, але сервер ў дадзены момант не адказвае.',
+      worklog: 'Часопіс работ (Worklog)',
+      styleguide: 'Правілы стыляў (Styleguide)',
     },
   },
 };
