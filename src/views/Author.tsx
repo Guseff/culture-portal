@@ -9,9 +9,11 @@ import {
   AuthorTimeline,
   AuthorModalVideo,
   AuthorSlider,
+  AuthorWorks,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
+import { Title } from 'react-bootstrap/lib/Modal';
 
 const Author: React.FC = () => {
   const authorState: IAuthorState = useSelector(
@@ -78,7 +80,12 @@ const Author: React.FC = () => {
               id={currentAuthorId}
               language={language}
             />
-            <AuthorSlider gallery={author[currentAuthorId].gallery} />
+            <div className="works-container">
+              <AuthorWorks
+                worksList={author[currentAuthorId][language].works}
+              />
+              <AuthorSlider gallery={author[currentAuthorId].gallery} />
+            </div>
           </>
         )
       )}
