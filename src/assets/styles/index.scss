@@ -32,7 +32,58 @@ body {
   0% {
     opacity: 0.8;
   }
+
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .content {
+    max-width: 1260px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .content {
+    max-width: 1460px;
+  }
+
+  .row {
+    .main_title {
+      font-size: 4rem !important;
+    }
+
+    .main_description {
+      font-size: 2rem;
+    }
+  }
+
+  .main-block2 {
+    max-width: 1400px;
+
+    .main-block2__title {
+      font-size: 3rem;
+    }
+  }
+
+  .row {
+    .main-block2__img {
+      img {
+        width: 350px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .content {
+    max-width: 1660px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .content {
+    max-width: 1860px;
   }
 }
