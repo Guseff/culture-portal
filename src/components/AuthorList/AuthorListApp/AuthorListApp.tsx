@@ -82,7 +82,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
     const { author, lang } = this.props;
 
     return (
-      <Container>
+      <>
         <AuthorListSearch
           handleFilterSelect={this.handleFilterSelect}
           handleInputChange={this.handleInputChange}
@@ -91,7 +91,7 @@ class AuthorListApp extends Component<AuthorListAppProps, AuthorListAppState> {
           searchOption={searchOption}
         />
         <AuthorListCards list={filterList} author={author} lang={lang} />
-      </Container>
+      </>
     );
   }
 }

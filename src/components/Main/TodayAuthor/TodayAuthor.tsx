@@ -2,7 +2,7 @@ import './index.scss';
 
 import React from 'react';
 import { Container, Image, Row, Col } from 'react-bootstrap';
-import LearnMoreButton from '../LearnMoreButton/';
+import RedirectButton from '../../RedirectButton';
 import { useTranslation } from 'react-i18next';
 
 const currentDay: number = new Date().getDay();
@@ -58,7 +58,10 @@ const TodayAuthor: React.FC<ITodayAuthorProps> = ({
             <p className="main-block2__text3">
               {author[todayAuthorId][language].description}
             </p>
-            <LearnMoreButton id={todayAuthorId} />
+            <RedirectButton
+              link={`author/${todayAuthorId}`}
+              text={t('learnMore')}
+            />
           </Col>
         </Row>
       </Container>

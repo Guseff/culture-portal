@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Row, Col, Container, Spinner } from 'react-bootstrap';
-import { Overview, TodayAuthor } from '../components/Main/';
+import { Overview, TodayAuthor } from '../components/Main';
 import {
   IStoreState,
   ISettingsState,

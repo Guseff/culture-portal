@@ -8,6 +8,12 @@ export interface IAuthorState {
   pending: boolean | null;
 }
 
+export interface IDeveloperState {
+  byId: string[];
+  developer: object;
+  pending: boolean | null;
+}
+
 export interface IAboutProject {
   ru: {
     title: string;
@@ -32,6 +38,7 @@ export interface IStoreState {
   settings: ISettingsState;
   author: IAuthorState;
   aboutProject: IAboutProjectState;
+  developer: IDeveloperState;
   router: {
     location: {
       pathname: string;
