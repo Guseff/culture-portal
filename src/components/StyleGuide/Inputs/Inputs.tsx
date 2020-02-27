@@ -1,15 +1,12 @@
-import React from 'react';
 import './inputs.scss';
+
+import React from 'react';
 
 const Inputs = ({ title }) => (
   <>
     <div>
-      Standard input
+      <p className="text">Standard input</p>
       <input className="inputs standard" placeholder={title} />
-    </div>
-    <div>
-      Disabled input
-      <input disabled className="inputs disabled" placeholder={title} />
     </div>
   </>
 );

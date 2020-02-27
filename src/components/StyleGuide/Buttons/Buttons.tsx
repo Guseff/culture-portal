@@ -1,15 +1,12 @@
-import React from 'react';
 import './buttons.scss';
+
+import React from 'react';
 
 const Buttons = ({ title }) => (
   <>
     <div>
-      Primary button
+      <p className="text">Primary button</p>
       <button className="buttons primary">{title}</button>
-    </div>
-    <div>
-      Secondarybutton
-      <button className="buttons secondary">{title}</button>
     </div>
   </>
 );
