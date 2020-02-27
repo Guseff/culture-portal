@@ -1,3 +1,4 @@
+import '../components/WorkLog/index.scss';
 import * as React from 'react';
 import { Container } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
@@ -13,7 +14,7 @@ const WorkLog = () => {
   const { language } = settings;
 
   return (
-    <Container className="content">
+    <Container className="content content-worklog">
       <WorkLogTable data={data[language]} />
       <WorkLogDifficulties language={language} />
       <WorkLogSelfCheck language={language} />
