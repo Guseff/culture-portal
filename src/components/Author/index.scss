@@ -90,6 +90,10 @@ h3 {
 
 .carousel {
   @include carousel-size($carousel-width, $carousel-height);
+
+  @media (max-width: 992px) {
+    margin: 0 auto;
+  }
 }
 
 .carousel-inner {
@@ -113,7 +117,19 @@ h3 {
 }
 
 .table {
-  width: 60%;
+  margin-bottom: 2rem;
+
+  @media (max-width: 992px) {
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.6rem;
+  }
 }
 
 .table thead th,
@@ -135,4 +151,28 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.works-table-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+  @media (max-width: 992px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.8rem;
+  }
+}
+
+.works-table-container {
+  @media (max-width: 992px) {
+    margin: 0 auto;
+  }
 }

@@ -17,6 +17,7 @@ const resources = {
       date: 'Date of creation',
       genre: 'Literary genre',
       workTitle: 'Title of the work',
+      worksTableTitle: 'Main works of the author',
     },
   },
   ru: {
@@ -37,6 +38,7 @@ const resources = {
       date: 'Дата создания',
       genre: 'Литературный жанр',
       workTitle: 'Название произведения',
+      worksTableTitle: 'Основные работы автора',
     },
   },
   be: {
@@ -45,7 +47,7 @@ const resources = {
       writers: 'Пісьменнікі',
       about: 'Пра нас',
       writerOfTheDay: 'Пісьменнік дня',
-      born: 'Нарадзiуся',
+      born: 'Нарадзiўся',
       inTheTown: 'у горадзе',
       businessPlace: 'Месца дзейнасці:',
       learnMore: 'Даведацца больш',
@@ -57,6 +59,7 @@ const resources = {
       date: 'Дата стварэння',
       genre: 'Лiтaратурны жанр',
       workTitle: 'Назва твора',
+      worksTableTitle: 'Асноўныя працы аўтара',
     },
   },
 };

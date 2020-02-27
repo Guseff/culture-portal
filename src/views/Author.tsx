@@ -13,6 +13,7 @@ import {
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
+import { Title } from 'react-bootstrap/lib/Modal';
 
 const Author: React.FC = () => {
   const authorState: IAuthorState = useSelector(
