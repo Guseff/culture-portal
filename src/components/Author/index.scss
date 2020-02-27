@@ -90,8 +90,10 @@ h3 {
 
 .carousel {
   @include carousel-size($carousel-width, $carousel-height);
-  margin: 0 auto;
-  margin-bottom: 20px;
+
+  @media (max-width: 992px) {
+    margin: 0 auto;
+  }
 }
 
 .carousel-inner {
@@ -112,4 +114,65 @@ h3 {
 
 .carousel-control-next {
   right: 15px;
+}
+
+.table {
+  margin-bottom: 2rem;
+
+  @media (max-width: 992px) {
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.6rem;
+  }
+}
+
+.table thead th,
+.table-sm td {
+  vertical-align: middle;
+}
+
+.table thead th {
+  border-bottom: 2px solid #ca6f15;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #ca6f15;
+}
+
+.works-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works-table-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+  @media (max-width: 992px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.8rem;
+  }
+}
+
+.works-table-container {
+  @media (max-width: 992px) {
+    margin: 0 auto;
+  }
 }

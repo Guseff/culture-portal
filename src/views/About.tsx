@@ -1,27 +1,40 @@
-import '../components/About/index.scss';
-import * as React from 'react';
-import CardItem from '../components/About/Card/index';
-import AboutButton from '../components/About/AboutButtons/index';
+import React from 'react';
 import { useSelector } from 'react-redux';
-
-import { Container, Spinner } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import { CardList } from '../components/About';
+import RedirectButton from '../components/RedirectButton';
+import { IStoreState, ISettingsState, IDeveloperState } from 'Types';
 
 const About: React.FC = () => {
-  const developerState = useSelector((store: any) => store.developer);
-  const settingsState = useSelector((store: any) => store.settings);
-  const { language } = settingsState;
-  const { byId, developer, pending } = developerState;
+  const developerState = useSelector((store: IStoreState) => store.developer);
+  const settingsState = useSelector((store: IStoreState) => store.settings);
+  const { language }: ISettingsState = settingsState;
+  const { byId, developer, pending }: IDeveloperState = developerState;
 
-  if (pending) {
-    return <Spinner animation="grow" variant="info" />;
-  }
+  const { t } = useTranslation();
 
   return (
     <Container className="content">
-      <AboutButton />
-      <section>
-        <CardItem list={byId} developer={developer} lang={language} />
-      </section>
+      {pending ? (
+        <Spinner className="spinner" animation="border" />
+      ) : (
+        <>
+          <Row>
+            <section className="about__button">
+              <RedirectButton link="worklog" text={t('worklog')} />
+              <RedirectButton link="styleguide" text={t('styleguide')} />
+            </section>
+          </Row>
+          <Row>
+            <CardList
+              developerIds={byId}
+              developer={developer}
+              language={language}
+            />
+          </Row>
+        </>
+      )}
     </Container>
   );
 };

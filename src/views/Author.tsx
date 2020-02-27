@@ -1,5 +1,5 @@
 import '../components/Author/';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Spinner, Nav, Row, Col } from 'react-bootstrap';
 import { Link, Redirect } from 'react-router-dom';
 import {
@@ -9,9 +9,11 @@ import {
   AuthorTimeline,
   AuthorModalVideo,
   AuthorSlider,
+  AuthorWorks,
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
+import { Title } from 'react-bootstrap/lib/Modal';
 
 const Author: React.FC = () => {
   const authorState: IAuthorState = useSelector(
@@ -25,11 +27,15 @@ const Author: React.FC = () => {
       store.router.location.pathname.slice(8) || store.author.byId[0]
   );
 
-  const hasAuthor = authorState.byId.includes(currentAuthorId);
-  if (!hasAuthor) return <Redirect to="../404" />;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
+  const hasAuthor = authorState.byId.includes(currentAuthorId);
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
+
+  if (!pending && !hasAuthor) return <Redirect to="../404" />;
 
   return (
     <Container className="content">
@@ -38,7 +44,7 @@ const Author: React.FC = () => {
         Back to Author List
       </Nav.Link>
       {pending ? (
-        <Spinner animation="grow" variant="info" />
+        <Spinner className="spinner" animation="border" />
       ) : (
         byId.length && (
           <>
@@ -74,7 +80,12 @@ const Author: React.FC = () => {
               id={currentAuthorId}
               language={language}
             />
-            <AuthorSlider gallery={author[currentAuthorId].gallery} />
+            <div className="works-container">
+              <AuthorWorks
+                worksList={author[currentAuthorId][language].works}
+              />
+              <AuthorSlider gallery={author[currentAuthorId].gallery} />
+            </div>
           </>
         )
       )}

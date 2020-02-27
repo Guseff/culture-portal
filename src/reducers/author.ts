@@ -3,7 +3,7 @@ import { AUTHOR_GET_LIST, RequestState } from 'Constants';
 const initialState = {
   byId: [],
   author: {},
-  pending: null,
+  pending: true,
 };
 
 interface AuthorPayload {

@@ -1,1 +1,3 @@
-import './index.css';
+import CardList from './CardList';
+
+export { CardList };

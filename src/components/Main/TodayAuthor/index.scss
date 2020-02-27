@@ -2,6 +2,8 @@
 
 .main-block2 {
   margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
   padding: 20px 20px 30px 20px;
   background: url('../../../assets/images/fon-main-block2.jpg') no-repeat;
   background-size: cover;
@@ -23,6 +25,7 @@
     font-family: $font-title;
     background: $color-bg-main-block2;
     margin-bottom: 20px;
+    line-height: 3rem;
     border-radius: $radius;
 
     &:after {
@@ -30,7 +33,7 @@
       display: block;
       width: 100%;
       height: 1px;
-      margin: 15px auto;
+      margin: 5px auto;
       background-color: rgb(151, 151, 151);
     }
   }
