@@ -11,7 +11,7 @@ interface IRedirectButtonProps {
 
 const RedirectButton: React.FC<IRedirectButtonProps> = ({ link, text }) => {
   return (
-    <Button variant="outline-secondary" as={Link} to={`/${link}`}>
+    <Button variant="outline-secondary" as={Link} to={link}>
       {text}
     </Button>
   );
