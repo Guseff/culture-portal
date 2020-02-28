@@ -1,5 +1,5 @@
-import * as React from 'react';
-import data from './difficulties.json';
+import React from 'react';
+import data from '../../../data/difficulties.json';
 
 const WorkLogDifficulties = ({ language }) => {
   return (

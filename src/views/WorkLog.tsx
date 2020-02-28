@@ -1,23 +1,35 @@
-import '../components/WorkLog/index.scss';
-import * as React from 'react';
-import { Container } from 'react-bootstrap';
+import React from 'react';
+import { Container, Spinner } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
-import { IStoreState } from '../types';
-
-import data from '../data/worklog-data.json';
-import WorkLogDifficulties from '../components/WorkLog/WorkLogDifficulties';
-import WorkLogSelfCheck from '../components/WorkLog/WorkLogSelfCheck';
-import WorkLogTable from '../components/WorkLog/WorkLogTable';
+import { IStoreState, IWorkLogState } from 'Types';
+import {
+  WorkLogTable,
+  WorkLogSelfCheck,
+  WorkLogDifficulties,
+} from '../components/WorkLog';
+// import data from '../data/worklog-data.json';
 
 const WorkLog = () => {
+  const worklogState: IWorkLogState = useSelector(
+    (store: IStoreState) => store.worklog
+  );
   const settings = useSelector((store: IStoreState) => store.settings);
   const { language } = settings;
+  const { pending, worklog } = worklogState;
+
+  console.log(worklog);
 
   return (
     <Container className="content content-worklog">
-      <WorkLogTable data={data[language]} />
-      <WorkLogDifficulties language={language} />
-      <WorkLogSelfCheck language={language} />
+      {pending ? (
+        <Spinner className="spinner" animation="border" />
+      ) : (
+        <>
+          <WorkLogTable data={worklog[language]} />
+          <WorkLogDifficulties language={language} />
+          <WorkLogSelfCheck language={language} />
+        </>
+      )}
     </Container>
   );
 };

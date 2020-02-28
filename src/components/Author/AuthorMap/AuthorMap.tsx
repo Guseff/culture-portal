@@ -1,3 +1,5 @@
+import './index.scss';
+
 import React from 'react';
 import ReactMapboxGl from 'react-mapbox-gl';
 import { useTranslation } from 'react-i18next';
@@ -16,7 +18,7 @@ const AuthorMap: React.FC<IAuthorMapProps> = ({ longitude, latitude }) => {
 
   return (
     <>
-      <span className="Author-page__map_text">{t('businessPlace')}</span>
+      <h4 className="map-title">{t('businessPlace')}</h4>
       <Map
         className="Author-page__map-container"
         style="mapbox://styles/mapbox/streets-v11"
