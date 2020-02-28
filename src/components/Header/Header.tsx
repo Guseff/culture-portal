@@ -19,18 +19,21 @@ const Header = () => {
           <Image src={logo} alt="logo" className="header_logo__img" />
           <h1>Belarusian Writers</h1>
         </Navbar.Brand>
-        <Nav>
-          <Nav.Link as={Link} to="/" disabled={pathname === '/'}>
-            {t('home')}
-          </Nav.Link>
-          <Nav.Link as={Link} to="/list" disabled={pathname === '/list'}>
-            {t('writers')}
-          </Nav.Link>
-          <Nav.Link as={Link} to="/about" disabled={pathname === '/about'}>
-            {t('about')}
-          </Nav.Link>
-        </Nav>
-        <SelectLanguage />
+
+        <div className="header_controls">
+          <Nav>
+            <Nav.Link as={Link} to="/" disabled={pathname === '/'}>
+              {t('home')}
+            </Nav.Link>
+            <Nav.Link as={Link} to="/list" disabled={pathname === '/list'}>
+              {t('writers')}
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about" disabled={pathname === '/about'}>
+              {t('about')}
+            </Nav.Link>
+          </Nav>
+          <SelectLanguage />
+        </div>
       </Navbar>
     </Container>
   );
