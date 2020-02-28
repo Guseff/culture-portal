@@ -12,8 +12,8 @@ interface IAuthorTimelineItemProps {
 }
 
 const timelineItemStyles = {
-  background: '#ff962e', // if you want to change the color -- change here
-  color: '#ff962e',
+  background: '#663036',
+  color: '#d6a57c',
 };
 
 const AuthorTimelineItem: React.FC<IAuthorTimelineItemProps> = ({ fact }) => {
