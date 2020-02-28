@@ -1,0 +1,89 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/fonts.scss';
+
+.content-worklog {
+  h3 {
+    color: $color-text;
+    font-family: $font-title;
+    font-size: 2rem;
+    text-align: center;
+  }
+  p {
+    font-family: $font-text;
+  }
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 10px;
+  border-spacing: 0;
+
+  tr {
+    padding: 0.35em;
+  }
+
+  td {
+    padding: 0.625em;
+    background: $color-bg-table-td;
+    text-align: center;
+  }
+
+  th {
+    padding: 0.625em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: $font-text;
+    background: $color-bg-table-th;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content-worklog {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  table {
+    border: 0;
+
+    thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    tr {
+      border-bottom: 3px solid rgb(177, 162, 162);
+      display: block;
+      margin-bottom: 0.625em;
+    }
+
+    td {
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+
+      &:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}

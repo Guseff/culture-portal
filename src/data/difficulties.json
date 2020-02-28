@@ -1,0 +1,23 @@
+{
+  "ru": {
+    "title": "Трудности в нашей работе",
+    "text": [
+      "Основной трудностью в нашей работе являлась, вероятно, организация взаимодействия между собой членов команды. И, можно сказать, эту трудность мы сообща преодолели. Каждый внес свой вклад в общее дело. И сегодня вы можете увидеть этот портал, посвященный писателям Беларуси.",
+      "Еще одним трудным моментом стало использование в работе TypeScript. Хотя этого и не требовалось поусловию задания, было решено использовать данный язык, чтобы потренироваться в работе с передовой технологией. И пусть не все получилось гладко, но определенные успехи достигнуты и, что самое главное, получен начальный опыт работы в этом направлении."
+    ]
+  },
+  "en": {
+    "title": "Work difficulties",
+    "text": [
+      "The main difficulty in our work was probably the organization of interaction between team members. And, we can say, we have overcome this difficulty together. Everyone has contributed to the common cause. And today you can see this portal dedicated to the writers of Belarus.",
+      "Another difficult point was the use of TypeScript in the work. Although this was not required by the terms of the assignment, it was decided to use this language to practice working with advanced technology. And though not everything turned out smoothly, but certain successes have been achieved and, most importantly, initial experience has been gained in this direction."
+    ]
+  },
+  "be": {
+    "title": "Цяжкасці ў нашай працы",
+    "text": [
+      "Асноўнай цяжкасцю у нашай працы з'яўлялася, верагодна, арганізацыя ўзаемадзеяння паміж сабой членаў каманды. І, можна сказаць, гэтую цяжкасць мы разам пераадолелі. Кожны ўнёс свой уклад у агульную справу. І сёння вы можаце ўбачыць гэты партал, прысвечаны пісьменнікам Беларусі.",
+      "Яшчэ адным цяжкім момантам стала выкарыстанне ў рабоце TypeScript. Хоць гэтага і не патрабавалася поусловию заданні, было вырашана выкарыстоўваць дадзены мову, каб патрэніравацца ў працы з перадавой тэхналогіяй. І хай не ўсё атрымалася гладка, але пэўныя поспехі дасягнуты і, што самае галоўнае, атрыманы пачатковы вопыт працы ў гэтым кірунку."
+    ]
+  }
+}

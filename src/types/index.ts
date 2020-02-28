@@ -42,7 +42,7 @@ export interface IWorkLogString {
   who: string;
 }
 
-export interface IWorkLog {
+export interface IWorkLogState {
   pending: boolean | null;
   worklog: {
     ru: {
@@ -68,7 +68,7 @@ export interface IStoreState {
   author: IAuthorState;
   aboutProject: IAboutProjectState;
   developer: IDeveloperState;
-  worklog: IWorkLog;
+  worklog: IWorkLogState;
   router: {
     location: {
       pathname: string;
