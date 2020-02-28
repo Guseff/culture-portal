@@ -28,3 +28,10 @@ StyleGuide building path happends through the command:
 - **npx styleguidist build** at the _styleguide/_ path which used for deploy.
 
 On the main website we insert url deploy on the styleguide page.
+
+### Netlify using
+
+For deployment we use Netlify service. So we can:
+
+1. Run **npm run build** to build the project.
+2. Run **npm run deploy** to deploy the project.
