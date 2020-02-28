@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface IAuthorWorksItemList {
   endAt: string | null;
@@ -13,11 +14,14 @@ interface IAuthorWorksItemProps {
 }
 
 const AuthorWorksItem: React.FC<IAuthorWorksItemProps> = ({ work, index }) => {
+  const { t } = useTranslation();
   return (
     <tr key={index}>
-      <td>{work.endAt ? `${work.startAt}-${work.endAt}` : work.startAt}</td>
-      <td>{work.genre}</td>
-      <td>{work.title}</td>
+      <td data-work={t('date')}>
+        {work.endAt ? `${work.startAt}-${work.endAt}` : work.startAt}
+      </td>
+      <td data-work={t('genre')}>{work.genre}</td>
+      <td data-work={t('workTitle')}>{work.title}</td>
     </tr>
   );
 };

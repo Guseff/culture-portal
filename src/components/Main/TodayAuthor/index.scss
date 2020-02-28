@@ -41,6 +41,7 @@
   .main-block2__img {
     display: flex;
     justify-content: flex-end;
+    flex-direction: column-reverse;
 
     img {
       width: 250px;
@@ -70,7 +71,7 @@
         width: 100%;
         height: 1px;
         margin: 5px auto;
-        background-color: $color-bg-header-footer;
+        background-color: rgb(151, 151, 151);
       }
     }
 
