@@ -1,7 +1,7 @@
 import '../components/Author/';
 import React, { useEffect } from 'react';
-import { Container, Spinner, Nav, Row, Col } from 'react-bootstrap';
-import { Link, Redirect } from 'react-router-dom';
+import { Container, Spinner, Row, Col } from 'react-bootstrap';
+import { Redirect } from 'react-router-dom';
 import {
   AuthorPhoto,
   AuthorMap,
