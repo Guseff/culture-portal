@@ -18,11 +18,11 @@ const AuthorInfo: React.FC<IAuthorInfoProps> = ({
 
   return (
     <>
-      <h3>{name}</h3>
-      <p>
+      <h3 className="title">{name}</h3>
+      <p className="text1">
         {t('born')} {years} {t('inTheTown')} {birthCity}.
       </p>
-      <p>{description}</p>
+      <p className="text2">{description}</p>
     </>
   );
 };

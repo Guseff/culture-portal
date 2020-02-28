@@ -19,7 +19,7 @@ const AuthorWorks: React.FC<IAuthorWorksProps> = ({ worksList }) => {
 
   return (
     <div className="works-table-container">
-      <h5 className="works-table-title">{t('worksTableTitle')}</h5>
+      <h4 className="works-table-title">{t('worksTableTitle')}</h4>
       <Table striped bordered hover size="md">
         <thead>
           <tr>

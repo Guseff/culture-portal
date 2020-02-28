@@ -13,7 +13,8 @@ import {
 } from '../components/Author/';
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
-import { Title } from 'react-bootstrap/lib/Modal';
+import { useTranslation } from 'react-i18next';
+import RedirectButton from '../components/RedirectButton';
 
 const Author: React.FC = () => {
   const authorState: IAuthorState = useSelector(
@@ -34,45 +35,37 @@ const Author: React.FC = () => {
   const hasAuthor = authorState.byId.includes(currentAuthorId);
   const { byId, author, pending }: IAuthorState = authorState;
   const { language }: ISettingsState = settingsState;
+  const { t } = useTranslation();
 
   if (!pending && !hasAuthor) return <Redirect to="../404" />;
 
   return (
     <Container className="content">
-      <h3>Author Page</h3>
-      <Nav.Link as={Link} to="/list">
-        Back to Author List
-      </Nav.Link>
+      <RedirectButton link="/list" text={t('backList')} />
       {pending ? (
         <Spinner className="spinner" animation="border" />
       ) : (
         byId.length && (
           <>
             <Row>
-              <Col md="auto" className="Author-page--photo-col">
-                <AuthorPhoto
-                  photo={author[currentAuthorId].photo}
-                  name={author[currentAuthorId][language].name}
-                />
-                <AuthorModalVideo
-                  videoId={author[currentAuthorId][language].video}
-                />
-              </Col>
-              <Col sm="6">
-                <AuthorInfo
-                  name={author[currentAuthorId][language].name}
-                  years={author[currentAuthorId][language].years}
-                  birthCity={author[currentAuthorId][language].birthCity}
-                  description={author[currentAuthorId][language].description}
-                />
-              </Col>
-              <Col md="auto" className="map">
-                <AuthorMap
-                  longitude={
-                    author[currentAuthorId][language].location.longitude
-                  }
-                  latitude={author[currentAuthorId][language].location.latitude}
-                />
+              <Col md="auto" className="author-page">
+                <div className="author-page__img">
+                  <AuthorPhoto
+                    photo={author[currentAuthorId].photo}
+                    name={author[currentAuthorId][language].name}
+                  />
+                </div>
+                <div className="author-page__description">
+                  <AuthorInfo
+                    name={author[currentAuthorId][language].name}
+                    years={author[currentAuthorId][language].years}
+                    birthCity={author[currentAuthorId][language].birthCity}
+                    description={author[currentAuthorId][language].description}
+                  />
+                  <AuthorModalVideo
+                    videoId={author[currentAuthorId][language].video}
+                  />
+                </div>
               </Col>
             </Row>
             <AuthorTimeline
@@ -84,7 +77,19 @@ const Author: React.FC = () => {
               <AuthorWorks
                 worksList={author[currentAuthorId][language].works}
               />
-              <AuthorSlider gallery={author[currentAuthorId].gallery} />
+              <Col md="auto" className="slider-map">
+                <AuthorSlider gallery={author[currentAuthorId].gallery} />
+                <div className="map">
+                  <AuthorMap
+                    longitude={
+                      author[currentAuthorId][language].location.longitude
+                    }
+                    latitude={
+                      author[currentAuthorId][language].location.latitude
+                    }
+                  />
+                </div>
+              </Col>
             </div>
           </>
         )
