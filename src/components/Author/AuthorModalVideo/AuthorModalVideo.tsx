@@ -1,3 +1,5 @@
+import './index.scss';
+
 import React, { Component } from 'react';
 import { Button, Image } from 'react-bootstrap';
 import ModalVideo from 'react-modal-video';
@@ -11,7 +13,10 @@ interface IAuthorModalVideoProps {
   videoId: string;
 }
 
-class AuthorModalVideo extends Component<IAuthorModalVideoProps, IAuthorModalVideoState> {
+class AuthorModalVideo extends Component<
+  IAuthorModalVideoProps,
+  IAuthorModalVideoState
+> {
   state = {
     isOpen: false,
   };

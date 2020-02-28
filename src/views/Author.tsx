@@ -1,7 +1,6 @@
-import '../components/Author/';
 import React, { useEffect } from 'react';
-import { Container, Spinner, Nav, Row, Col } from 'react-bootstrap';
-import { Link, Redirect } from 'react-router-dom';
+import { Container, Spinner, Row, Col } from 'react-bootstrap';
+import { Redirect, Link } from 'react-router-dom';
 import {
   AuthorPhoto,
   AuthorMap,
@@ -42,12 +41,15 @@ const Author: React.FC = () => {
 
   return (
     <Container className="content">
-      <RedirectButton link="/list" text={t('backList')} />
       {pending ? (
         <Spinner className="spinner" animation="border" />
       ) : (
         byId.length && (
           <>
+            <Row className="link-back">
+              <div className="line"></div>
+              <Link to="/list">{t('backList')}</Link>
+            </Row>
             <Row>
               <Col md="auto" className="author-page">
                 <div className="author-page__img">
@@ -74,24 +76,20 @@ const Author: React.FC = () => {
               id={currentAuthorId}
               language={language}
             />
-            <div className="works-container">
+            <Row className="works-container">
               <AuthorWorks
                 worksList={author[currentAuthorId][language].works}
               />
-              <Col md="auto" className="slider-map">
-                <AuthorSlider gallery={author[currentAuthorId].gallery} />
-                <div className="map">
-                  <AuthorMap
-                    longitude={
-                      author[currentAuthorId][language].location.longitude
-                    }
-                    latitude={
-                      author[currentAuthorId][language].location.latitude
-                    }
-                  />
-                </div>
-              </Col>
-            </div>
+            </Row>
+            <Row className="gallery-container">
+              <AuthorSlider gallery={author[currentAuthorId].gallery} />
+            </Row>
+            <Row className="map-container">
+              <AuthorMap
+                longitude={author[currentAuthorId][language].location.longitude}
+                latitude={author[currentAuthorId][language].location.latitude}
+              />
+            </Row>
           </>
         )
       )}
