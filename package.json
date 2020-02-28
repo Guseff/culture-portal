@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open",
     "build": "webpack",
-    "lint": "eslint ./src/**/*.{ts,tsx} --fix"
+    "lint": "eslint ./src/**/*.{ts,tsx} --fix",
+    "deploy": "netlify deploy --prod --open"
   },
   "author": "The conquerors of React",
   "license": "ISC",
