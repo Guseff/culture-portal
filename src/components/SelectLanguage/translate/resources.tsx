@@ -29,6 +29,7 @@ const resources = {
       styleguideLink: 'Link to StyleGuide',
       styleguidist: 'Link to React Styleguidist',
       redirect: 'Follow the link',
+      backList: 'Back to list author',
     },
   },
   ru: {
@@ -61,6 +62,7 @@ const resources = {
       styleguideLink: 'Ссылка на правила стилей',
       styleguidist: 'Ссылка на React Styleguidist',
       redirect: 'Перейти по ссылке',
+      backList: 'Вернуться к списку авторов',
     },
   },
   be: {
@@ -93,6 +95,7 @@ const resources = {
       styleguideLink: 'Спасылка на правіла стыляў',
       styleguidist: 'Спасылка на React Styleguidist',
       redirect: 'Перайсці па спасылцы',
+      backList: 'Вярнуцца да аўтара спісу',
     },
   },
 };
