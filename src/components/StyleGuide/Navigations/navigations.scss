@@ -1,0 +1,34 @@
+@import '../../../assets/styles/fonts.scss';
+@import '../../../assets/styles/variables.scss';
+
+.navigations {
+  margin: 5px;
+  font-size: large;
+
+  &.standard {
+    cursor: pointer;
+    color: $color-nav-text;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $color-nav-text-hover;
+    }
+  }
+
+  &.disabled {
+    color: $color-nav-text-disabled;
+  }
+}
+
+.navigations-container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 30px;
+  background-color: $color-bg-header-footer;
+}
+
+.text {
+  margin: 5px;
+  font-family: $font-text;
+}

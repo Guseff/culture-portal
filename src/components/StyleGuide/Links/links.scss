@@ -1,0 +1,22 @@
+@import '../../../assets/styles/fonts.scss';
+@import '../../../assets/styles/variables.scss';
+
+.links {
+  margin: 5px;
+
+  &.standard {
+    font-size: 16px;
+    font-family: $font-text;
+    color: #007bff;
+    cursor: pointer;
+
+    &:hover {
+      color: #0067d4;
+    }
+  }
+}
+
+.text {
+  margin: 5px;
+  font-family: $font-text;
+}

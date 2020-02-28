@@ -3,3 +3,11 @@
   flex-flow: row wrap;
   justify-content: center;
 }
+
+.about__button {
+  width: 80%;
+
+  .btn {
+    width: 100%;
+  }
+}

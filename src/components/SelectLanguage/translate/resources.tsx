@@ -24,6 +24,11 @@ const resources = {
       byName: 'By name',
       byBornPlace: 'By city of birth',
       search: 'Search...',
+      styleguideOverview:
+        'React Styleguidist library was used for Style Guide. According to the recommendations, the page with styleguide is deployed onto a third-party link and inserted already here. Totally:',
+      styleguideLink: 'Link to StyleGuide',
+      styleguidist: 'Link to React Styleguidist',
+      redirect: 'Follow the link',
     },
   },
   ru: {
@@ -51,6 +56,11 @@ const resources = {
       byName: 'По имени',
       byBornPlace: 'По месту рождения',
       search: 'Поиск...',
+      styleguideOverview:
+        'Для правил по стилям (Style Guide) использовалась библиотека React Styleguidist. По рекомендациям страница с правилами стилей заливается на стороннюю ссылку и вставляется уже здесь. Итого:',
+      styleguideLink: 'Ссылка на правила стилей',
+      styleguidist: 'Ссылка на React Styleguidist',
+      redirect: 'Перейти по ссылке',
     },
   },
   be: {
@@ -78,6 +88,11 @@ const resources = {
       byName: 'Па імені',
       byBornPlace: 'Па горадзе нараджэння',
       search: 'Пошук...',
+      styleguideOverview:
+        'Для правілаў па стылях (Style Guide) выкарыстоўвалася бібліятэка React Styleguidist. Па рэкамендацыях старонка з правіламі стыляў заліваецца на іншую спасылку і ўстаўляецца ужо тут. Такім чынам:',
+      styleguideLink: 'Спасылка на правіла стыляў',
+      styleguidist: 'Спасылка на React Styleguidist',
+      redirect: 'Перайсці па спасылцы',
     },
   },
 };

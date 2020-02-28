@@ -1,0 +1,35 @@
+@import '../../../assets/styles/fonts.scss';
+@import '../../../assets/styles/variables.scss';
+
+.colors {
+  margin: 5px;
+
+  &.primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 60px;
+    background-color: #663036;
+    color: #ffffff;
+    font-family: $font-text;
+  }
+
+  &.secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(to bottom, #ffefd1, #d6a57c) no-repeat;
+    color: #000000;
+    font-family: $font-text;
+  }
+}
+
+.text {
+  margin: 5px;
+  font-family: $font-text;
+}
