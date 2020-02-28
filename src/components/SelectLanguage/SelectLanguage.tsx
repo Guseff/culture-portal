@@ -1,3 +1,5 @@
+import './index.scss';
+
 import React from 'react';
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
@@ -12,16 +14,16 @@ import i18n from 'i18next';
 
 const languages = Object.values(LANGUAGES);
 
-interface SelectLanguageProps {
+interface ISelectLanguageProps {
   dispatch: Dispatch;
 }
 
-interface SelectLanguagePropsS {
+interface ISelectLanguagePropsS {
   language?: string;
 }
 
 class SelectLanguage extends React.Component<
-  SelectLanguageProps & SelectLanguagePropsS
+  ISelectLanguageProps & ISelectLanguagePropsS
 > {
   setLanguageHandle = (e: React.FormEvent<HTMLInputElement>): void => {
     e.preventDefault();
@@ -32,7 +34,7 @@ class SelectLanguage extends React.Component<
   render() {
     const { language } = this.props;
     return (
-      <Form>
+      <Form className="lang_select">
         <Form.Control
           as="select"
           value={language}
@@ -51,7 +53,7 @@ class SelectLanguage extends React.Component<
   }
 }
 
-const mapStateToProps = (state: IStoreState): SelectLanguagePropsS => {
+const mapStateToProps = (state: IStoreState): ISelectLanguagePropsS => {
   return { language: state.settings.language };
 };
 
