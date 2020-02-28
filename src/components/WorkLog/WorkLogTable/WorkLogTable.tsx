@@ -1,4 +1,6 @@
-import * as React from 'react';
+import './index.scss';
+
+import React from 'react';
 import { Table } from 'react-bootstrap';
 
 const WorkLogTable = ({ data }) => {
