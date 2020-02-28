@@ -16,19 +16,7 @@
   }
 }
 
-.table thead th,
-.table-sm td {
-  vertical-align: middle;
-}
 
-.table thead th {
-  border-bottom: 2px solid #ca6f15;
-}
-
-.table-bordered td,
-.table-bordered th {
-  border: 1px solid #ca6f15;
-}
 
 .works-container {
   align-items: center;
@@ -64,6 +52,46 @@
 
     @media (max-width: 400px) {
       font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .table-author {
+    border: 0;
+
+    thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    tr {
+      border-bottom: 3px solid rgb(177, 162, 162);
+      display: block;
+      margin-bottom: 0.625em;
+    }
+
+    td {
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+
+      &:before {
+        content: attr(data-work);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
     }
   }
 }
