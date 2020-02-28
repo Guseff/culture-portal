@@ -15,7 +15,11 @@ const StyleGuideOverview = () => {
       <Row>
         <Col>
           <p className="styleguide__text">{t('styleguideLink')}</p>
-          <RedirectButton as="a" link="/" text={t('redirect')} />
+          <RedirectButton
+            as="a"
+            link="https://culture-portal-style-guide.netlify.com/"
+            text={t('redirect')}
+          />
         </Col>
         <Col>
           <p className="styleguide__text">{t('styleguidist')}</p>

@@ -1,0 +1,18 @@
+@import '../../../assets/styles/fonts.scss';
+@import '../../../assets/styles/variables.scss';
+
+.lines {
+  margin: 5px;
+
+  &.standard {
+    height: 1px;
+    width: 90%;
+    background-color: $color-text;
+    margin-top: 10px;
+  }
+}
+
+.text {
+  margin: 5px;
+  font-family: $font-text;
+}

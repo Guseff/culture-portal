@@ -20,7 +20,7 @@ const RedirectButton: React.FC<IRedirectButtonProps> = ({
       {text}
     </Button>
   ) : (
-    <Button variant="outline-secondary" as={as} href={link}>
+    <Button variant="outline-secondary" as={as} href={link} target="_blank">
       {text}
     </Button>
   );

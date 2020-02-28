@@ -1,6 +1,9 @@
+import './index.scss';
+
 import React from 'react';
 import { Timeline } from 'vertical-timeline-component-for-react';
 import AuthorTimelineItem from '../AuthorTimelineItem';
+import { useTranslation } from 'react-i18next';
 
 interface IAuthorTimelineFacts {
   endAt: string | null;
@@ -15,7 +18,7 @@ interface IAuthorTimelineProps {
 }
 
 const timelineStyles = {
-  lineColor: '#ddd', // if you want to change the color -- change here
+  lineColor: '#663036',
 };
 
 const AuthorTimeline: React.FC<IAuthorTimelineProps> = ({
@@ -23,12 +26,19 @@ const AuthorTimeline: React.FC<IAuthorTimelineProps> = ({
   author,
   language,
 }) => {
+  const { t } = useTranslation();
+
   return (
-    <Timeline lineColor={timelineStyles.lineColor}>
-      {author[id][language].biography.map((fact: IAuthorTimelineFacts, idx) => (
-        <AuthorTimelineItem key={idx} fact={fact} />
-      ))}
-    </Timeline>
+    <>
+      <h4 className="timeline-title">{t('biography')}</h4>
+      <Timeline lineColor={timelineStyles.lineColor}>
+        {author[id][language].biography.map(
+          (fact: IAuthorTimelineFacts, idx) => (
+            <AuthorTimelineItem key={idx} fact={fact} />
+          )
+        )}
+      </Timeline>
+    </>
   );
 };
 
