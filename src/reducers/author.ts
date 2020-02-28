@@ -3,17 +3,17 @@ import { AUTHOR_GET_LIST, RequestState } from 'Constants';
 const initialState = {
   byId: [],
   author: {},
-  pending: true,
+  pending: null,
 };
 
-interface AuthorPayload {
+interface IAuthorPayload {
   byId: string[];
   author: {};
 }
 
 export const author = (
   state = initialState,
-  action: { type: string; payload: AuthorPayload }
+  action: { type: string; payload: IAuthorPayload }
 ) => {
   const { type, payload } = action;
 
