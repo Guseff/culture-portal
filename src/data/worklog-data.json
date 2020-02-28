@@ -10,6 +10,13 @@
     },
     "body": [
       {
+        "feature": "Общий контроль разработки",
+        "from": "16-02-2020",
+        "to": "29-02-2020",
+        "spent": "24/7",
+        "who": "Диана Иванова"
+      },
+      {
         "feature": "Сделать общий репозиторий",
         "from": "16-02-2020",
         "to": "16-02-2020",
@@ -157,53 +164,137 @@
         "who": "Ольга Бугрова"
       },
       {
-        "feature": "Добавить карточки участников проекта",
+        "feature": "Сделать кнопки для перехода на Worklog и StyleGuide",
         "from": "20-02-2020",
         "to": "20-02-2020",
         "spent": "1 час",
         "who": "Ольга Бугрова"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? часа",
-        "who": ""
+        "feature": "Пример подтягивания данных из redux-store",
+        "from": "21-02-2020",
+        "to": "21-02-2020",
+        "spent": "2 часа",
+        "who": "Игорь Барбашов"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? часа",
-        "who": ""
+        "feature": "Добавление обложек книг для фотогалереи",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "1 час",
+        "who": "Ольга Сойко"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? часа",
-        "who": ""
+        "feature": "Занести в CMS перевод информации по разработчикам и о проекте + занести всю эту информацию в redux",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "2 часа",
+        "who": "Игорь Барбашов"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? часа",
-        "who": ""
+        "feature": "Занести в CMS информацию для worklog на трех языках + сохранить эту информацию в redux",
+        "from": "23-02-2020",
+        "to": "24-02-2020",
+        "spent": "1 час",
+        "who": "Игорь Барбашов"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? часа",
-        "who": ""
+        "feature": "Стилизовать карточки участников проекта",
+        "from": "20-02-2020",
+        "to": "20-02-2020",
+        "spent": "1 час",
+        "who": "Ольга Бугрова"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? часа",
-        "who": ""
+        "feature": "Стилизация секции today author",
+        "from": "22-02-2020",
+        "to": "22-02-2020",
+        "spent": "1 час",
+        "who": "Диана Иванова"
+      },
+      {
+        "feature": "Стилизация страницы main",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "4 часа",
+        "who": "Ольга Бугрова"
+      },
+      {
+        "feature": "Стилизация страницы author list",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "1 час",
+        "who": "Ольга Сойко"
+      },
+      {
+        "feature": "Стилизация страницы автора",
+        "from": "27-02-2020",
+        "to": "...",
+        "spent": ". часа",
+        "who": "Ольга Бугрова"
+      },
+      {
+        "feature": "Стилизация страницы worklog",
+        "from": "74-02-2020",
+        "to": "...",
+        "spent": ". часа",
+        "who": "Ольга Бугрова"
+      },
+      {
+        "feature": "Рефакторинг стилей, изменение цветовой палитры",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "3 часа",
+        "who": "Диана Иванова"
+      },
+      {
+        "feature": "Рефактор: адаптировать контент под большие экраны",
+        "from": "27-02-2020",
+        "to": "27-02-2020",
+        "spent": "2 часа",
+        "who": "Ольга Бугрова"
+      },
+      {
+        "feature": "Перевод статичного контента на разные языки",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "3 часа",
+        "who": "Владимир Оторощенко"
+      },
+      {
+        "feature": "Перевод поискового виджета",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "2 часа",
+        "who": "Василий Гусев"
+      },
+      {
+        "feature": "Поменять взятие данных о текущем языке",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "3 часа",
+        "who": "Владимир Оторощенко"
+      },
+      {
+        "feature": "Перенести некоторые данные перевода в нужное место и исправить перевод в соответствующих компонентах",
+        "from": "27-02-2020",
+        "to": "27-02-2020",
+        "spent": "2 часа",
+        "who": "Владимир Оторощенко"
+      },
+      {
+        "feature": "Рефактор: поменять взятие данных о писателе дня",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "2 часа",
+        "who": "Диана Иванова"
+      },
+      {
+        "feature": "Рефактор: брать данные описания портала из cms",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "2 часа",
+        "who": "Диана Иванова"
       }
     ]
   },
@@ -217,6 +308,13 @@
       "who": "Implemented by"
     },
     "body": [
+      {
+        "feature": "General development control",
+        "from": "16-02-2020",
+        "to": "29-02-2020",
+        "spent": "24/7",
+        "who": "Diana Ivanova"
+      },
       {
         "feature": "Make github repository",
         "from": "16-02-2020",
@@ -365,53 +463,137 @@
         "who": "Olga Bugrova"
       },
       {
-        "feature": "Make crew members cards",
+        "feature": "Make buttons to go to Worklog and StyleGuide",
         "from": "20-02-2020",
         "to": "20-02-2020",
         "spent": "1 hour",
         "who": "Olga Bugrova"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? hour",
-        "who": ""
+        "feature": "Example of pulling data from redux-store",
+        "from": "21-02-2020",
+        "to": "21-02-2020",
+        "spent": "2 hour",
+        "who": "Igor Barbashov"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? hours",
-        "who": ""
+        "feature": "Adding a book cover for photo gallery",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "1 hour",
+        "who": "Volga Soika"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? hours",
-        "who": ""
+        "feature": "Record in the CMS translation for information about the project developers and + bring all of this information in the redux",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "2 hours",
+        "who": "Igor Barbashov"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? hours",
-        "who": ""
+        "feature": "Record in the CMS information worklog trilingual + save this information in a redux",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "1 hour",
+        "who": "Igor Barbashov"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? hours",
-        "who": ""
+        "feature": "Stylize card project participants",
+        "from": "20-02-2020",
+        "to": "20-02-2020",
+        "spent": "1 hour",
+        "who": "Olga Bugrova"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? hours",
-        "who": ""
+        "feature": "Styling the today author section",
+        "from": "22-02-2020",
+        "to": "22-02-2020",
+        "spent": "1 hours",
+        "who": "Diana Ivanova"
+      },
+      {
+        "feature": "Styles for main page",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "4 hours",
+        "who": "Olga Bugrova"
+      },
+      {
+        "feature": "Styles for author list page",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "1 hour",
+        "who": "Olga Soika"
+      },
+      {
+        "feature": "Styles for author page",
+        "from": "27-02-2020",
+        "to": "...",
+        "spent": ". hours",
+        "who": "Olga Bugrova"
+      },
+      {
+        "feature": "Styles for worklog page",
+        "from": "27-02-2020",
+        "to": "...",
+        "spent": ". hours",
+        "who": "Olga Bugrova"
+      },
+      {
+        "feature": "Refactoring styles Changing Color Palette",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "3 hours",
+        "who": "Diana Ivanova"
+      },
+      {
+        "feature": "Adapt content for larger screens",
+        "from": "27-02-2020",
+        "to": "27-02-2020",
+        "spent": "2 hours",
+        "who": "Olga Bugrova"
+      },
+      {
+        "feature": "Translation of static content into different languages",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "3 hours",
+        "who": "Vladimir Otroshchenko"
+      },
+      {
+        "feature": "Search widget translation",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "2 hours",
+        "who": "Vasily Gusev"
+      },
+      {
+        "feature": "Swap current language data",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "3 hours",
+        "who": "Vladimir Otroshchenko"
+      },
+      {
+        "feature": "Transfer some translation data to the right place and correct the translation in the corresponding components",
+        "from": "27-02-2020",
+        "to": "27-02-2020",
+        "spent": "2 hours",
+        "who": "Vladimir Otroshchenko"
+      },
+      {
+        "feature": "Refactor: swap data capture about the writer of the day",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "2 hours",
+        "who": "Diana Ivanova"
+      },
+      {
+        "feature": "Refactor: take portal description data from cms",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "2 hours",
+        "who": "Diana Ivanova"
       }
     ]
   },
@@ -425,6 +607,13 @@
       "who": "Выканаўца"
     },
     "body": [
+      {
+        "feature": "Агульны кантроль распрацоўкі",
+        "from": "16-02-2020",
+        "to": "29-02-2020",
+        "spent": "24/7",
+        "who": "Дзiяна Iванова"
+      },
       {
         "feature": "Зрабіць агульны рэпазітар",
         "from": "16-02-2020",
@@ -573,53 +762,137 @@
         "who": "Вольга Бугрова"
       },
       {
-        "feature": "Дадаць карткі удзельнікаў праекта",
+        "feature": "Зрабіць кнопкі для пераходу на Worklog і StyleGuide",
         "from": "20-02-2020",
         "to": "20-02-2020",
         "spent": "1 гадзінa",
         "who": "Вольга Бугрова"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? гадзіны",
-        "who": ""
+        "feature": "Пример подтягивания данных из redux-store",
+        "from": "21-02-2020",
+        "to": "21-02-2020",
+        "spent": "2 гадзіны",
+        "who": "Iгар Барбашоў"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? гадзіны",
-        "who": ""
+        "feature": "Даданне вокладкі кнігі для фотагалерэі",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "1 гадзіна",
+        "who": "Вольга Сойка"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? гадзіны",
-        "who": ""
+        "feature": "Занесці у CMS інфармацыi пра распрацоўшчыкі і пра праекты + занесці ўсю інфармацыю ў рэдукс",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "2 гадзіны",
+        "who": "Iгар Барбашоў"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? гадзіны",
-        "who": ""
+        "feature": "Занесці ў CMS інфармацыі для Часопіс падзей на трох мовах + захаваць гэтую інфармацыю ў перевождь",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "1 гадзіна",
+        "who": "Iгар Барбашоў"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? гадзіны",
-        "who": ""
+        "feature": "Стылізаваць карточных удзельнікаў праекта",
+        "from": "20-02-2020",
+        "to": "20-02-2020",
+        "spent": "1 гадзінa",
+        "who": "Вольга Бугрова"
       },
       {
-        "feature": "",
-        "from": "??-02-2020",
-        "to": "??-02-2020",
-        "spent": "? гадзіны",
-        "who": ""
+        "feature": "Стылізацыя секцый today author",
+        "from": "22-02-2020",
+        "to": "22-02-2020",
+        "spent": "1 гадзінa",
+        "who": "Дзiяна Iванова"
+      },
+      {
+        "feature": "Стылі для галоўнай старонкі",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "4 гадзіны",
+        "who": "Вольга Бугрова"
+      },
+      {
+        "feature": "Стылі для спісу аўтараў",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "1 гадзіны",
+        "who": "Вольга Сойка"
+      },
+      {
+        "feature": "Стылі для старонкі аўтара",
+        "from": "27-02-2020",
+        "to": "...",
+        "spent": ". гадзіны",
+        "who": "Вольга Бугрова"
+      },
+      {
+        "feature": "Стылі для старонкі worklog",
+        "from": "27-02-2020",
+        "to": "...",
+        "spent": ". гадзіны",
+        "who": "Вольга Бугрова"
+      },
+      {
+        "feature": "Рэканструкцыя стылю, вымярэнне кветкавай палітры",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "3 гадзіны",
+        "who": "Дзiяна Iванова"
+      },
+      {
+        "feature": "Адаптаваць кантэнт пад вялікія экраны",
+        "from": "27-02-2020",
+        "to": "27-02-2020",
+        "spent": "2 гадзіны",
+        "who": "Вольга Бугрова"
+      },
+      {
+        "feature": "Пераклад статычнага кантэнту на розныя мовы",
+        "from": "23-02-2020",
+        "to": "23-02-2020",
+        "spent": "3 гадзіны",
+        "who": "Уладзімір Атрошчанка"
+      },
+      {
+        "feature": "Пераклад пошукавага фішкі",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "2 гадзіны",
+        "who": "Васiлiй Гусеў"
+      },
+      {
+        "feature": "Памяняць ўзяцце дадзеных аб бягучым мове",
+        "from": "24-02-2020",
+        "to": "24-02-2020",
+        "spent": "3 гадзіны",
+        "who": "Уладзімір Атрошчанка"
+      },
+      {
+        "feature": "Перанесці некаторыя дадзеныя перакладу ў патрэбнае месца і выправіць пераклад у адпаведных кампанентах",
+        "from": "27-02-2020",
+        "to": "27-02-2020",
+        "spent": "2 гадзіны",
+        "who": "Уладзімір Атрошчанка"
+      },
+      {
+        "feature": "Рефактор: памяняць ўзяцце дадзеных пра пісьменніка дня",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "2 гадзіны",
+        "who": "Дзiяна Iванова"
+      },
+      {
+        "feature": "Рефактор: браць дадзеныя апісання партала з cms",
+        "from": "25-02-2020",
+        "to": "25-02-2020",
+        "spent": "2 гадзіны",
+        "who": "Дзiяна Iванова"
       }
     ]
   }
