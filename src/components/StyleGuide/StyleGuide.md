@@ -61,3 +61,11 @@ import Navigations from './Navigations/Navigations.tsx';
 
 <Navigations title="Click me, I'm a navigation link" />;
 ```
+
+## Lines
+
+```js
+import Lines from './Lines/Lines.tsx';
+
+<Lines />;
+```
