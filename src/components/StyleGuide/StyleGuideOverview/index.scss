@@ -1,0 +1,47 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/fonts.scss';
+
+.content-styleguide {
+  h3 {
+    color: $color-text;
+    font-family: $font-title;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  p {
+    font-family: $font-text;
+    color: $color-text;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    width: 300px;
+  }
+}
+
+.styleguide__overview {
+  text-align: center;
+  color: $color-text;
+  margin-bottom: 70px;
+
+  &:after,
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 90%;
+    background-color: $color-text;
+    margin: 10px auto;
+  }
+}
+
+.styleguide__text {
+  text-align: center;
+}
