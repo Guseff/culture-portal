@@ -37,7 +37,8 @@ const Author: React.FC = () => {
   const { language }: ISettingsState = settingsState;
   const { t } = useTranslation();
 
-  if (!pending && !hasAuthor) return <Redirect to="../404" />;
+  if (authorState.byId.length > 0 && !hasAuthor)
+    return <Redirect to="../404" />;
 
   return (
     <Container className="content">
