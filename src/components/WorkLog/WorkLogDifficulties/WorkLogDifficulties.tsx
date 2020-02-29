@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '../../../data/difficulties.json';
 
 const WorkLogDifficulties = ({ difficulties }) => {
   return (
