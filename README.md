@@ -35,3 +35,11 @@ For deployment we use Netlify service. So we can:
 
 1. Run **npm run build** to build the project.
 2. Run **npm run deploy** to deploy the project.
+
+### Our Culture Portal deploy link
+
+- **https://culture-portal-rss.netlify.com/**
+
+### Our Style Guide deploy link
+
+- **https://culture-portal-style-guide.netlify.com/**
