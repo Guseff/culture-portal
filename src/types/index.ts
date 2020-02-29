@@ -42,44 +42,46 @@ export interface IWorkLogString {
   who: string;
 }
 
-export interface IWorkLogState {
+export interface IWorkLogInOneLanguage {
+  title: string;
+  headers: IWorkLogString;
+  body: IWorkLogString[];
+}
+
+export interface ISelfCheckInOneLanguage {
+  [key: string]: string;
+}
+
+export interface IDifficultiesInOneLanguage {
+  title: string;
+  text: string[];
+}
+
+export interface IWorkLogPayload<T> {
+  worklog:
+    | {
+        ru: IWorkLogInOneLanguage;
+        be: IWorkLogInOneLanguage;
+        en: IWorkLogInOneLanguage;
+      }
+    | T;
+  difficulties:
+    | {
+        ru: IDifficultiesInOneLanguage;
+        be: IDifficultiesInOneLanguage;
+        en: IDifficultiesInOneLanguage;
+      }
+    | T;
+  selfCheck:
+    | {
+        ru: ISelfCheckInOneLanguage;
+        be: ISelfCheckInOneLanguage;
+        en: ISelfCheckInOneLanguage;
+      }
+    | T;
+}
+export interface IWorkLogState extends IWorkLogPayload<{}> {
   pending: boolean | null;
-  worklog: {
-    ru: {
-      title: string;
-      headers: IWorkLogString;
-      body: IWorkLogString[];
-    };
-    be: {
-      title: string;
-      headers: IWorkLogString;
-      body: IWorkLogString[];
-    };
-    en: {
-      title: string;
-      headers: IWorkLogString;
-      body: IWorkLogString[];
-    };
-  };
-  difficulties: {
-    ru: {
-      title: string;
-      text: string[];
-    };
-    be: {
-      title: string;
-      text: string[];
-    };
-    en: {
-      title: string;
-      text: string[];
-    };
-  };
-  selfCheck: {
-    ru: object;
-    be: object;
-    en: object;
-  };
 }
 
 export interface IStoreState {
