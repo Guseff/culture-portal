@@ -7,7 +7,6 @@ import {
   WorkLogSelfCheck,
   WorkLogDifficulties,
 } from '../components/WorkLog';
-// import data from '../data/worklog-data.json';
 
 const WorkLog = () => {
   const worklogState: IWorkLogState = useSelector(
@@ -15,7 +14,7 @@ const WorkLog = () => {
   );
   const settings = useSelector((store: IStoreState) => store.settings);
   const { language } = settings;
-  const { pending, worklog } = worklogState;
+  const { pending, worklog, difficulties, selfCheck } = worklogState;
 
   return (
     <Container className="content content-worklog">
@@ -24,8 +23,8 @@ const WorkLog = () => {
       ) : (
         <>
           <WorkLogTable data={worklog[language]} />
-          <WorkLogDifficulties language={language} />
-          <WorkLogSelfCheck language={language} />
+          <WorkLogDifficulties difficulties={difficulties[language]} />
+          <WorkLogSelfCheck selfCheck={selfCheck[language]} />
         </>
       )}
     </Container>

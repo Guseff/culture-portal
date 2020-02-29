@@ -1,11 +1,11 @@
 import React from 'react';
 import data from '../../../data/difficulties.json';
 
-const WorkLogDifficulties = ({ language }) => {
+const WorkLogDifficulties = ({ difficulties }) => {
   return (
     <div>
-      <h3>{data[language].title}</h3>
-      {data[language].text.map((paragraph, i) => {
+      <h3>{difficulties.title}</h3>
+      {difficulties.text.map((paragraph, i) => {
         return <p key={i}>{paragraph}</p>;
       })}
     </div>

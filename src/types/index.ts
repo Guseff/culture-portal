@@ -61,6 +61,25 @@ export interface IWorkLogState {
       body: IWorkLogString[];
     };
   };
+  difficulties: {
+    ru: {
+      title: string;
+      text: string[];
+    };
+    be: {
+      title: string;
+      text: string[];
+    };
+    en: {
+      title: string;
+      text: string[];
+    };
+  };
+  selfCheck: {
+    ru: object;
+    be: object;
+    en: object;
+  };
 }
 
 export interface IStoreState {
