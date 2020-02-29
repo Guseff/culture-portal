@@ -3,3 +3,9 @@
 .input-group-select {
   border-radius: $radius 0 0 $radius;
 }
+
+@media (max-width: 576px)  {
+  .input-group {
+    flex-direction: column;
+  }
+}

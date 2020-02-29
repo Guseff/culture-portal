@@ -18,7 +18,7 @@ const AuthorListCardList: React.FC<IAuthorListCardsProps> = ({
   const { t } = useTranslation();
 
   return authorList.length ? (
-    <ul className="row row-cols-3 list-unstyled list">
+    <ul className="row list-unstyled list">
       {authorList.map((authorId: string) => (
         <AuthorListCardItem
           key={authorId}
