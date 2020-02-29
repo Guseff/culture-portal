@@ -1,6 +1,6 @@
 import { WORKLOG_GET, RequestState } from 'Constants';
 
-interface WorkLog {
+interface IWorkLog {
   feature: string;
   from: string;
   to: string;
@@ -8,7 +8,7 @@ interface WorkLog {
   who: string;
 }
 
-interface WorkLogInOneLanguage {
+interface IWorkLogInOneLanguage {
   title: string;
   headers: {
     feature: string;
@@ -17,30 +17,44 @@ interface WorkLogInOneLanguage {
     spent: string;
     who: string;
   };
-  body: WorkLog[];
+  body: IWorkLog[];
 }
 
-interface WorkLogPayload {
-  workLog: {
-    ru: WorkLogInOneLanguage[];
-    en: WorkLogInOneLanguage[];
-    be: WorkLogInOneLanguage[];
-  };
+interface ISelfCheckInOneLanguage {
+  [key: string]: string;
 }
 
-interface WorkLogState {
-  worklog: WorkLogPayload | {};
+interface IDifficultiesInOneLanguage {
+  title: string;
+  text: string[];
+}
+
+interface IItranslation<T> {
+  ru: T[];
+  en: T[];
+  be: T[];
+}
+
+interface IWorkLogPayload<T> {
+  worklog: IItranslation<IWorkLogInOneLanguage> | T;
+  difficulties: IItranslation<IDifficultiesInOneLanguage> | T;
+  selfCheck: IItranslation<ISelfCheckInOneLanguage> | T;
+}
+
+interface IWorkLogState extends IWorkLogPayload<{}> {
   pending: boolean | null;
 }
 
-const initialState: WorkLogState = {
+const initialState: IWorkLogState = {
   worklog: {},
+  difficulties: {},
+  selfCheck: {},
   pending: null,
 };
 
 export const worklog = (
-  state: WorkLogState = initialState,
-  action: { type: string; payload: WorkLogPayload }
+  state: IWorkLogState = initialState,
+  action: { type: string; payload: IWorkLogPayload<{}> }
 ) => {
   const { type, payload } = action;
 
@@ -53,7 +67,7 @@ export const worklog = (
 
     case `${WORKLOG_GET}${RequestState.SUCCESS}`:
       return {
-        worklog: payload,
+        ...payload,
         pending: false,
       };
 

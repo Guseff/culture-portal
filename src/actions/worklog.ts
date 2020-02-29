@@ -15,7 +15,11 @@ export const worklogGet = () => {
         }
         dispatch({
           type: `${WORKLOG_GET}${RequestState.SUCCESS}`,
-          payload: response.data.items[0].fields.worklogData,
+          payload: {
+            worklog: response.data.items[0].fields.worklogData,
+            difficulties: response.data.items[0].fields.difficultiesData,
+            selfCheck: response.data.items[0].fields.selfCheckData,
+          },
         });
       })
       .catch(() => {
