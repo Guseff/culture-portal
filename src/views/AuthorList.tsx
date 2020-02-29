@@ -9,9 +9,6 @@ const AuthorList: React.FC = () => {
   const { language } = settingsState;
   const { byId, author, pending } = authorState;
 
-  if (pending) {
-  }
-
   return (
     <Container className="content">
       {pending ? (

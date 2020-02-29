@@ -1,31 +1,31 @@
 import { ABOUT_PROJECT_GET, RequestState } from 'Constants';
 
-interface AboutProject {
+interface IAboutProject {
   title: string;
   description: string;
 }
 
-interface AboutProjectPayload {
+interface IAboutProjectPayload {
   aboutProject: {
-    ru: AboutProject;
-    en: AboutProject;
-    be: AboutProject;
+    ru: IAboutProject;
+    en: IAboutProject;
+    be: IAboutProject;
   };
 }
 
-interface AboutProjectState {
-  aboutProject: AboutProjectPayload | {};
+interface IAboutProjectState {
+  aboutProject: IAboutProjectPayload | {};
   pending: boolean | null;
 }
 
-const initialState: AboutProjectState = {
+const initialState: IAboutProjectState = {
   aboutProject: {},
   pending: null,
 };
 
 export const aboutProject = (
-  state: AboutProjectState = initialState,
-  action: { type: string; payload: AboutProjectPayload }
+  state: IAboutProjectState = initialState,
+  action: { type: string; payload: IAboutProjectPayload }
 ) => {
   const { type, payload } = action;
 

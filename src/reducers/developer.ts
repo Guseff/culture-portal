@@ -6,14 +6,14 @@ const initialState = {
   pending: null,
 };
 
-interface DeveloperPayload {
+interface IDeveloperPayload {
   byId: string[];
   developer: {};
 }
 
 export const developer = (
   state = initialState,
-  action: { type: string; payload: DeveloperPayload }
+  action: { type: string; payload: IDeveloperPayload }
 ) => {
   const { type, payload } = action;
 

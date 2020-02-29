@@ -13,7 +13,6 @@ import {
 import { useSelector } from 'react-redux';
 import { IStoreState, ISettingsState, IAuthorState } from 'Types';
 import { useTranslation } from 'react-i18next';
-import RedirectButton from '../components/RedirectButton';
 
 const Author: React.FC = () => {
   const authorState: IAuthorState = useSelector(
