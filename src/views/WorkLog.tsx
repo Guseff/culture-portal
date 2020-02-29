@@ -17,8 +17,6 @@ const WorkLog = () => {
   const { language } = settings;
   const { pending, worklog } = worklogState;
 
-  console.log(worklog);
-
   return (
     <Container className="content content-worklog">
       {pending ? (
