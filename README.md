@@ -38,8 +38,12 @@ For deployment we use Netlify service. So we can:
 
 ### Our Culture Portal deploy link
 
-- **https://culture-portal-rss.netlify.com/**
+- **[Culture Portal](https://culture-portal-rss.netlify.com/)**
 
 ### Our Style Guide deploy link
 
-- **https://culture-portal-style-guide.netlify.com/**
+- **[StyleGuide](https://culture-portal-style-guide.netlify.com/)**
+
+### Our Work Log with task management
+
+- **[WorkLog](https://docs.google.com/spreadsheets/d/1bsXn_v9RWOBEY0zTikrZfy0IyOsrxP5cEkcuFy9RJNE/)**
