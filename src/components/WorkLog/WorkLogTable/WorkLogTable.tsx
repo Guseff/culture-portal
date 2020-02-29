@@ -2,6 +2,7 @@ import './index.scss';
 
 import React from 'react';
 import { Table } from 'react-bootstrap';
+import { IWorkLogString } from '../../../types';
 
 const WorkLogTable = ({ data }) => {
   return (
@@ -22,19 +23,25 @@ const WorkLogTable = ({ data }) => {
               </tr>
             </thead>
             <tbody>
-              {data.body.map((tableRow, i) => {
-                return tableRow.feature ? (
-                  <tr key={i}>
-                    <td data-label={data.headers.feature}>
-                      {tableRow.feature}
-                    </td>
-                    <td data-label={data.headers.from}>{tableRow.from}</td>
-                    <td data-label={data.headers.to}>{tableRow.to}</td>
-                    <td data-label={data.headers.spent}>{tableRow.spent}</td>
-                    <td data-label={data.headers.who}>{tableRow.who}</td>
-                  </tr>
-                ) : null;
-              })}
+              {data.body
+                .sort((a: IWorkLogString, b: IWorkLogString) => {
+                  if (a.from < b.from) return -1;
+                  if (a.from > b.from) return 1;
+                  return 0;
+                })
+                .map((tableRow: IWorkLogString, i: number) => {
+                  return tableRow.feature ? (
+                    <tr key={i}>
+                      <td data-label={data.headers.feature}>
+                        {tableRow.feature}
+                      </td>
+                      <td data-label={data.headers.from}>{tableRow.from}</td>
+                      <td data-label={data.headers.to}>{tableRow.to}</td>
+                      <td data-label={data.headers.spent}>{tableRow.spent}</td>
+                      <td data-label={data.headers.who}>{tableRow.who}</td>
+                    </tr>
+                  ) : null;
+                })}
             </tbody>
           </Table>
         </>
