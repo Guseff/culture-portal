@@ -20,7 +20,7 @@ const AuthorListCardItem: React.FC<IAuthorListCardsProps> = ({
   const { t } = useTranslation();
 
   return (
-    <li className="col mb-4">
+    <li className="col col-md-6 col-lg-4 mb-4">
       <Card>
         <Link to={`/author/${authorId}`}>
           <Card.Img
