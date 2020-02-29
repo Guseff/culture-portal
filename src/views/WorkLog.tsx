@@ -7,7 +7,7 @@ import {
   WorkLogSelfCheck,
   WorkLogDifficulties,
 } from '../components/WorkLog';
-import { isNotEmptyObj } from '../utils';
+import { isNotEmptyObj } from 'Utils';
 
 const WorkLog = () => {
   const worklogState: IWorkLogState = useSelector(
@@ -17,18 +17,17 @@ const WorkLog = () => {
   const { language } = settings;
   const { pending, worklog, difficulties, selfCheck } = worklogState;
 
-  if (pending || !isNotEmptyObj(worklog))
-    return (
-      <Container className="content content-worklog">
-        <Spinner className="spinner" animation="border" />
-      </Container>
-    );
-
   return (
     <Container className="content content-worklog">
-      <WorkLogTable data={worklog[language]} />
-      <WorkLogDifficulties difficulties={difficulties[language]} />
-      <WorkLogSelfCheck selfCheck={selfCheck[language]} />
+      {pending || !isNotEmptyObj(worklog) ? (
+        <Spinner className="spinner" animation="border" />
+      ) : (
+        <>
+          <WorkLogTable data={worklog[language]} />
+          <WorkLogDifficulties difficulties={difficulties[language]} />
+          <WorkLogSelfCheck selfCheck={selfCheck[language]} />
+        </>
+      )}
     </Container>
   );
 };
